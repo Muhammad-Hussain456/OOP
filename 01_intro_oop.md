@@ -260,6 +260,9 @@ ClassName objectName;
 
 ---
 
+Yeh main syntax hai, aur problem ke nature ke mutabiq isi mein additional programming constructs add kiye jate hain.                       
+Zyada tar OOP mein class aur object ke sath 4 pillars (Encapsulation, Inheritance, Polymorphism, Abstraction) ko zarurat ke mutabiq use kiya jata hai. Kabhi sirf encapsulation ki zarurat hoti hai, kabhi sirf polymorphism, kabhi inheritance, aur kabhi abstraction. Kabhi do, teen ya tamam 4 pillars bhi use karne parte hain — yeh sab problem ke nature par depend karta hai.
+
 # 🔹 OOP ke 4 Pillars
 
 ## 1️⃣ Encapsulation
