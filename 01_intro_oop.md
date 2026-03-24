@@ -1,6 +1,8 @@
-> 📚 **Prerequisite:** Is se pehle programming ke basic concepts (What is programming?, What is Progamming language?, Why Programming language?, Types of programming languages, Why high level Programming language?, variables, functions, arrays, structures, etc.) ko samajhna zaroori hai.  
+> 📚 **Prerequisite:** Is se pehle ICT aur programming ke basic concepts (What is computer? Parts of computer, What is hardware?, What is software?, Types of software, What enables us to communicate with hardware?, What enables us to communicate with OS?, What enables OS to communicate with hardware?, Why we create software and what is used to write a software?, What is programming?, What is Progamming language?, Why Programming language?, Types of programming languages, Why high level Programming language?, variables, functions, arrays, structures, etc.) ko samajhna zaroori hai.  
 > Ye sab topics yahan cover kiye gaye hain:  
 > 👉 [Fundamentals of Programming Repository](https://github.com/Muhammad-Hussain456/Fundamentals_of_Programming-)
+> 👉 [Application-of-ICT Repository](https://github.com/Muhammad-Hussain456/Application-of-ICT).
+
 
 # 🔹 What is OOP?
 
