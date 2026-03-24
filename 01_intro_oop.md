@@ -1,4 +1,4 @@
-> 📚 **Prerequisite:** Is se pehle programming ke basic concepts (What is programming?, Why Programming? Types of programming, Progamming languages, Types of programming languages, variables, functions, arrays, structures, etc.) ko samajhna zaroori hai.  
+> 📚 **Prerequisite:** Is se pehle programming ke basic concepts (What is programming?, What is Progamming language?, Why Programming language?, Types of programming languages, Why high level Programming language?, variables, functions, arrays, structures, etc.) ko samajhna zaroori hai.  
 > Ye sab topics yahan cover kiye gaye hain:  
 > 👉 [Fundamentals of Programming Repository](https://github.com/Muhammad-Hussain456/Fundamentals_of_Programming-)
 
