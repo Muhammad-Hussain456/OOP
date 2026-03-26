@@ -1,4 +1,4 @@
-# 🔹 Difference Between Method/Function and Constructor
+# 🔹 Difference Between Method and Constructor
 
 |       | **Method / Function** | **Constructor** |
 |-------|----------------------|-----------------|
