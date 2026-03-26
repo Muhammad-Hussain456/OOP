@@ -331,7 +331,7 @@ private:
 
 # 🔹 Key Points to Remember
 
-✅ **Basic Encapsulation** comes automatically with class and object (bundling)
+✅ **Basic Encapsulation** comes automatically with class and object (bundling/grouping)
 
 ✅ **True Encapsulation** requires additional constructs:
    - `private` access modifier (data hiding)
@@ -339,11 +339,6 @@ private:
    - Setter methods (controlled write)
    - Validation logic (data integrity)
 
-✅ **Class** provides the structure for encapsulation
-
-✅ **Object** is the actual encapsulated unit
-
-✅ **True encapsulation = Security + Control + Data Integrity**
 
 ---
 
