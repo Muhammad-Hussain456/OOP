@@ -271,8 +271,8 @@ ClassName objectName;
 
 ---
 
-This is the main syntax, and additional programming constructs are added to it based on the nature of the problem.
-In most cases, OOP uses the 4 pillars (Encapsulation, Inheritance, Polymorphism, Abstraction) with classes and objects as needed by the problem. Sometimes only encapsulation is needed, sometimes only polymorphism, sometimes inheritance, and sometimes abstraction. Sometimes two, three, or all four pillars have to be used — this all depends on the nature of the problem.
+This is the main syntax, and additional programming constructs such as OOP's 4 pillars are added to it based on the nature of the problem.
+In most cases, OOP uses the 4 pillars (Encapsulation, Inheritance, Polymorphism, Abstraction) with classes and objects main as needed by the problem. Sometimes only encapsulation is needed, sometimes only polymorphism, sometimes inheritance, and sometimes abstraction. Sometimes two, three, or all four pillars have to be used — this all depends on the nature of the problem.
 
 # 🔹 The 4 Pillars of OOP
 
