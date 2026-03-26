@@ -1,6 +1,8 @@
 > 📚 **Prerequisite:** Before this, it is necessary to understand the basic concepts of ICT and programming (What is a computer? Parts of a computer, What is hardware?, What is software?, Types of software, What enables us to communicate with hardware?, What enables us to communicate with the OS?, What enables the OS to communicate with hardware?, Why do we create software and what is used to write software?, What is programming?, What is a programming language?, Why programming languages?, Types of programming languages, Why high-level programming languages?, Variables, Functions, Arrays, Conditional statements, Pointers, Structures, etc.).
-> All these topics are covered here:                                                                                                      
-> 👉 [Fundamentals of Programming Repository](https://github.com/Muhammad-Hussain456/Fundamentals_of_Programming-)                       
+> All these topics are covered here:
+>                                                                                      
+> 👉 [Fundamentals of Programming Repository](https://github.com/Muhammad-Hussain456/Fundamentals_of_Programming-)
+>              
 > 👉 [Application-of-ICT Repository](https://github.com/Muhammad-Hussain456/Application-of-ICT)
 
 # 🔹 What is Object Oriented Programming(OOP)?                                                                                           
