@@ -276,7 +276,7 @@ Encapsulation = Bundling data + methods + controlling access
 
 👉 Example: PINs, passwords, bank account balances, etc., are kept private.
 
-**How to use/implement encapsulation in program**
+**How to use/implement encapsulation in program**                                                                                         
 using access modifiers (private, public, protected), getter and setter methods, and classes
 
 ---
@@ -288,7 +288,7 @@ Showing only the necessary things and hiding the rest.
 
 👉 Example: You use an ATM, but you don't know its internal system. Users use app icons, folders, and files, but the internal programming is not shown to them.
 
-**How to use/implement abstraction in program**
+**How to use/implement abstraction in program**                                                                                           
 using abstract classes, interfaces, pure virtual functions, and abstract methods
 
 ---
@@ -300,7 +300,7 @@ it creates parent child relationship between two or more classes.
 
 👉 Example: BankAccount → SavingsAccount
 
-**How to use/implement inheritance in program**
+**How to use/implement inheritance in program**                                                                                           
 using base class (parent class), derived class (child class), and inheritance syntax (extends in Java, : in C++)
 
 ---
@@ -310,7 +310,7 @@ Same function name, different behavior/working.
 
 👉 Example: calculateInterest()
 
-**How to use/implement polymorphism in program**
+**How to use/implement polymorphism in program**                                                                                          
 using method overloading, method overriding, virtual functions, operator overloading, function overloading, and interfaces
 
 ---
