@@ -1,100 +1,106 @@
-> 📚 **Prerequisite:** Is se pehle ICT aur programming ke basic concepts (What is computer? Parts of computer, What is hardware?, What is software?, Types of software, What enables us to communicate with hardware?, What enables us to communicate with OS?, What enables OS to communicate with hardware?, Why we create software and what is used to write a software?, What is programming?, What is Progamming language?, Why Programming language?, Types of programming languages, Why high level Programming language?, Variables, Functions, Arrays, conditional statements, Pointers, Structures, etc.) ko samajhna zaroori hai.  
-> Ye sab topics yahan cover kiye gaye hain:  
-> 👉 [Fundamentals of Programming Repository](https://github.com/Muhammad-Hussain456/Fundamentals_of_Programming-)                        
-> 👉 [Application-of-ICT Repository](https://github.com/Muhammad-Hussain456/Application-of-ICT).
+> 📚 **Prerequisite:** Before this, it is necessary to understand the basic concepts of ICT and programming (What is a computer? Parts of a computer, What is hardware?, What is software?, Types of software, What enables us to communicate with hardware?, What enables us to communicate with the OS?, What enables the OS to communicate with hardware?, Why do we create software and what is used to write software?, What is programming?, What is a programming language?, Why programming languages?, Types of programming languages, Why high-level programming languages?, Variables, Functions, Arrays, Conditional statements, Pointers, Structures, etc.).
+> All these topics are covered here:
+> 👉 [Fundamentals of Programming Repository](https://github.com/Muhammad-Hussain456/Fundamentals_of_Programming-)
+> 👉 [Application-of-ICT Repository](https://github.com/Muhammad-Hussain456/Application-of-ICT)
 
+# 🔹 What is Object Oriented Programming(OOP)?                                                                                           
+## Object Orientation:
+Object orientation is a method or technique of system or thing modeling.                                                                 
+## Model:                                                                                                                                 
+A model is an abstraction of something. 
+## Abstraction 
+Abstraction means to show only the necessary implementations or things. 
 
-# 🔹 What is OOP?
+Example: We first create the model and then build cars following that model.
 
-Object-Oriented Programming (OOP) ek programming paradigm hai jo **objects** par based hai.
+## Object-Oriented Programming(OOP):
+Object-Oriented Programming is a programming technique used to create models for things or systems. It is mainly based on classes and objects. 
+**For example**, we want to create an attendance system for 50 students. Each student has some common or similar properties (variables) and functions (methods, behavior, or working). We could declare these properties and methods every time for each student, which would take more time, repeat the same code, and make the code lengthy. To fix this issue, we can create a model, template, design, or blueprint for all the students and declare the common or similar properties (variables) and functions (methods, behavior, or working) in that blueprint once. Then, following that blueprint, we can add each student's details to the attendance system. The model, blueprint, design, or template we have created here is known as a **class**. To add each student's details, we create **objects** of that class.
 
-Objects contain:
-- **Data** (variables / properties)
-- **Behavior** (functions / methods)
+OOP provides a way to represent real-world entities in a program.
 
-OOP real-world entities ko program mein represent karne ka tareeqa deta hai.
-## 🔹 OOP kyun zaroori?
+## 🔹 Why is OOP necessary?
 
-Pehle hum:
+Before OOP, we used to:
 
-* Har cheez ke liye alag **variables**
-* Aur alag **functions** banate thay
-  chahy boht sari chezn similar functions and variables ko use kr rahy ho.
+* Create separate **variables** for everything.
+* And separate **functions** for everything.
+  Even if many things were using the same similar functions and variables.
 
-👉 Is se problem hoti thi:
+👉 This led to problems:
 
-* Code repeat hota tha
-* Time zyada lagta tha
-* Code messy ho jata tha
+* Code repetition.
+* More time consumption.
+* Code became messy.
 
-## ✅ OOP madad karta hai:
+## ✅ OOP helps by:
 
-* Code ko organized aur modular banata hai
-* Code ko maintain aur update karna asaan hota hai
-* Code reuse karne mein madad deta hai
-* Real-world problems ko asaani se model karta hai
-* Bade applications mein complexity kam karta hai
-
----
-
-# 🔹 Class kyun use karte hain?
-
-Ooper mention problems ko solve karne ke liye OOP mein **class** use ki jati hai.
-
-👉 **Class ek naqsha (نقشہ) / blueprint / template / design hoti hai**
-
-Jisme hum:
-
-* Variables (properties)
-* Functions (methods)
-
-ek jagah *define/declare* kar dete hain.
-
-👉 Phir hume baar baar same code likhne ki zaroorat nahi hoti ✅
+* Making the code organized and modular.
+* Making code easier to maintain and update.
+* Helping with code reuse.
+* Making it easier to model real-world problems.
+* Reducing complexity in large applications.
 
 ---
 
-# 🔹 Object kyun use karte hain?
+# 🔹 Why do we use a Class?
 
-👉 **Object class ka instance (real/physical form) hota hai**
+To solve the problems mentioned above, we use a **class** in OOP.
 
-* Class sirf design hai
-* Object real cheez hoti hai jo hum use karte hain
-* Object mein hum class ke variables aur functions ko initialize karte hain
+👉 **A class is a map (نقشہ) / blueprint / template / design.**
+
+In it, we:
+
+* Define or declare variables (properties)
+* And functions (methods)
+
+in one single place.
+
+👉 Then, we don't need to write the same code repeatedly ✅
 
 ---
 
-# 🔹 Analogy (Best samajh)
+# 🔹 Why do we use an Object?
 
-Socho ek **car factory** 🚗
+👉 **An object is an instance (real/physical form) of a class.**
 
-* Class = car ka blueprint/design
-* Object = actual car
+* The class is just a design.
+* The object is the real thing that we use.
+* In the object, we initialize the variables and functions defined in the class.
 
-👉 Tum blueprint ek dafa banate ho
-👉 Phir us se bohat sari cars (objects) bana lete ho
+---
 
-Har car:
+# 🔹 Analogy (Best way to understand)
 
-* Structure same (engine, wheels)
-* Lekin color, number different ho sakta hai
+Think of a **car factory** 🚗
+
+* Class = The car's blueprint or design.
+* Object = The actual car.
+
+👉 You create the blueprint once.
+👉 Then you can create many cars (objects) from it.
+
+Each car:
+
+* Has the same structure (engine, wheels).
+* But can have different colors, registration numbers, etc.
 
 ---
 
 # 🔹 C++ Example (Bad code - repetition & lengthy)
 
-```cpp id="bad001"
+```cpp
 #include <iostream>
 using namespace std;
 
 string s1name;
-int s1age;
+int s1RollNo;
 string s2name;
-int s2age;
+int s2RollNo;
 string s3name;
-int s3age;
+int s3RollNo;
 string s4name;
-int s4age;
+int s4RollNo;
 
 void s1study() {
     cout << s1name << " is studying" << endl;
@@ -115,16 +121,16 @@ void s4study() {
 int main() {
 
     s1name = "Ali";
-    s1age = 20;
+    s1RollNo = 20;
 
     s2name = "Sara";
-    s2age = 22;
+    s2RollNo = 22;
 
     s3name = "Hasan";
-    s3age = 25;
+    s3RollNo = 25;
 
     s4name = "Hussain";
-    s4age = 23;
+    s4RollNo = 23;
 
     s1study();
     s2study();
@@ -133,166 +139,3 @@ int main() {
 
     return 0;
 }
-```
-
----
-
-# 🔹 C++ Example (Good code using Class)
-
-```cpp id="good001"
-#include <iostream>
-using namespace std;
-
-class Student {
-public:
-    string name;
-    int age;
-
-    void study() {
-        cout << name << " is studying" << endl;
-    }
-};
-
-int main() {
-    Student s1;
-    Student s2;
-    Student s3;
-    Student s4;
-
-    s1.name = "Ali";
-    s1.age = 20;
-
-    s2.name = "Sara";
-    s2.age = 22;
-
-    s3.name = "Hasan";
-    s3.age = 25;
-
-    s4.name = "Hussain";
-    s4.age = 23;
-
-    s1.study();
-    s2.study();
-    s3.study();
-    s4.study();
-
-    return 0;
-}
-```
-
----
-
-# 🔹 Explanation
-
-👉 Class blueprint hai aur object us blueprint se bani hui real cheez hai
-
-👉 Pehle example mein code repeat hua, lengthy aur difficult tha
-
-👉 Dusre example mein:
-
-* Code clean hai
-* Code short hai
-* Code reusable hai
-
-👉 `Student` ek class hai
-
-👉 `s1`, `s2`, `s3`, `s4` objects hain
-
-👉 In sab ke paas:
-
-* same properties (name, age)
-* same function (study)
-
----
-
-# 🔹 Benefits of Class & Object
-
-* Code reuse hota hai
-* Code repeat nahi hota
-* Time bach jata hai
-* Code short hota hai
-* Code clean aur easy hota hai
-
----
-
-# 🔹 Repeat vs Reuse
-
-## ❌ Repeat
-
-Same code dobara likhna
-
-## ✅ Reuse
-
-Ek dafa likhna, baar baar use karna
-
----
-
-# 🔹 Syntax & Semantics
-
-## 🔸 Class Syntax
-
-```cpp id="syn001"
-class ClassName {
-    // data members
-    // member functions
-};
-```
-
-## 🔸 Class Semantics
-
-* Class ek blueprint hoti hai
-* Data aur functions ko group karti hai
-* Khud memory allocate nahi karti
-
----
-
-## 🔸 Object Syntax
-
-```cpp id="syn002"
-ClassName objectName;
-```
-
-## 🔸 Object Semantics
-
-* Object class ka instance hota hai
-* Memory allocate hoti hai
-* Har object ki apni values hoti hain
-
----
-
-Yeh main syntax hai, aur problem ke nature ke mutabiq isi mein additional programming constructs add kiye jate hain.                       
-Zyada tar OOP mein class aur object ke sath 4 pillars (Encapsulation, Inheritance, Polymorphism, Abstraction) ko zarurat ke mutabiq use kiya jata hai. Kabhi sirf encapsulation ki zarurat hoti hai, kabhi sirf polymorphism, kabhi inheritance, aur kabhi abstraction. Kabhi do, teen ya tamam 4 pillars bhi use karne parte hain — yeh sab problem ke nature par depend karta hai.
-
-# 🔹 OOP ke 4 Pillars
-
-## 1️⃣ Encapsulation
-
-Data ko bundle karna aur protect karna
-
-👉 Example: Bank account (balance private hota hai)
-
----
-
-## 2️⃣ Abstraction
-
-Sirf zaroori cheez dikhana, baqi hide karna
-
-👉 Example: ATM use karte ho, internal system nahi pata
-
----
-
-## 3️⃣ Inheritance
-
-Ek class ke features dusri class use kare
-
-👉 Example: BankAccount → SavingsAccount
-
----
-
-## 4️⃣ Polymorphism
-
-Same function, different behavior
-
-👉 Example: calculateInterest()
-
----
