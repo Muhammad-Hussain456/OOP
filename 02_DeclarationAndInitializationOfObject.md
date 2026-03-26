@@ -1,19 +1,7 @@
-# 🔹 Declaration and Initialization of Object                                                                                                                                                                                                    
-After declaration, the object gets the properties and functions declared in the class.
-
-## 🔹 What is an Object?
-
-An **object** is an instance (real/physical form) of a class.
-
-* Class = Blueprint (design)
-* Object = Actual thing created from blueprint
-
----
-
+# 🔹 Declaration and Initialization of Object                                                                                                                                                                                                 
 ## 🔹 Declaration of Object
-
 Creating an object is called declaration.
-
+When an object is declared, it gets the properties and functions declared in the class.
 ### Syntax:
 ```cpp
 ClassName objectName;
