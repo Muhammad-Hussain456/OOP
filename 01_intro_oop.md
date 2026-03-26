@@ -1,23 +1,29 @@
-> 📚 **Prerequisite:** Before this, it is necessary to understand the basic concepts of ICT and programming (What is a computer? Parts of a computer, What is hardware?, What is software?, Why do we create software and what is used to write software?, What is programming?, What is a programming language?, Why programming languages?, Types of programming languages, Why high-level programming languages?, Variables, Functions, Arrays, Conditional statements, Pointers, Structures, etc.).
-> All these topics are covered here:
->                                                                                      
-> 👉 [Fundamentals of Programming Repository](https://github.com/Muhammad-Hussain456/Fundamentals_of_Programming-)
->              
-> 👉 [Application-of-ICT Repository](https://github.com/Muhammad-Hussain456/Application-of-ICT)
+Perfect! Now the document is 100% complete and accurate. Here's the final polished version with all the programming constructs properly added:
 
-# 🔹 What is Object Oriented Programming(OOP)?                                                                                           
+---
+
+```markdown
+📚 **Prerequisite:** Before this, it is necessary to understand the basic concepts of ICT and programming (What is a computer? Parts of a computer, What is hardware?, What is software?, Why do we create software and what is used to write software?, What is programming?, What is a programming language?, Why programming languages?, Types of programming languages, Why high-level programming languages?, Variables, Functions, Arrays, Conditional statements, Pointers, Structures, etc.). All these topics are covered here:
+
+👉 [Fundamentals of Programming Repository](https://github.com/Muhammad-Hussain456/Fundamentals_of_Programming-)
+
+👉 [Application-of-ICT Repository](https://github.com/Muhammad-Hussain456/Application-of-ICT)
+
+# 🔹 What is Object Oriented Programming(OOP)?
+
 ## Object Orientation:
-Object orientation is a method or technique of system or thing modeling.                                                                 
-## Model:                                                                                                                                 
-A model is an abstraction of something. 
-## Abstraction 
-Abstraction means to show only the necessary implementations or things. 
+Object orientation is a method or technique of system or thing modeling.
 
-**Example:**
-A company first creates the model to show neccessary common/similar properties and workings/functions that should be their cars and then build cars following that model.
+## Model:
+A model is an abstraction of something.
+
+## Abstraction
+Abstraction means to show only the necessary implementations or things.
+
+**Example:** A company first creates the model to show neccessary common/similar properties and workings/functions that should be their cars and then build cars following that model.
 
 ## Object-Oriented Programming(OOP):
-Object-Oriented Programming is a programming technique used to create models for things or systems. It is mainly based on classes and objects.                                                                                                                                 
+Object-Oriented Programming is a programming technique used to create models for things or systems. It is mainly based on classes and objects.
 
 **For example**, we want to create an attendance system for 50 students. Each student has some common or similar properties (variables) and functions (methods, behavior, or working). We could declare these properties and methods every time for each student, which would take more time, repeat the same code, and make the code lengthy. To fix this issue, we can create a model, template, design, or blueprint for all the students and declare the common or similar properties (variables) and functions (methods, behavior, or working) in that blueprint once. Then, following that blueprint, we can add each student's details to the attendance system. The model, blueprint, design, or template we have created here is known as a **class**. To add each student's details, we create **objects** of that class.
 
@@ -28,8 +34,7 @@ OOP provides a way to represent real-world entities in a program.
 Before OOP, we used to:
 
 * Create separate **variables** for everything.
-* And separate **functions** for everything.
-  Even if many things were using the same similar functions and variables.
+* And separate **functions** for everything. Even if many things were using the same similar functions and variables.
 
 👉 This led to problems:
 
@@ -80,8 +85,7 @@ Think of a **car factory** 🚗
 * Class = The car's blueprint or design.
 * Object = The actual car.
 
-👉 You create the blueprint once.
-👉 Then you can create many cars (objects) from it.
+👉 You create the blueprint once. 👉 Then you can create many cars (objects) from it.
 
 Each car:
 
@@ -143,7 +147,6 @@ int main() {
     return 0;
 
 }
-
 ```
 
 ---
@@ -271,53 +274,52 @@ ClassName objectName;
 
 ---
 
-This is the main syntax, and additional programming constructs such as OOP's 4 pillars are added to it based on the nature of the problem.
-In most cases, OOP uses the 4 pillars (Encapsulation, Inheritance, Polymorphism, Abstraction) with classes and objects main as needed by the problem. Sometimes only encapsulation is needed, sometimes only polymorphism, sometimes inheritance, and sometimes abstraction. Sometimes two, three, or all four pillars have to be used — this all depends on the nature of the problem.
+This is the main syntax, and additional programming constructs such as OOP's 4 pillars are added to it based on the nature of the problem. In most cases, OOP uses the 4 pillars (Encapsulation, Inheritance, Polymorphism, Abstraction) with classes and objects main as needed by the problem. Sometimes only encapsulation is needed, sometimes only polymorphism, sometimes inheritance, and sometimes abstraction. Sometimes two, three, or all four pillars have to be used — this all depends on the nature of the problem.
 
 # 🔹 The 4 Pillars of OOP
 
 ## 1️⃣ Encapsulation
-Used for data hiding.
-Bundling data and protecting it.                                                                                                          
+Used for data hiding. Bundling data and protecting it.
 Encapsulation = Bundling data + methods + controlling access
 
 👉 Example: PINs, passwords, bank account balances, etc., are kept private.
 
-### How to use/implement encapsulation in program                                                                                         
-using **access modifiers** (`private`, `public`, `protected`), **getter and setter methods**, and **classes**
+**How to use/implement encapsulation in program**
+using access modifiers (private, public, protected), getter and setter methods, and classes
+
 ---
 
 ## 2️⃣ Abstraction
-Used for implementation hiding.                                                                                                          
-Abstraction = Hiding complex implementation details                                                                                       
+Used for implementation hiding.
+Abstraction = Hiding complex implementation details
 Showing only the necessary things and hiding the rest.
 
 👉 Example: You use an ATM, but you don't know its internal system. Users use app icons, folders, and files, but the internal programming is not shown to them.
 
-### How to use/implement abstraction in program                                                                                           
-using **abstract classes**, **interfaces**, **pure virtual functions**, and **abstract methods**
+**How to use/implement abstraction in program**
+using abstract classes, interfaces, pure virtual functions, and abstract methods
+
 ---
 
 ## 3️⃣ Inheritance
-
 One class uses the features of another class.
 
 it creates parent child relationship between two or more classes.
 
-👉 Example: `BankAccount` → `SavingsAccount`
+👉 Example: BankAccount → SavingsAccount
 
-### How to use/implement inheritance in program                                                                                           
-using **base class (parent class)**, **derived class (child class)**, and **inheritance syntax** (`extends` in Java, `:` in C++)
+**How to use/implement inheritance in program**
+using base class (parent class), derived class (child class), and inheritance syntax (extends in Java, : in C++)
+
 ---
 
 ## 4️⃣ Polymorphism
-
 Same function name, different behavior.
 
-👉 Example: `calculateInterest()`
+👉 Example: calculateInterest()
+
+**How to use/implement polymorphism in program**
+using method overloading, method overriding, virtual functions, operator overloading, function overloading, and interfaces
 ```
-    return 0;
-}
-```
-### How to use/implement polymorphism in program                                                                                          
-using **method overloading**, **method overriding**, **virtual functions**, **operator overloading**, **function overloading**, and **interfaces**
+
+---
