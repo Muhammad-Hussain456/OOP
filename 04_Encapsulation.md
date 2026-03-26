@@ -4,7 +4,7 @@
 
 **Encapsulation** is a fundamental concept of Object-Oriented Programming (OOP) that bundles/groups data (variables) and methods (functions) together into a single unit and controls access to them.
 
-👉 **Encapsulation = Bundling + Data Hiding + Controlled Access**
+👉 **Encapsulation = Bundling/Grouping + Data Hiding + Controlled Access**
 
 ---
 
