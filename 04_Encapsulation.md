@@ -57,7 +57,7 @@ int main() {
     Student s1;    // Object encapsulates data + behavior
     
     s1.name = "Ali";
-    s1.study();    // Behavior
+    s1.study();    // method
     
     return 0;
 }
@@ -78,7 +78,7 @@ public:
     string name;                   // Data
     int rollNo;                    // Data
     
-    void study() {                 // Behavior
+    void study() {                 // method
         cout << name << " is studying" << endl;
     }
 };
