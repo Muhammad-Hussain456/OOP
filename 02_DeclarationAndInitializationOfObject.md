@@ -115,50 +115,6 @@ int main() {
     return 0;
 }
 ```
-
----
-
-### 3️⃣ **Using Setter Methods**
-
-When we want to control how values are set (good for encapsulation).
-
-```cpp
-#include <iostream>
-using namespace std;
-
-class Student {
-private:
-    string name;
-    int rollNo;
-    
-public:
-    // Setter methods
-    void setName(string n) {
-        name = n;
-    }
-    
-    void setRollNo(int r) {
-        rollNo = r;
-    }
-    
-    void display() {
-        cout << name << " - " << rollNo << endl;
-    }
-};
-
-int main() {
-    Student s1;                    // Declaration
-    
-    // Initialization using setter methods
-    s1.setName("Ali");
-    s1.setRollNo(101);
-    
-    s1.display();                  // Output: Ali - 101
-    
-    return 0;
-}
-```
-
 ---
 
 ## 🔹 Most Common Ways (For Beginners)
@@ -167,7 +123,6 @@ int main() {
 |---|--------|--------------|
 | 1 | **Dot Operator** | `s1.name = "Ali";` |
 | 2 | **Constructor** | `Student s1("Ali", 101);` |
-| 3 | **Setter Methods** | `s1.setName("Ali");` |
 
 ---
 
@@ -175,7 +130,6 @@ int main() {
 
 ✅ **Dot Operator** is simplest for beginners  
 ✅ **Constructor** is the most professional and widely used  
-✅ **Setter Methods** are used when we want to control access to data  
 ✅ Declaration + Initialization can be done in one line using constructors  
 
 ---
@@ -191,10 +145,6 @@ s1.rollNo = 101;
 // Way 2: Constructor (Best way)
 Student s1("Ali", 101);
 
-// Way 3: Setter Methods
-Student s1;
-s1.setName("Ali");
-s1.setRollNo(101);
 ```
 
 ---
