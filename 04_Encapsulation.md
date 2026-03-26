@@ -2,7 +2,7 @@
 
 ## What is Encapsulation?
 
-**Encapsulation** is a fundamental concept of Object-Oriented Programming (OOP) that bundles data (variables) and methods (functions) together into a single unit and controls access to them.
+**Encapsulation** is a fundamental concept of Object-Oriented Programming (OOP) that bundles/groups data (variables) and methods (functions) together into a single unit and controls access to them.
 
 👉 **Encapsulation = Bundling + Data Hiding + Controlled Access**
 
@@ -14,7 +14,7 @@ Encapsulation exists at two levels in OOP:
 
 | Level | What It Provides | Programming Constructs Used |
 |-------|-----------------|---------------------------|
-| **Basic Encapsulation** | Bundling data and methods together | Class, Object |
+| **Basic Encapsulation** | Bundling/grouping data and methods together | Class, Object |
 | **True Encapsulation** | Bundling , Data Hiding and Controlled Access | Access Modifiers, Getters, Setters, Validation |
 
 ---
@@ -25,8 +25,7 @@ Encapsulation exists at two levels in OOP:
 
 A **class** itself provides basic encapsulation by:
 
-- **Bundling** properties and functions together
-- **Grouping** related properties and behaviors in one place
+- **Bundling/Grouping** related properties and behaviors/functions/methods in one place
 
 ```cpp
 class Student {
@@ -49,12 +48,12 @@ class Student {
 
 An **object** is the physical instance that:
 
-- **Contains** both data and behavior in one unit
+- **Contains** both data/properties and behavior/function in one unit
 - **Represents** a complete entity with its properties and actions
 
 ```cpp
 int main() {
-    Student s1;    // Object encapsulates data + behavior
+    Student s1;    
     
     s1.name = "Ali";
     s1.study();    // method
@@ -73,7 +72,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-class Student {                    // Class provides bundling
+class Student {                    // Class provides bundling/grouping
 public:
     string name;                   // Data
     int rollNo;                    // Data
@@ -84,7 +83,7 @@ public:
 };
 
 int main() {
-    Student s1;                    // Object encapsulates everything
+    Student s1;                              
     
     s1.name = "Ali";               // Direct access allowed
     s1.rollNo = -5;                // ❌ No validation (problem!)
