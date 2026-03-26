@@ -132,6 +132,68 @@ int main() {
 | **public** | Accessible from anywhere | Exposes the interface |
 | **protected** | Accessible within class and derived classes | Used in inheritance |
 
+
+
+### 🔹 private
+Accessible only within the same class.
+
+```cpp
+class Person {
+private:
+    int age = 25;
+
+public:
+    void show() {
+        std::cout << age;
+    }
+};
+````
+
+---
+
+### 🔹 public
+
+Accessible from anywhere.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class Person {
+public:
+    string name = "Ali";
+};
+
+int main() {
+    Person p;
+    cout << p.name;
+    return 0;
+}
+```
+
+---
+
+### 🔹 protected
+
+Accessible within the class and derived classes.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class Parent {
+protected:
+    int value = 10;
+};
+
+class Child : public Parent {
+public:
+    void show() {
+        cout << value;
+    }
+};
+```
+
 ---
 
 ## 2️⃣ Getter and Setter Methods
@@ -141,91 +203,47 @@ int main() {
 | **Getter (Accessor)** | Provides controlled access to read private data |
 | **Setter (Mutator)** | Provides controlled access to modify private data |
 
+### 🔹 Getter (Accessor)
+
+Used to read private data.
+
+```cpp
+class Person {
+private:
+    string name;
+
+public:
+    string getName() {
+        return name;
+    }
+};
+```
+
+---
+
+### 🔹 Setter (Mutator)
+
+Used to modify private data.
+
+```cpp
+class Person {
+private:
+    string name;
+
+public:
+    void setName(string n) {
+        name = n;
+    }
+};
+```
 ---
 
 ## 3️⃣ Validation Logic
 
-Validation ensures that only **valid data** is stored in the object.
-
----
-
-## 🔹 True Encapsulation Example
-
-```cpp
-#include <iostream>
-using namespace std;
-
-class Student {
-private:                    // ✅ Data Hiding
-    string name;
-    int rollNo;
-    
-public:
-    // ✅ Setter with Validation
-    void setName(string n) {
-        if (!n.empty()) {
-            name = n;
-        } else {
-            cout << "Error: Name cannot be empty!" << endl;
-        }
-    }
-    
-    // ✅ Setter with Validation
-    void setRollNo(int r) {
-        if (r > 0) {
-            rollNo = r;
-        } else {
-            cout << "Error: Roll number must be positive!" << endl;
-        }
-    }
-    
-    // ✅ Getter (Controlled Read Access)
-    string getName() {
-        return name;
-    }
-    
-    // ✅ Getter (Controlled Read Access)
-    int getRollNo() {
-        return rollNo;
-    }
-    
-    // ✅ Behavior method using private data
-    void study() {
-        cout << name << " is studying" << endl;
-    }
-};
-
-int main() {
-    Student s1;                    // Object encapsulates data + behavior
-    
-    // ✅ Controlled access through setters
-    s1.setName("Ali");
-    s1.setRollNo(101);
-    
-    // ✅ Controlled read through getters
-    cout << "Name: " << s1.getName() << endl;
-    cout << "Roll No: " << s1.getRollNo() << endl;
-    
-    s1.study();
-    
-    // ❌ Cannot access directly (compilation error)
-    // s1.name = "Ahmed";      // Error: private
-    // s1.rollNo = 50;         // Error: private
-    
-    // ✅ Validation prevents invalid data
-    s1.setRollNo(-5);           // Error message shown
-    
-    return 0;
-}
-```
-
-**Output:**
-```
-Name: Ali
-Roll No: 101
-Ali is studying
-Error: Roll number must be positive!
-```
+Validation ensures that only **valid data** is stored in the object.                                                                      
+Use if/else conditions inside setters                                                                                                     
+Prevent invalid data assignment                                                                                                           
+Improves data safety and encapsulation
 
 ---
 
@@ -261,8 +279,8 @@ Error: Roll number must be positive!
 ┌─────────────────────────────────┐
 │             CLASS                │
 │  ┌───────────────────────────┐  │
-│  │       INTERFACE           │  │
-│  │  (Public Methods)         │  │
+│  │                           │  │
+│  │        (Public)           │  │
 │  │  ┌─────────────────────┐  │  │
 │  │  │ setName()           │  │  │
 │  │  │ setRollNo()         │◄─┼── Controlled access
