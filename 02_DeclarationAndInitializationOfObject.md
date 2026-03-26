@@ -1,6 +1,7 @@
 # 🔹 Declaration and Initialization of Object                                                                                                                                                                                                 
 ## 🔹 Declaration of Object
-Creating an object is called declaration.
+Creating an object is called declaration.                              
+
 When an object is declared, it gets the properties and functions declared in the class.
 ### Syntax:
 ```cpp
@@ -16,8 +17,7 @@ Student s1;    // s1 is an object of Student class
 
 ## 🔹 Initialization of Object
 
-Initialization means giving values to the object's data members.                                                                          
-
+Initialization means giving values to the object's data members.                                                                                                                                   
 After declaring the object, we can assign values to its members using the dot operator.
 
 ---
