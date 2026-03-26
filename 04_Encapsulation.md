@@ -14,8 +14,8 @@ Encapsulation exists at two levels in OOP:
 
 | Level | What It Provides | Programming Constructs Used |
 |-------|-----------------|---------------------------|
-| **Basic Encapsulation** | Bundling data + methods together | Class, Object |
-| **True Encapsulation** | Bundling + Data Hiding + Controlled Access | Access Modifiers, Getters, Setters, Validation |
+| **Basic Encapsulation** | Bundling data and methods together | Class, Object |
+| **True Encapsulation** | Bundling , Data Hiding and Controlled Access | Access Modifiers, Getters, Setters, Validation |
 
 ---
 
