@@ -272,10 +272,10 @@ This is the main syntax, and additional programming constructs such as OOP's 4 p
 
 ## 1️⃣ Encapsulation
 
- Used for Bundling, Data Hiding and Controlled Access
+ Used for Bundling/Grouping, Data Hiding and Controlled Access
 
-**Note:** Basic encapsulation (bundling) is automatically used whenever we create a class and object because a class groups data and methods together. 
-However, for **true encapsulation** (data hiding + controlled access), we need additional programming constructs.
+**Note:** Basic encapsulation (bundling) is automatically used whenever we create a class and object because a class groups/bundles data and methods together. 
+However, for **true encapsulation** (Bundling/Grouping + data hiding + controlled access), we need additional programming constructs.
 
 Without these, the class is just a container, not truly encapsulated.
 
