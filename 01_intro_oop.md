@@ -13,7 +13,7 @@ A model is an abstraction of something.
 ## Abstraction 
 Abstraction means to show only the necessary implementations or things. 
 
-Example: We first create the model and then build cars following that model.
+Example: We first create the model to show neccessary and common/similar things that should be in a car and then build cars following that model.
 
 ## Object-Oriented Programming(OOP):
 Object-Oriented Programming is a programming technique used to create models for things or systems. It is mainly based on classes and objects.                                                                                                                                 
