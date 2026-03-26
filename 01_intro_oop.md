@@ -51,7 +51,7 @@ Before OOP, we used to:
 
 To solve the problems mentioned above, we use a **class** in OOP.
 
-👉 **A class is a map (نقشہ) / blueprint / template / design.**
+👉 **A class is a map (نقشہ) / blueprint / template / design/ model.**
 
 In it, we:
 
