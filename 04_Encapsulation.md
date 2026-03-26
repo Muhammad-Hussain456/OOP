@@ -141,11 +141,6 @@ Accessible only within the same class.
 class Person {
 private:
     int age = 25;
-
-public:
-    void show() {
-        std::cout << age;
-    }
 };
 ````
 
@@ -163,12 +158,6 @@ class Person {
 public:
     string name = "Ali";
 };
-
-int main() {
-    Person p;
-    cout << p.name;
-    return 0;
-}
 ```
 
 ---
@@ -184,13 +173,6 @@ using namespace std;
 class Parent {
 protected:
     int value = 10;
-};
-
-class Child : public Parent {
-public:
-    void show() {
-        cout << value;
-    }
 };
 ```
 
@@ -320,11 +302,6 @@ private:
     dataType variable1;
     dataType variable2;
     
-public:
-    // Constructor
-    ClassName(parameters) {
-        // Initialization with validation
-    }
     
     // Setter (Mutator) with validation
     void setVariable1(dataType value) {
@@ -338,10 +315,6 @@ public:
         return variable1;
     }
     
-    // Behavior methods
-    void performAction() {
-        // Uses private data
-    }
 };
 ```
 
