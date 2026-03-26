@@ -238,8 +238,8 @@ Writing something once and using it multiple times.
 
 ```cpp
 class ClassName {
-    // data members
-    // member functions
+    // variable/members/properties/attributes
+    // member functions/methods
 };
 ```
 
