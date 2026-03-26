@@ -55,11 +55,7 @@ To solve the problems mentioned above, we use a **class** in OOP.
 
 In it, we:
 
-* Define or declare variables (properties) and functions (methods)
-
-in one single place.
-
-👉 Then, we don't need to write the same code repeatedly ✅
+* Define or declare variables (properties) and functions (methods) in one single place. Then, we don't need to write the same code repeatedly.
 
 ---
 
