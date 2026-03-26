@@ -1,8 +1,3 @@
-Perfect! Now the document is 100% complete and accurate. Here's the final polished version with all the programming constructs properly added:
-
----
-
-```markdown
 📚 **Prerequisite:** Before this, it is necessary to understand the basic concepts of ICT and programming (What is a computer? Parts of a computer, What is hardware?, What is software?, Why do we create software and what is used to write software?, What is programming?, What is a programming language?, Why programming languages?, Types of programming languages, Why high-level programming languages?, Variables, Functions, Arrays, Conditional statements, Pointers, Structures, etc.). All these topics are covered here:
 
 👉 [Fundamentals of Programming Repository](https://github.com/Muhammad-Hussain456/Fundamentals_of_Programming-)
@@ -320,6 +315,5 @@ Same function name, different behavior.
 
 **How to use/implement polymorphism in program**
 using method overloading, method overriding, virtual functions, operator overloading, function overloading, and interfaces
-```
 
 ---
