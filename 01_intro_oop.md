@@ -270,7 +270,8 @@ This is the main syntax, and additional programming constructs such as OOP's 4 p
 # 🔹 The 4 Pillars of OOP
 
 ## 1️⃣ Encapsulation
-Used for data hiding. Bundling data and protecting it.
+Used for data hiding.                                                                                                                    
+Bundling data and protecting it.                                                                                                        
 Encapsulation = Bundling data + methods + controlling access
 
 👉 Example: PINs, passwords, bank account balances, etc., are kept private.
@@ -281,8 +282,8 @@ using access modifiers (private, public, protected), getter and setter methods, 
 ---
 
 ## 2️⃣ Abstraction
-Used for implementation hiding.
-Abstraction = Hiding complex implementation details
+Used for implementation hiding.                                                                                                           
+Abstraction = Hiding complex implementation details                                                                                       
 Showing only the necessary things and hiding the rest.
 
 👉 Example: You use an ATM, but you don't know its internal system. Users use app icons, folders, and files, but the internal programming is not shown to them.
@@ -305,7 +306,7 @@ using base class (parent class), derived class (child class), and inheritance sy
 ---
 
 ## 4️⃣ Polymorphism
-Same function name, different behavior.
+Same function name, different behavior/working.
 
 👉 Example: calculateInterest()
 
