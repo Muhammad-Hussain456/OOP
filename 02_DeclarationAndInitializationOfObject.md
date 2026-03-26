@@ -56,7 +56,7 @@ int main() {
 
 A **constructor** is a special function that automatically initializes an object when it is created.
 
-#### a) **Parameterized Constructor** (Most Important)
+#### a) **Parameterized Constructor** 
 
 ```cpp
 #include <iostream>
@@ -117,7 +117,7 @@ int main() {
 ```
 ---
 
-## 🔹 Most Common Ways (For Beginners)
+## 🔹 Most Common Ways 
 
 | # | Method | Code Example |
 |---|--------|--------------|
@@ -142,7 +142,7 @@ Student s1;
 s1.name = "Ali";
 s1.rollNo = 101;
 
-// Way 2: Constructor (Best way)
+// Way 2: Constructor 
 Student s1("Ali", 101);
 
 ```
