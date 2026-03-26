@@ -1,4 +1,4 @@
-> 📚 **Prerequisite:** Before this, it is necessary to understand the basic concepts of ICT and programming (What is a computer? Parts of a computer, What is hardware?, What is software?, Types of software, What enables us to communicate with hardware?, What enables us to communicate with the OS?, What enables the OS to communicate with hardware?, Why do we create software and what is used to write software?, What is programming?, What is a programming language?, Why programming languages?, Types of programming languages, Why high-level programming languages?, Variables, Functions, Arrays, Conditional statements, Pointers, Structures, etc.).
+> 📚 **Prerequisite:** Before this, it is necessary to understand the basic concepts of ICT and programming (What is a computer? Parts of a computer, What is hardware?, What is software?, Why do we create software and what is used to write software?, What is programming?, What is a programming language?, Why programming languages?, Types of programming languages, Why high-level programming languages?, Variables, Functions, Arrays, Conditional statements, Pointers, Structures, etc.).
 > All these topics are covered here:
 >                                                                                      
 > 👉 [Fundamentals of Programming Repository](https://github.com/Muhammad-Hussain456/Fundamentals_of_Programming-)
@@ -283,6 +283,8 @@ Encapsulation = Bundling data + methods + controlling access
 
 👉 Example: PINs, passwords, bank account balances, etc., are kept private.
 
+### How to use/implement encapsulation in program                                                                                         
+using **access modifiers** (`private`, `public`, `protected`), **getter and setter methods**, and **classes**
 ---
 
 ## 2️⃣ Abstraction
@@ -292,14 +294,20 @@ Showing only the necessary things and hiding the rest.
 
 👉 Example: You use an ATM, but you don't know its internal system. Users use app icons, folders, and files, but the internal programming is not shown to them.
 
+### How to use/implement abstraction in program                                                                                           
+using **abstract classes**, **interfaces**, **pure virtual functions**, and **abstract methods**
 ---
 
 ## 3️⃣ Inheritance
 
 One class uses the features of another class.
 
+it creates parent child relationship between two or more classes.
+
 👉 Example: `BankAccount` → `SavingsAccount`
 
+### How to use/implement inheritance in program                                                                                           
+using **base class (parent class)**, **derived class (child class)**, and **inheritance syntax** (`extends` in Java, `:` in C++)
 ---
 
 ## 4️⃣ Polymorphism
@@ -310,3 +318,6 @@ Same function name, different behavior.
 ```
     return 0;
 }
+```
+### How to use/implement polymorphism in program                                                                                          
+using **method overloading**, **method overriding**, **virtual functions**, **operator overloading**, **function overloading**, and **interfaces**
