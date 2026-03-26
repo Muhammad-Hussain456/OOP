@@ -1,6 +1,6 @@
 # 🔹 Difference Between Method/Function and Constructor
 
-| Point | **Method / Function** | **Constructor** |
+|       | **Method / Function** | **Constructor** |
 |-------|----------------------|-----------------|
 | **Purpose** | Performs an action or operation | Initializes an object when created |
 | **Name** | Can have any name | Must have the same name as the class |
