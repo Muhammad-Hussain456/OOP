@@ -16,7 +16,8 @@ Abstraction means to show only the necessary implementations or things.
 Example: We first create the model and then build cars following that model.
 
 ## Object-Oriented Programming(OOP):
-Object-Oriented Programming is a programming technique used to create models for things or systems. It is mainly based on classes and objects. 
+Object-Oriented Programming is a programming technique used to create models for things or systems. It is mainly based on classes and objects.                                                                                                                                 
+
 **For example**, we want to create an attendance system for 50 students. Each student has some common or similar properties (variables) and functions (methods, behavior, or working). We could declare these properties and methods every time for each student, which would take more time, repeat the same code, and make the code lengthy. To fix this issue, we can create a model, template, design, or blueprint for all the students and declare the common or similar properties (variables) and functions (methods, behavior, or working) in that blueprint once. Then, following that blueprint, we can add each student's details to the attendance system. The model, blueprint, design, or template we have created here is known as a **class**. To add each student's details, we create **objects** of that class.
 
 OOP provides a way to represent real-world entities in a program.
