@@ -141,4 +141,172 @@ int main() {
     s4study();
 
     return 0;
+
+}
+
+```
+
+---
+
+# 🔹 C++ Example (Good code using Class)
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int RollNo;
+
+    void study() {
+        cout << name << " is studying" << endl;
+    }
+};
+
+int main() {
+    Student s1;
+    Student s2;
+    Student s3;
+    Student s4;
+
+    s1.name = "Ali";
+    s1.RollNo = 20;
+
+    s2.name = "Sara";
+    s2.RollNo = 22;
+
+    s3.name = "Hasan";
+    s3.RollNo = 25;
+
+    s4.name = "Hussain";
+    s4.RollNo = 23;
+
+    s1.study();
+    s2.study();
+    s3.study();
+    s4.study();
+
+    return 0;
+}
+```
+
+---
+
+# 🔹 Explanation
+
+👉 The class is the blueprint, and the object is the real thing created from that blueprint.
+
+👉 In the first example, the code is repeated, lengthy, and difficult.
+
+👉 In the second example:
+
+* The code is clean.
+* The code is short.
+* The code is reusable.
+
+👉 `Student` is a class.
+
+👉 `s1`, `s2`, `s3`, and `s4` are objects.
+
+👉 All of them have:
+
+* The same properties (`name`, `RollNo`).
+* The same function (`study`).
+
+---
+
+# 🔹 Benefits of Class & Object
+
+* Code is reused.
+* Code is not repeated.
+* Time is saved.
+* Code is short.
+* Code is clean and easy to manage.
+
+---
+
+# 🔹 Repeat vs Reuse
+
+## ❌ Repeat
+
+Writing the same code again.
+
+## ✅ Reuse
+
+Writing something once and using it multiple times.
+
+---
+
+# 🔹 Syntax & Semantics
+
+## 🔸 Class Syntax
+
+```cpp
+class ClassName {
+    // data members
+    // member functions
+};
+```
+
+## 🔸 Class Semantics
+
+* A class is a blueprint.
+* It groups data and functions together.
+* It does not allocate memory by itself.
+
+---
+
+## 🔸 Object Syntax
+
+```cpp
+ClassName objectName;
+```
+
+## 🔸 Object Semantics
+
+* An object is an instance of a class.
+* Memory is allocated for it.
+* Each object has its own values for the data members.
+
+---
+
+This is the main syntax, and additional programming constructs are added to it based on the nature of the problem.
+In most cases, OOP uses the 4 pillars (Encapsulation, Inheritance, Polymorphism, Abstraction) with classes and objects as needed by the problem. Sometimes only encapsulation is needed, sometimes only polymorphism, sometimes inheritance, and sometimes abstraction. Sometimes two, three, or all four pillars have to be used — this all depends on the nature of the problem.
+
+# 🔹 The 4 Pillars of OOP
+
+## 1️⃣ Encapsulation
+Used for data hiding.
+Bundling data and protecting it.                                                                                                          
+Encapsulation = Bundling data + methods + controlling access
+
+👉 Example: PINs, passwords, bank account balances, etc., are kept private.
+
+---
+
+## 2️⃣ Abstraction
+Used for implementation hiding.                                                                                                          
+Abstraction = Hiding complex implementation details                                                                                       
+Showing only the necessary things and hiding the rest.
+
+👉 Example: You use an ATM, but you don't know its internal system. Users use app icons, folders, and files, but the internal programming is not shown to them.
+
+---
+
+## 3️⃣ Inheritance
+
+One class uses the features of another class.
+
+👉 Example: `BankAccount` → `SavingsAccount`
+
+---
+
+## 4️⃣ Polymorphism
+
+Same function name, different behavior.
+
+👉 Example: `calculateInterest()`
+```
+    return 0;
 }
