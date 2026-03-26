@@ -18,7 +18,7 @@ Student s1;    // s1 is an object of Student class
 ## 🔹 Initialization of Object
 
 Initialization means giving values to the object's data members.                                                                                                                                   
-After declaring the object, we can assign values to its members using the dot operator.
+After declaring the object, we can assign values to its members.
 
 ---
 
