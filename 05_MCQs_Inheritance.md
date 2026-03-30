@@ -5,7 +5,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** d) All of the above  
+ d) All of the above  
 > C++ supports three inheritance visibility modes: public, private, and protected.
 </details>
 
@@ -14,7 +14,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** c) Multiple  
+ c) Multiple  
 > The diamond problem occurs when multiple inheritance creates ambiguity due to a shared base class.
 </details>
 
@@ -23,7 +23,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** b) private  
+ b) private  
 > Default inheritance for a `class` is private.
 </details>
 
@@ -32,7 +32,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** c) Public and protected  
+ c) Public and protected  
 > Private members are not inherited (only accessible inside the base class).
 </details>
 
@@ -41,7 +41,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** d) All  
+ d) All  
 > Constructors, destructors, and friend functions are not inherited.
 </details>
 
@@ -50,7 +50,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** b) Multiple  
+ b) Multiple  
 > More than one base means multiple inheritance.
 </details>
 
@@ -59,7 +59,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** b) Hierarchical  
+ b) Hierarchical  
 > One base, many derived = hierarchical.
 </details>
 
@@ -68,7 +68,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** c) is‑a  
+ c) is‑a  
 > Inheritance models “is‑a” relationships.
 </details>
 
@@ -77,7 +77,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** c) private  
+ c) private  
 > Public and protected base members become private.
 </details>
 
@@ -86,7 +86,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** b) Multilevel  
+ b) Multilevel  
 > One class derives from another in a chain.
 </details>
 
@@ -95,7 +95,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** d) 5  
+ d) 5  
 > C++ inheritance is commonly categorized into five types: single, multilevel, multiple, hierarchical, and hybrid.
 </details>
 
@@ -104,7 +104,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** b) No  
+ b) No  
 > Constructors (and destructors) are not inherited.
 </details>
 
@@ -113,7 +113,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** b) Derived  
+ b) Derived  
 > Derived destructor runs before base destructor.
 </details>
 
@@ -122,7 +122,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** a) public  
+ a) public  
 > Public inheritance preserves base member visibility.
 </details>
 
@@ -131,7 +131,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** b) private  
+ b) private  
 > Protected becomes private.
 </details>
 
@@ -140,7 +140,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** a) Yes  
+ a) Yes  
 > Protected members are accessible to derived classes.
 </details>
 
@@ -149,7 +149,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** b) Redefining base class function in derived class  
+ b) Redefining base class function in derived class  
 > Redefinition in derived class is overriding.
 </details>
 
@@ -158,7 +158,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** b) Dynamic binding  
+ b) Dynamic binding  
 > `virtual` enables runtime polymorphism.
 </details>
 
@@ -167,7 +167,7 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** d) Any combination  
+ d) Any combination  
 > Hybrid is a combination of inheritance types.
 </details>
 
@@ -176,6 +176,6 @@
 
 <details>
 <summary>Check Answer</summary>
-**Answer:** c) `class D : access specifier B`  
+ c) `class D : access specifier B`  
 > C++ uses colon + specifier before base name.
 </details>
