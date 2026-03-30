@@ -364,65 +364,142 @@ Marks < 50   → Grade: F
 
 ## 🧮 Algorithm
 
-### Algorithm for Student Class Implementation
-
 ```
-1. Define class Student with private data members/properties/variables:
-   - name (string)
-   - rollNo (int)
-   - marks (float)
-   - grade (char[3] or string)
+# 🔹 Simple English Explanation of the Algorithm
 
-2. Define public methods:
+Here's the same algorithm explained in **very simple English**:
 
-   Method setName(n):
-       if n is not empty:
-           name = n
-       else:
-           display error "Name cannot be empty"
+---
 
-   Method setRollNo(r):
-       if r > 0:
-           rollNo = r
-       else:
-           display error "Roll number must be positive"
+## 📋 Step 1: Create the Student Blueprint
 
-   Method setMarks(m):
-       if m >= 0 and m <= 100:
-           marks = m
-           calculateGrade()  // auto-update grade
-       else:
-           display error "Marks must be between 0 and 100"
+First, we create a **Student blueprint** (called a class) that will store:
+- **Name** - what the student is called
+- **Roll Number** - the student's ID number
+- **Marks** - the student's score
+- **Grade** - the letter grade (A+, A, B, etc.)
 
-   Method getName():
-       return name
+**Important:** We hide these details so nobody can change them directly.
 
-   Method getRollNo():
-       return rollNo
+---
 
-   Method getMarks():
-       return marks
+## 📋 Step 2: Create Methods to Set Information (Setters)
 
-   Method getGrade():
-       return grade
+We need **special doors** (called setters) to put information into our student:
 
-   Method calculateGrade():
-       if marks >= 90: grade = "A+"
-       else if marks >= 80: grade = "A"
-       else if marks >= 70: grade = "B"
-       else if marks >= 60: grade = "C"
-       else if marks >= 50: grade = "D"
-       else: grade = "F"
-
-   Method displayInfo():
-       print name, rollNo, marks, grade
-
-3. In main():
-   - Create student object
-   - Demonstrate valid and invalid inputs
-   - Show automatic grade calculation
+### Setting the Name:
+```
+When we want to set the name:
+    → First check: Is the name empty?
+    → If NOT empty: Save the name
+    → If empty: Show error message "Name cannot be empty"
 ```
 
+### Setting the Roll Number:
+```
+When we want to set the roll number:
+    → First check: Is the number greater than 0?
+    → If YES: Save the roll number
+    → If NO: Show error message "Roll number must be positive"
+```
+
+### Setting the Marks:
+```
+When we want to set the marks:
+    → First check: Are marks between 0 and 100?
+    → If YES: 
+        - Save the marks
+        - Automatically calculate the grade
+    → If NO: Show error message "Marks must be between 0 and 100"
+```
+
+---
+
+## 📋 Step 3: Create Methods to Get Information (Getters)
+
+We create **special windows** (called getters) to look at the information:
+
+```
+getName()    → Just give me the name
+getRollNo()  → Just give me the roll number  
+getMarks()   → Just give me the marks
+getGrade()   → Just give me the grade
+```
+
+These are like **read-only** - you can see but cannot change!
+
+---
+
+## 📋 Step 4: Create Grade Calculation Logic
+
+```
+This is our rule book for grades:
+
+If marks are 90 or above    → Grade is "A+"
+If marks are 80 to 89       → Grade is "A"
+If marks are 70 to 79       → Grade is "B"
+If marks are 60 to 69       → Grade is "C"
+If marks are 50 to 59       → Grade is "D"
+If marks are below 50       → Grade is "F"
+```
+
+**Important:** This happens automatically whenever marks change!
+
+---
+
+## 📋 Step 5: Create Display Method
+
+```
+When we want to see all student information:
+    → Show the name
+    → Show the roll number
+    → Show the marks
+    → Show the grade
+    → Print a nice line to separate
+```
+
+---
+
+## 📋 Step 6: Test Everything (Main Program)
+
+Now we test our student system:
+
+### Test 1: Create a Student with Good Information
+```
+Make a new student called "Ali Raza" with roll number 101 and 85.5 marks
+Show the student's information
+Expected: Everything looks correct with grade "A"
+```
+
+### Test 2: Try to Put Wrong Information
+```
+Try to give the student 150 marks
+    → The system should say "Error: Marks must be between 0 and 100"
+    → The old marks should stay (85.5)
+    → Grade should not change
+```
+
+### Test 3: Put Good Information and Watch Grade Update
+```
+Give the student 92.5 marks
+    → System accepts because it's between 0-100
+    → Grade automatically changes to "A+"
+    → Show the updated information
+```
+
+### Test 4: Try to Create Student with Bad Information
+```
+Try to make a student with:
+    - Empty name
+    - Negative roll number (-5)
+    - 75 marks
+    
+The system should:
+    → Show error about empty name, use "Unknown" instead
+    → Show error about negative roll number, use 0 instead
+    → Accept the marks (75 is valid)
+    → Calculate grade "B" for 75 marks
+```
 ---
 
 ## 💻 Program Implementation
