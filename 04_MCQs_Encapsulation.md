@@ -417,3 +417,528 @@ D) Remove attributes
 **Answer: C) Inherit from existing class**
 
 </details>
+
+---
+
+### **Q26.** Which of the following is a main purpose of encapsulation in C++?
+
+A) Data hiding
+B) Memory allocation
+C) Inheritance
+D) None of the above
+
+<details><summary>✅ Check Answer</summary>
+A) Data hiding  
+</details> :contentReference[oaicite:1]{index=1}
+
+---
+
+### **Q27.** Which access specifier provides the highest level of protection in encapsulation?
+
+A) private
+B) protected
+C) public
+D) internal
+
+<details><summary>✅ Check Answer</summary>
+A) private  
+</details> :contentReference[oaicite:2]{index=2}
+
+---
+
+### **Q28.** How is encapsulation implemented in C++?
+
+A) Using access specifiers
+B) Using templates
+C) Using loops
+D) Using inheritance
+
+<details><summary>✅ Check Answer</summary>
+A) Using access specifiers  
+</details> :contentReference[oaicite:3]{index=3}
+
+---
+
+### **Q29.** Encapsulation primarily prevents:
+
+A) Code duplication
+B) Unauthorized data access
+C) Memory leaks
+D) Looping errors
+
+<details><summary>✅ Check Answer</summary>
+B) Unauthorized data access  
+</details> :contentReference[oaicite:4]{index=4}
+
+---
+
+### **Q30.** What does a “getter” function do in encapsulation?
+
+A) Deletes private data
+B) Retrieves private data
+C) Hides the class
+D) Creates an object
+
+<details><summary>✅ Check Answer</summary>
+B) Retrieves private data  
+</details> :contentReference[oaicite:5]{index=5}
+
+---
+
+### **Q31.** What does a “setter” function do?
+
+A) Retrieves values
+B) Modifies private members
+C) Returns default values
+D) Exposes private methods
+
+<details><summary>✅ Check Answer</summary>
+B) Modifies private members  
+</details> :contentReference[oaicite:6]{index=6}
+
+---
+
+### **Q32.** If a class encapsulates data and methods, it is preventing:
+
+A) Unexpected object creation
+B) Direct manipulation of its data
+C) Conditional statements
+D) Inheritance
+
+<details><summary>✅ Check Answer</summary>
+B) Direct manipulation of its data  
+</details> :contentReference[oaicite:7]{index=7}
+
+---
+
+### **Q33.** What key benefit does encapsulation provide?
+
+A) Data exposure
+B) Direct access
+C) Improved control over access and modification
+D) Increased redundancy
+
+<details><summary>✅ Check Answer</summary>
+C) Improved control over access and modification  
+</details> :contentReference[oaicite:8]{index=8}
+
+---
+
+### **Q34.** Encapsulation helps in writing ________ classes in Java.
+
+A) Mutable
+B) Abstract
+C) Wrapper
+D) Immutable
+
+<details><summary>✅ Check Answer</summary>
+D) Immutable  
+</details> :contentReference[oaicite:9]{index=9}
+
+---
+
+### **Q35.** Which of these is NOT a part of encapsulation?
+
+A) Data hiding
+B) Controlled access
+C) Data replication
+D) Bundling methods with data
+
+<details><summary>✅ Check Answer</summary>
+C) Data replication  
+</details> :contentReference[oaicite:10]{index=10}
+
+---
+
+### **Q36.** What is the most suitable definition of encapsulation?
+
+A) Combining methods only
+B) Combining data with methods and restricting access
+C) Code optimization
+D) Memory management
+
+<details><summary>✅ Check Answer</summary>
+B) Combining data with methods and restricting access  
+</details> :contentReference[oaicite:11]{index=11}
+
+---
+
+### **Q37.** If private data members are inaccessible outside the class, how do we access them?
+
+A) Using friend functions only
+B) Using public member functions
+C) Using global variables
+D) Directly
+
+<details><summary>✅ Check Answer</summary>
+B) Using public member functions  
+</details> :contentReference[oaicite:12]{index=12}
+
+---
+
+### **Q38.** Which of these encapsulation practices improves modular programming?
+
+A) Public data members
+B) Private data members + public getters/setters
+C) Global variables
+D) Static members only
+
+<details><summary>✅ Check Answer</summary>
+B) Private data members + public getters/setters  
+</details> :contentReference[oaicite:13]{index=13}
+
+---
+
+### **Q39.** True encapsulation requires:
+
+A) Access modifiers only
+B) Access modifiers + getters/setters
+C) Direct access
+D) No methods
+
+<details><summary>✅ Check Answer</summary>
+B) Access modifiers + getters/setters  
+</details> :contentReference[oaicite:14]{index=14}
+
+---
+
+### **Q40.** Which of the following is the MAIN principle behind encapsulation?
+
+A) Reducing code length
+B) Separating compilation units
+C) Controlling access to data
+D) Ensuring inheritance
+
+<details><summary>✅ Check Answer</summary>
+C) Controlling access to data  
+</details> :contentReference[oaicite:15]{index=15}
+
+---
+
+### **Q41.** Encapsulation leads to:
+
+A) Less maintenance
+B) More bugs
+C) Harder code
+D) No benefit
+
+<details><summary>✅ Check Answer</summary>
+A) Less maintenance  
+</details> :contentReference[oaicite:16]{index=16}
+
+---
+
+### **Q42.** Encapsulation is also known as:
+
+A) Information hiding
+B) Direct memory access
+C) Pointer arithmetic
+D) Manual memory management
+
+<details><summary>✅ Check Answer</summary>
+A) Information hiding  
+</details> :contentReference[oaicite:17]{index=17}
+
+---
+
+### **Q43.** Which is NOT an access specifier in C++?
+
+A) public
+B) private
+C) internal
+D) protected
+
+<details><summary>✅ Check Answer</summary>
+C) internal  
+</details> :contentReference[oaicite:18]{index=18}
+
+---
+
+### **Q44.** Encapsulation helps increase:
+
+A) Code security
+B) Compile time
+C) Unnecessary dependencies
+D) Redundant data
+
+<details><summary>✅ Check Answer</summary>
+A) Code security  
+</details> :contentReference[oaicite:19]{index=19}
+
+---
+
+### **Q45.** Which of the following best describes encapsulation?
+
+A) Only data hiding
+B) Combining data and behavior with controlled access
+C) Only bundling methods
+D) Only inheritance
+
+<details><summary>✅ Check Answer</summary>
+B) Combining data and behavior with controlled access  
+</details> :contentReference[oaicite:20]{index=20}
+
+---
+
+### **Q46.** Which feature allows a class to prevent its data from being accessed directly?
+
+A) Encapsulation
+B) Looping
+C) Recursion
+D) Polymorphism
+
+<details><summary>✅ Check Answer</summary>
+A) Encapsulation :contentReference[oaicite:1]{index=1}
+</details>
+
+---
+
+### **Q47.** Encapsulation in Java is primarily achieved by using:
+
+A) static keyword
+B) private access modifier
+C) switch statements
+D) public classes only
+
+<details><summary>✅ Check Answer</summary>
+B) private access modifier :contentReference[oaicite:2]{index=2}
+</details>
+
+---
+
+### **Q48.** What does encapsulation help hide?
+
+A) Loop counters
+B) Implementation details
+C) File names
+D) Comments
+
+<details><summary>✅ Check Answer</summary>
+B) Implementation details :contentReference[oaicite:3]{index=3}
+</details>
+
+---
+
+### **Q49.** Which of the following is the correct way to access private data from outside the class?
+
+A) Direct access
+B) Using pointers
+C) Using public methods
+D) Using global variables
+
+<details><summary>✅ Check Answer</summary>
+C) Using public methods :contentReference[oaicite:4]{index=4}
+</details>
+
+---
+
+### **Q50.** What is the main advantage of using a setter method?
+
+A) Faster execution
+B) Improved data security
+C) Increased file size
+D) None
+
+<details><summary>✅ Check Answer</summary>
+B) Improved data security :contentReference[oaicite:5]{index=5}
+</details>
+
+---
+
+### **Q51.** A class that uses encapsulation typically has:
+
+A) Only private methods
+B) Private data members with public access methods
+C) All public members only
+D) No methods
+
+<details><summary>✅ Check Answer</summary>
+B) Private data members with public access methods :contentReference[oaicite:6]{index=6}
+</details>
+
+---
+
+### **Q52.** What keyword in Java restricts direct access to class variables?
+
+A) protected
+B) static
+C) private
+D) final
+
+<details><summary>✅ Check Answer</summary>
+C) private :contentReference[oaicite:7]{index=7}
+</details>
+
+---
+
+### **Q53.** The principle behind preventing direct access to internal representation is known as:
+
+A) Clustering
+B) Encapsulation
+C) Buffering
+D) Segmentation
+
+<details><summary>✅ Check Answer</summary>
+B) Encapsulation :contentReference[oaicite:8]{index=8}
+</details>
+
+---
+
+### **Q54.** Encapsulation helps in:
+
+A) Making code longer
+B) Data security and integrity
+C) Avoiding classes
+D) Reducing abstraction
+
+<details><summary>✅ Check Answer</summary>
+B) Data security and integrity :contentReference[oaicite:9]{index=9}
+</details>
+
+---
+
+### **Q55.** What is NOT a direct benefit of encapsulation?
+
+A) Data hiding
+B) Controlled access
+C) Faster compilation
+D) Improved maintainability
+
+<details><summary>✅ Check Answer</summary>
+C) Faster compilation :contentReference[oaicite:10]{index=10}
+</details>
+
+---
+
+### **Q56.** Which of these is part of true encapsulation?
+
+A) Data hiding only
+B) Setters and getters
+C) Loops
+D) Both A & B
+
+<details><summary>✅ Check Answer</summary>
+D) Both A & B :contentReference[oaicite:11]{index=11}
+</details>
+
+---
+
+### **Q57.** If a class exposes all its data publicly, this violates:
+
+A) Inheritance
+B) Encapsulation
+C) Polymorphism
+D) Abstraction
+
+<details><summary>✅ Check Answer</summary>
+B) Encapsulation :contentReference[oaicite:12]{index=12}
+</details>
+
+---
+
+### **Q58.** When we combine data and related functions into a single unit, it is called:
+
+A) Recursion
+B) Encapsulation
+C) Overloading
+D) Interrupting
+
+<details><summary>✅ Check Answer</summary>
+B) Encapsulation :contentReference[oaicite:13]{index=13}
+</details>
+
+---
+
+### **Q59.** Which is true about encapsulation?
+
+A) Data is exposed to all
+B) Data is hidden and accessed via public methods
+C) Methods are private only
+D) No control over data
+
+<details><summary>✅ Check Answer</summary>
+B) Data is hidden and accessed via public methods :contentReference[oaicite:14]{index=14}
+</details>
+
+---
+
+### **Q60.** Data encapsulation is a means to implement:
+
+A) Abstraction
+B) Inheritance
+C) File handling
+D) Recursion
+
+<details><summary>✅ Check Answer</summary>
+A) Abstraction :contentReference[oaicite:15]{index=15}
+</details>
+
+---
+
+### **Q61.** Encapsulation is also called:
+
+A) Data hiding
+B) Recursion
+C) Aggregation
+D) Overloading
+
+<details><summary>✅ Check Answer</summary>
+A) Data hiding :contentReference[oaicite:16]{index=16}
+</details>
+
+---
+
+### **Q62.** Which feature stops accidental modification of data?
+
+A) Pointers
+B) Encapsulation
+C) Break statements
+D) Conditional statements
+
+<details><summary>✅ Check Answer</summary>
+B) Encapsulation :contentReference[oaicite:17]{index=17}
+</details>
+
+---
+
+### **Q63.** What can be used to access hidden data?
+
+A) Global variables
+B) Public methods (getters)
+C) Private methods only
+D) Recursion
+
+<details><summary>✅ Check Answer</summary>
+B) Public methods (getters) :contentReference[oaicite:18]{index=18}
+</details>
+
+---
+
+### **Q64.** Which is a core OOP concept that encapsulates both data and methods?
+
+A) File I/O
+B) Encapsulation
+C) Multithreading
+D) Networking
+
+<details><summary>✅ Check Answer</summary>
+B) Encapsulation :contentReference[oaicite:19]{index=19}
+</details>
+
+---
+
+### **Q65.** Encapsulation increases:
+
+A) Errors
+B) Security
+C) File size
+D) Redundancy
+
+<details><summary>✅ Check Answer</summary>
+B) Security :contentReference[oaicite:20]{index=20}
+</details>
+
+---
+
+
+
