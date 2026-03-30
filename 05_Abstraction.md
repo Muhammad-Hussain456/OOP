@@ -1,60 +1,43 @@
 # Abstraction in C++
 
-Abstraction is one of the **core concepts of Object-Oriented Programming (OOP)** in C++. It allows a programmer to **hide the internal implementation details** of a class or function and show only the essential features to the user. In simpler words, abstraction focuses on **what an object does**, rather than **how it does it**.
+Abstraction is a way to **cope with complexity** in programming. It allows us to **focus on the essential features** of an object while **hiding unnecessary details**.
 
 ---
 
-## Key Points
+## Principle of Abstraction
 
-- **Purpose**: To reduce complexity and isolate the impact of changes.
-- **How achieved**: Using **abstract classes** and **interfaces** (pure virtual functions) in C++.
-- **Benefits**:
-  - Hides unnecessary details from the user.
-  - Helps in **maintaining large codebases**.
-  - Enhances **security** and **code reusability**.
+The principle of abstraction can be summarized as:
 
----
+> **“Capture only those details about an object that are relevant to the current perspective.”**
 
-## Abstract Classes
-
-An **abstract class** is a class that **cannot be instantiated** and usually contains **at least one pure virtual function**.
-````
-
-* `= 0` indicates a **pure virtual function**.
-* Classes inheriting an abstract class **must implement** all pure virtual functions to become concrete.
-
----
-`
-
-**Explanation:**
-
-* `Shape` is an **abstract class** with a pure virtual function `draw()`.
-* `Circle` and `Rectangle` **implement the draw() function**.
-* The user can **use the abstract interface `Shape`** without knowing the details of `Circle` or `Rectangle`.
+This means that the same object can have **different abstractions** depending on how it is viewed.
 
 ---
 
-## When to Use Abstraction
+## Example of Abstraction
 
-* When you want to **hide internal details** of a class.
-* When you want to define a **common interface** for different types of objects.
-* To **simplify code maintenance** and improve **modularity**.
+A **person** can be seen from different perspectives:
 
----
+- As a **Student** → Attributes like roll number, grades, courses.
+- As a **Teacher** → Attributes like subjects taught, department, salary.
+- As an **Employee** → Attributes like employee ID, department, salary, leave balance.
 
-## Key Differences: Abstraction vs Encapsulation
-
-| Feature        | Abstraction                                            | Encapsulation                                                              |
-| -------------- | ------------------------------------------------------ | -------------------------------------------------------------------------- |
-| Focus          | Hides **implementation details**                       | Hides **data**                                                             |
-| Implementation | Achieved using **abstract classes** and **interfaces** | Achieved using **access specifiers** (private, protected, public)          |
-| Example        | Abstract class `Shape` with pure virtual functions     | Class `Car` with private variables like `speed` and public getters/setters |
+Each perspective **hides irrelevant details** and focuses only on what matters for that role.
 
 ---
 
-Abstraction in C++ ensures that the **complex implementation details** are hidden, providing a **clean and simple interface** to the user.
+## Advantages of Abstraction
 
-```
+1. **Simplifies the model**  
+   By hiding irrelevant details, abstraction allows us to work with a simplified representation of an object or system.
 
-If you want, I can also **add diagrams in Markdown** to visually show abstraction in C++ classes. It makes the file look more professional. Do you want me to do that?
-```
+2. **Reduces complexity**  
+   Users of a class or function do not need to understand the internal implementation.
+
+3. **Provides flexibility**  
+   Abstraction allows **implementation decisions to be deferred**, avoiding premature commitment to details. This makes the system easier to maintain and extend.
+
+4. **Improves code reusability and modularity**  
+   By exposing only the essential interface, classes can be reused in different contexts.
+
+---
