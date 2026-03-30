@@ -4,37 +4,6 @@ Inheritance is a fundamental concept of **Object-Oriented Programming (OOP)** in
 
 ---
 
-## Main Purpose of Inheritance
-
-The main purpose of inheritance in C++ is to **reuse existing code** and **establish relationships between classes**. By inheriting from a base class, a derived class can:
-
-- Reuse **common properties** and **functions** without rewriting them.
-- Increased maintainability.
-- Represent **real-world hierarchical relationships** naturally.
-- Less redundancy 
-
----
-
-## Types of Inheritance in C++
-
-1. **Single Inheritance**  
-   A derived class inherits from a single base class.
-
-2. **Multiple Inheritance**  
-   A derived class inherits from more than one base class.
-
-3. **Multilevel Inheritance**  
-   A derived class inherits from another derived class, forming a chain.
-
-4. **Hierarchical Inheritance**  
-   Multiple derived classes inherit from a single base class.
-
-5. **Hybrid Inheritance**  
-   Combination of two or more types of inheritance.
-
----
-
-
 ## Example: Person Hierarchy
 
 We can model real-world entities using hierarchical inheritance:
@@ -68,11 +37,12 @@ We can model real-world entities using hierarchical inheritance:
 
 ## Advantages of Inheritance
 
-1. **Code Reusability** – Write once, use in multiple classes.
-2. **Extensibility** – Easily add new classes without modifying existing ones.
-3. **Maintainability** – Changes in base class automatically propagate to derived classes.
-4. **Polymorphism Support** – Enables dynamic method overriding.
-5. **Organized Code** – Helps model real-world relationships in a hierarchical structure.
+Reuse                                                                                                                                    
+
+Less redundancy                                                                                                                          
+
+Increased maintainability                                                                                                                 
+  
 
 ---
 ## Reuse with Inheritance                                                                                                                 
@@ -82,7 +52,7 @@ Select an existing class closer to the desired functionality
 Create a new class and inherit it from the selected class                                                                                 
 Add to and/or modify the inherited functionality                                                                                         
 
-## Inheritance as a Kind of Relationship (with UML)
+## Inheritance as a Kind of Relationship 
 
 Inheritance represents an **“is-a” relationship** between classes. For example:
 
