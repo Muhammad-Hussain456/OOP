@@ -74,8 +74,8 @@ using namespace std;
 
 class Student {                    // Class provides bundling/grouping
 public:
-    string name;                   // Data
-    int rollNo;                    // Data
+    string name;                   // Data/property/attribute/member
+    int rollNo;                    // Data/property/attribute/member
     
     void study() {                 // method
         cout << name << " is studying" << endl;
