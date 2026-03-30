@@ -364,7 +364,7 @@ Marks < 50   → Grade: F
 
 ## 🧮 Algorithm
 
-### 📋 Step 1: Create the Student Blueprint
+### 📋 Step 1: Create the Student Blueprint/Class
 
 First, we create a **Student blueprint** (called a class) that will store:
 - **Name** - what the student is called
@@ -376,9 +376,10 @@ First, we create a **Student blueprint** (called a class) that will store:
 
 ---
 
-### 📋 Step 2: Create Methods to Set Information (Setters)
+### 📋 Step 2: Create Methods (Setters) to Set properties/data 
 
-We need **special doors** (called setters) to put information into our student:
+We need **special doors** (called setters) to put information/value into properties/data/attributes of objects(students).
+We use this method as we want to have control over the changes.
 
 #### Setting the Name:
 ```
@@ -410,8 +411,8 @@ When we want to set the marks:
 
 ### 📋 Step 3: Create Methods to Get Information (Getters)
 
-We create **special windows** (called getters) to look at the information:
-
+We create **special windows** (called getters) to look at the information/values:
+We use this method as we want to control read access.
 ```
 getName()    → Just give me the name
 getRollNo()  → Just give me the roll number  
@@ -440,7 +441,7 @@ If marks are below 50       → Grade is "F"
 
 ---
 
-### 📋 Step 5: Create Display Method
+### 📋 Step 5: Create Display/Output Method
 
 ```
 When we want to see all student information:
@@ -457,14 +458,14 @@ When we want to see all student information:
 
 Now we test our student system:
 
-#### Test 1: Create a Student with Good Information
+#### Test 1: Create a student object with Good Information/values
 ```
 Make a new student called "Ali Raza" with roll number 101 and 85.5 marks
 Show the student's information
 Expected: Everything looks correct with grade "A"
 ```
 
-#### Test 2: Try to Put Wrong Information
+#### Test 2: Try to Put Wrong Information/values
 ```
 Try to give the student 150 marks
     → The system should say "Error: Marks must be between 0 and 100"
@@ -472,7 +473,7 @@ Try to give the student 150 marks
     → Grade should not change
 ```
 
-#### Test 3: Put Good Information and Watch Grade Update
+#### Test 3: Put Good Information and Watch Grade Update/Change
 ```
 Give the student 92.5 marks
     → System accepts because it's between 0-100
@@ -480,7 +481,7 @@ Give the student 92.5 marks
     → Show the updated information
 ```
 
-#### Test 4: Try to Create Student with Bad Information
+#### Test 4: Try to Create student object with Bad Information/Values
 ```
 Try to make a student with:
     - Empty name
