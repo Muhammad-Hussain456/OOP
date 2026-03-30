@@ -1,6 +1,7 @@
 # Abstraction in C++
 
-Abstraction is a way to **cope with complexity** in programming. It allows us to **focus on the essential features** of an object while **hiding unnecessary details**.
+Abstraction is a way to **cope with complexity** in programming.                                                                            
+It allows us to **focus on the essential features** of an object while **hiding unnecessary details**.
 
 ---
 
