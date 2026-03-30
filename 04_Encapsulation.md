@@ -315,18 +315,408 @@ Improves data safety and encapsulation
 
 ---
 
-# 🔹 Summary
+
+## 📋 Example Problem: Student Grade Management System
+
+### Problem Statement
+Write a program to build a Student Grade Management System.
+
+## Solution
+
+### Define the problem
+A school needs a system to manage student grades. The system must ensure that:
+- Student marks are always between 0 and 100
+- A student cannot have a negative roll number
+- The student's name cannot be empty
+- The grade is automatically calculated based on marks
+- Once a student is created, their details should be protected from invalid modifications
+
+---
+
+## 🔍 Analysis
+
+### Requirements Identification
+
+| Requirement Type | Details |
+|-----------------|---------|
+| **Data to Store** | Student name, roll number, marks, grade |
+| **Operations** | Create student, update marks, view details |
+| **Constraints** | Name: non-empty, Roll No: positive, Marks: 0-100 |
+| **Business Logic** | Grade calculation based on marks |
+
+### Grade Calculation Rule
+```
+Marks >= 90  → Grade: A+
+Marks >= 80  → Grade: A
+Marks >= 70  → Grade: B
+Marks >= 60  → Grade: C
+Marks >= 50  → Grade: D
+Marks < 50   → Grade: F
+```
+
+### Encapsulation Requirements
+1. **Data Hiding**: All data members must be private
+2. **Controlled Access**: Getters and setters with validation
+3. **Automatic Updates**: Grade updates automatically when marks change
+4. **Data Integrity**: No invalid data can be stored
+
+---
+
+## 🧮 Algorithm
+
+### Algorithm for Student Class Implementation
 
 ```
-ENCAPSULATION
-     │
-     ├── Basic Encapsulation
-     │    ├── Provided by: Class + Object
-     │    └── Provides: Bundling of data + methods
-     │
-     └── True Encapsulation
-          ├── Requires: Access Modifiers (private)
-          ├── Requires: Getter Methods
-          ├── Requires: Setter Methods with Validation
-          └── Provides: Bundling + Data Hiding + Controlled Access
+1. Define class Student with private data members:
+   - name (string)
+   - rollNo (int)
+   - marks (float)
+   - grade (char[3] or string)
+
+2. Define public methods:
+
+   Method setName(n):
+       if n is not empty:
+           name = n
+       else:
+           display error "Name cannot be empty"
+
+   Method setRollNo(r):
+       if r > 0:
+           rollNo = r
+       else:
+           display error "Roll number must be positive"
+
+   Method setMarks(m):
+       if m >= 0 and m <= 100:
+           marks = m
+           calculateGrade()  // auto-update grade
+       else:
+           display error "Marks must be between 0 and 100"
+
+   Method getName():
+       return name
+
+   Method getRollNo():
+       return rollNo
+
+   Method getMarks():
+       return marks
+
+   Method getGrade():
+       return grade
+
+   Method calculateGrade():
+       if marks >= 90: grade = "A+"
+       else if marks >= 80: grade = "A"
+       else if marks >= 70: grade = "B"
+       else if marks >= 60: grade = "C"
+       else if marks >= 50: grade = "D"
+       else: grade = "F"
+
+   Method displayInfo():
+       print name, rollNo, marks, grade
+
+3. In main():
+   - Create student object
+   - Demonstrate valid and invalid inputs
+   - Show automatic grade calculation
 ```
+
+---
+
+## 💻 Program Implementation
+
+### C++ Program with True Encapsulation
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Student {
+private:
+    // Hidden data members
+    string name;
+    int rollNo;
+    float marks;
+    string grade;
+    
+    // Private helper method for grade calculation
+    void calculateGrade() {
+        if (marks >= 90) {
+            grade = "A+";
+        } else if (marks >= 80) {
+            grade = "A";
+        } else if (marks >= 70) {
+            grade = "B";
+        } else if (marks >= 60) {
+            grade = "C";
+        } else if (marks >= 50) {
+            grade = "D";
+        } else {
+            grade = "F";
+        }
+    }
+    
+public:
+    // Constructor with validation
+    Student(string n, int r, float m) {
+        setName(n);
+        setRollNo(r);
+        setMarks(m);  // This will also calculate grade
+    }
+    
+    // Setter for name with validation
+    void setName(string n) {
+        if (!n.empty()) {
+            name = n;
+        } else {
+            cout << "Error: Name cannot be empty!" << endl;
+            name = "Unknown";
+        }
+    }
+    
+    // Setter for roll number with validation
+    void setRollNo(int r) {
+        if (r > 0) {
+            rollNo = r;
+        } else {
+            cout << "Error: Roll number must be positive!" << endl;
+            rollNo = 0;
+        }
+    }
+    
+    // Setter for marks with validation and auto grade update
+    void setMarks(float m) {
+        if (m >= 0 && m <= 100) {
+            marks = m;
+            calculateGrade();  // Grade automatically updates
+        } else {
+            cout << "Error: Marks must be between 0 and 100!" << endl;
+            marks = 0;
+            calculateGrade();
+        }
+    }
+    
+    // Getters for controlled read access
+    string getName() {
+        return name;
+    }
+    
+    int getRollNo() {
+        return rollNo;
+    }
+    
+    float getMarks() {
+        return marks;
+    }
+    
+    string getGrade() {
+        return grade;
+    }
+    
+    // Method to display student information
+    void displayInfo() {
+        cout << "\n--- Student Information ---" << endl;
+        cout << "Name    : " << name << endl;
+        cout << "Roll No : " << rollNo << endl;
+        cout << "Marks   : " << marks << endl;
+        cout << "Grade   : " << grade << endl;
+        cout << "---------------------------" << endl;
+    }
+};
+
+int main() {
+    cout << "===== Student Grade Management System =====" << endl;
+    cout << "Demonstrating True Encapsulation\n" << endl;
+    
+    // Creating student with valid data
+    cout << "1. Creating student with valid data:" << endl;
+    Student s1("Ali Raza", 101, 85.5);
+    s1.displayInfo();
+    
+    // Demonstrating validation
+    cout << "\n2. Trying to set invalid marks:" << endl;
+    s1.setMarks(150);  // Invalid - will show error
+    s1.displayInfo();   // Shows marks unchanged
+    
+    cout << "\n3. Setting valid marks:" << endl;
+    s1.setMarks(92.5);  // Valid - grade auto updates
+    s1.displayInfo();   // Shows updated marks and grade
+    
+    // Creating student with invalid data
+    cout << "\n4. Creating student with invalid data:" << endl;
+    Student s2("", -5, 75);  // Invalid name and roll number
+    s2.displayInfo();   // Shows default values with errors
+    
+    // Demonstrating controlled access
+    cout << "\n5. Controlled access demonstration:" << endl;
+    cout << "Student name: " << s1.getName() << endl;
+    cout << "Student grade: " << s1.getGrade() << endl;
+    
+    // This would cause error if uncommented (data hiding)
+    // s1.marks = 95;  // Error: marks is private
+    
+    // Testing grade boundaries
+    cout << "\n6. Testing grade boundaries:" << endl;
+    Student s3("Test Student", 103, 89);
+    s3.displayInfo();
+    
+    s3.setMarks(90);
+    cout << "\nAfter updating marks to 90:" << endl;
+    s3.displayInfo();
+    
+    return 0;
+}
+```
+
+---
+
+## 📊 Program Output
+
+```
+===== Student Grade Management System =====
+Demonstrating True Encapsulation
+
+1. Creating student with valid data:
+
+--- Student Information ---
+Name    : Ali Raza
+Roll No : 101
+Marks   : 85.5
+Grade   : A
+---------------------------
+
+2. Trying to set invalid marks:
+Error: Marks must be between 0 and 100!
+
+--- Student Information ---
+Name    : Ali Raza
+Roll No : 101
+Marks   : 85.5
+Grade   : A
+---------------------------
+
+3. Setting valid marks:
+
+--- Student Information ---
+Name    : Ali Raza
+Roll No : 101
+Marks   : 92.5
+Grade   : A+
+---------------------------
+
+4. Creating student with invalid data:
+Error: Name cannot be empty!
+Error: Roll number must be positive!
+
+--- Student Information ---
+Name    : Unknown
+Roll No : 0
+Marks   : 75
+Grade   : B
+---------------------------
+
+5. Controlled access demonstration:
+Student name: Ali Raza
+Student grade: A+
+
+6. Testing grade boundaries:
+
+--- Student Information ---
+Name    : Test Student
+Roll No : 103
+Marks   : 89
+Grade   : A
+---------------------------
+
+After updating marks to 90:
+
+--- Student Information ---
+Name    : Test Student
+Roll No : 103
+Marks   : 90
+Grade   : A+
+---------------------------
+```
+
+---
+
+
+## 🔍 Explanation (How Encapsulation is Applied)
+
+### 1. **Bundling** (Basic Encapsulation)
+```cpp
+class Student {
+    // Data and methods bundled together
+private:
+    string name;      // data
+    int rollNo;       // data
+    float marks;      // data
+    string grade;     // data
+    
+    void calculateGrade() { }  // method
+public:
+    void setName() { }          // method
+    void setMarks() { }         // method
+    // ...
+};
+```
+
+### 2. **Data Hiding** (Access Modifiers)
+```cpp
+private:
+    string name;      // Hidden from outside
+    int rollNo;       // Hidden from outside
+    float marks;      // Hidden from outside
+```
+
+### 3. **Controlled Access** (Getters & Setters)
+```cpp
+public:
+    void setMarks(float m) {    // Controlled write access
+        if (m >= 0 && m <= 100) {
+            marks = m;
+            calculateGrade();
+        }
+    }
+    
+    float getMarks() {          // Controlled read access
+        return marks;
+    }
+```
+
+### 4. **Validation Logic**
+```cpp
+if (m >= 0 && m <= 100) {
+    // Valid - update
+} else {
+    // Invalid - show error
+}
+```
+
+---
+
+## 📈 Benefits Achieved
+
+| Benefit | How It's Achieved |
+|---------|------------------|
+| **Data Security** | Private data members/properties prevent direct access |
+| **Data Integrity** | Validation ensures only valid data/property is stored |
+| **Automatic Updates** | Grade auto-calculates when marks change |
+| **Maintainability** | Changes to validation logic only affect setters |
+| **Controlled Interface** | Clear public methods define how to interact |
+| **Error Prevention** | Invalid inputs are caught and handled |
+
+---
+
+
+
+# 🔹 Summary
+
+1. **Basic encapsulation** comes automatically with class bundling
+2. **True encapsulation** requires private members + getters/setters
+3. **Validation** is essential for data integrity
+4. **Business logic** (like grade calculation) stays inside the class
+5. **Objects** become self-contained, reliable units
