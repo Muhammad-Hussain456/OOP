@@ -29,11 +29,11 @@ A **class** itself provides basic encapsulation by:
 
 ```cpp
 class Student {
-    // Data members
+    // Data members / properties
     string name;
     int rollNo;
     
-    // Member functions
+    // Member functions / methods 
     void study() {
         cout << name << " is studying" << endl;
     }
