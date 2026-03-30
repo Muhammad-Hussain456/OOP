@@ -8,7 +8,7 @@ C) Inheritance
 D) Compilation
 
 <details><summary>✅ Check Answer</summary>
-D) Compilation :contentReference[oaicite:1]{index=1}
+D) Compilation 
 </details>
 
 ---
@@ -21,7 +21,7 @@ C) Abstraction
 D) Polymorphism
 
 <details><summary>✅ Check Answer</summary>
-B) Encapsulation :contentReference[oaicite:2]{index=2}
+B) Encapsulation 
 </details>
 
 ---
@@ -34,7 +34,7 @@ C) Object
 D) Interface
 
 <details><summary>✅ Check Answer</summary>
-C) Object :contentReference[oaicite:3]{index=3}
+C) Object 
 </details>
 
 ---
@@ -47,7 +47,7 @@ C) Inheritance
 D) Aggregation
 
 <details><summary>✅ Check Answer</summary>
-C) Inheritance :contentReference[oaicite:4]{index=4}
+C) Inheritance 
 </details>
 
 ---
@@ -60,7 +60,7 @@ C) Define access modifiers
 D) Allocate memory
 
 <details><summary>✅ Check Answer</summary>
-B) Hide implementation details :contentReference[oaicite:5]{index=5}
+B) Hide implementation details 
 </details>
 
 ---
@@ -73,7 +73,7 @@ C) Code duplication
 D) Dynamic typing
 
 <details><summary>✅ Check Answer</summary>
-B) Hiding internal details :contentReference[oaicite:6]{index=6}
+B) Hiding internal details 
 </details>
 
 ---
@@ -86,7 +86,7 @@ C) Inheritance
 D) Abstraction
 
 <details><summary>✅ Check Answer</summary>
-B) Polymorphism :contentReference[oaicite:7]{index=7}
+B) Polymorphism 
 </details>
 
 ---
@@ -99,7 +99,7 @@ C) Increase program size
 D) Execute objects
 
 <details><summary>✅ Check Answer</summary>
-B) Enable code reuse :contentReference[oaicite:8]{index=8}
+B) Enable code reuse
 </details>
 
 ---
@@ -112,7 +112,7 @@ C) Interface
 D) Package
 
 <details><summary>✅ Check Answer</summary>
-B) Class :contentReference[oaicite:9]{index=9}
+B) Class 
 </details>
 
 ---
@@ -125,7 +125,7 @@ C) Abstraction
 D) Inheritance
 
 <details><summary>✅ Check Answer</summary>
-B) Encapsulation :contentReference[oaicite:10]{index=10}
+B) Encapsulation 
 </details>
 
 ---
@@ -138,7 +138,7 @@ C) Overloading
 D) Direct access
 
 <details><summary>✅ Check Answer</summary>
-A) Encapsulation :contentReference[oaicite:11]{index=11}
+A) Encapsulation 
 </details>
 
 ---
@@ -151,7 +151,7 @@ C) Inheritance
 D) Polymorphism
 
 <details><summary>✅ Check Answer</summary>
-B) Abstraction :contentReference[oaicite:12]{index=12}
+B) Abstraction 
 </details>
 
 ---
@@ -164,7 +164,7 @@ C) Same class and its subclasses
 D) Outside unrelated code
 
 <details><summary>✅ Check Answer</summary>
-C) Same class and its subclasses :contentReference[oaicite:13]{index=13}
+C) Same class and its subclasses 
 </details>
 
 ---
@@ -177,7 +177,7 @@ C) Method
 D) Variable
 
 <details><summary>✅ Check Answer</summary>
-B) Object :contentReference[oaicite:14]{index=14}
+B) Object 
 </details>
 
 ---
@@ -190,7 +190,7 @@ C) Encapsulation
 D) Polymorphism
 
 <details><summary>✅ Check Answer</summary>
-C) Encapsulation :contentReference[oaicite:15]{index=15}
+C) Encapsulation 
 </details>
 
 ---
@@ -203,7 +203,7 @@ C) Errors
 D) Addresses
 
 <details><summary>✅ Check Answer</summary>
-A) Messages :contentReference[oaicite:16]{index=16}
+A) Messages 
 </details>
 
 ---
@@ -216,7 +216,7 @@ C) Pointers
 D) Scripts
 
 <details><summary>✅ Check Answer</summary>
-B) Objects :contentReference[oaicite:17]{index=17}
+B) Objects 
 </details>
 
 ---
@@ -229,7 +229,7 @@ C) Garbage collection
 D) Member functions
 
 <details><summary>✅ Check Answer</summary>
-C) Garbage collection :contentReference[oaicite:18]{index=18}
+C) Garbage collection 
 </details>
 
 ---
@@ -251,7 +251,7 @@ C) Inheritance
 D) Abstraction
 
 <details><summary>✅ Check Answer</summary>
-C) Inheritance :contentReference[oaicite:1]{index=1}
+C) Inheritance 
 </details>
 
 ---
@@ -264,7 +264,7 @@ C) Polymorphism
 D) Constructor
 
 <details><summary>✅ Check Answer</summary>
-C) Polymorphism :contentReference[oaicite:2]{index=2}
+C) Polymorphism 
 </details>
 
 ---
@@ -277,7 +277,7 @@ C) Abstract type
 D) Interface
 
 <details><summary>✅ Check Answer</summary>
-B) Instance :contentReference[oaicite:3]{index=3}
+B) Instance 
 </details>
 
 ---
@@ -290,7 +290,7 @@ C) Attributes
 D) Access modifiers
 
 <details><summary>✅ Check Answer</summary>
-B) Implementation details :contentReference[oaicite:4]{index=4}
+B) Implementation details 
 </details>
 
 ---
@@ -303,7 +303,7 @@ C) It contains both data and behavior
 D) It contains syntax errors
 
 <details><summary>✅ Check Answer</summary>
-C) It contains both data and behavior :contentReference[oaicite:5]{index=5}
+C) It contains both data and behavior 
 </details>
 
 ---
@@ -316,7 +316,7 @@ C) Encapsulation
 D) Overloading
 
 <details><summary>✅ Check Answer</summary>
-C) Encapsulation :contentReference[oaicite:6]{index=6}
+C) Encapsulation 
 </details>
 
 ---
@@ -329,7 +329,7 @@ C) Overload methods
 D) Hide data
 
 <details><summary>✅ Check Answer</summary>
-B) Initialize an object :contentReference[oaicite:7]{index=7}
+B) Initialize an object 
 </details>
 
 ---
@@ -342,7 +342,7 @@ C) Compilation
 D) Polymorphism
 
 <details><summary>✅ Check Answer</summary>
-C) Compilation :contentReference[oaicite:8]{index=8}
+C) Compilation 
 </details>
 
 ---
@@ -355,7 +355,7 @@ C) Polymorphism
 D) Abstraction
 
 <details><summary>✅ Check Answer</summary>
-B) Aggregation/Composition :contentReference[oaicite:9]{index=9}
+B) Aggregation/Composition 
 </details>
 
 ---
@@ -368,7 +368,7 @@ C) public
 D) none
 
 <details><summary>✅ Check Answer</summary>
-C) public :contentReference[oaicite:10]{index=10}
+C) public 
 </details>
 
 ---
@@ -381,7 +381,7 @@ C) Any function anywhere
 D) Class methods only
 
 <details><summary>✅ Check Answer</summary>
-B) The class itself and its subclasses :contentReference[oaicite:11]{index=11}
+B) The class itself and its subclasses 
 </details>
 
 ---
@@ -394,7 +394,7 @@ C) A variable
 D) A constant
 
 <details><summary>✅ Check Answer</summary>
-B) A blueprint for objects :contentReference[oaicite:12]{index=12}
+B) A blueprint for objects 
 </details>
 
 ---
@@ -407,7 +407,7 @@ C) Static binding
 D) Compilation
 
 <details><summary>✅ Check Answer</summary>
-A) Loose coupling through encapsulation :contentReference[oaicite:13]{index=13}
+A) Loose coupling through encapsulation 
 </details>
 
 ---
@@ -420,7 +420,7 @@ C) Dynamic (run‑time) polymorphism
 D) Overloading
 
 <details><summary>✅ Check Answer</summary>
-C) Dynamic (run‑time) polymorphism :contentReference[oaicite:14]{index=14}
+C) Dynamic (run‑time) polymorphism 
 </details>
 
 ---
@@ -433,7 +433,7 @@ C) public
 D) package‑private
 
 <details><summary>✅ Check Answer</summary>
-C) public :contentReference[oaicite:15]{index=15}
+C) public 
 </details>
 
 ---
@@ -446,7 +446,7 @@ C) Objects
 D) Interfaces
 
 <details><summary>✅ Check Answer</summary>
-C) Objects :contentReference[oaicite:16]{index=16}
+C) Objects 
 </details>
 
 ---
@@ -459,7 +459,7 @@ C) Both abstract and concrete methods
 D) No methods
 
 <details><summary>✅ Check Answer</summary>
-C) Both abstract and concrete methods :contentReference[oaicite:17]{index=17}
+C) Both abstract and concrete methods 
 </details>
 
 ---
@@ -472,7 +472,7 @@ C) Using private members
 D) Using global variables
 
 <details><summary>✅ Check Answer</summary>
-C) Using private members :contentReference[oaicite:18]{index=18}
+C) Using private members 
 </details>
 
 ---
@@ -485,7 +485,7 @@ C) Memory overflow
 D) Redundant code
 
 <details><summary>✅ Check Answer</summary>
-A) Code reuse :contentReference[oaicite:19]{index=19}
+A) Code reuse 
 </details>
 
 ---
@@ -498,7 +498,7 @@ C) Inheritance
 D) Polymorphism
 
 <details><summary>✅ Check Answer</summary>
-B) Abstraction :contentReference[oaicite:20]{index=20}
+B) Abstraction 
 </details>
 
 ---
