@@ -1,139 +1,114 @@
-# C++ Inheritance — MCQ Quiz
+# Inheritance in C++ - Quiz
 
-### **1.** Which keyword/access is used to inherit a class in C++?
+## Instructions
+- Read each question carefully.
+- Choose the correct answer from the options provided.
+- Click **Check Answer** to reveal the correct response.
 
-a) `extends`  
-b) `implements`  
-c) `inherits`  
-d) `public/private/protected`
+---
+
+### Question 1
+What is the primary purpose of inheritance in C++ as described in the text?
+
+**A)** To hide data from other classes  
+**B)** To reuse existing code and model hierarchical relationships  
+**C)** To create multiple instances of a class  
+**D)** To overload operators for a class  
 
 <details>
-<summary>Show Answer</summary>
-✔️ **d) public/private/protected** 
+<summary><strong>Check Answer</strong></summary>
+
+**Correct Answer: B**
+
+The text states that inheritance "promotes **code reusability**, **extensibility**, and models **real-world hierarchical relationships**."
 </details>
 
 ---
 
-### **2.** Which type of inheritance in C++ can cause the *diamond problem*?
+### Question 2
+Based on the provided example, which of the following best describes the relationship between a `Teacher` and a `Person`?
 
-a) Single Inheritance  
-b) Multilevel Inheritance  
-c) Multiple Inheritance  
-d) Hierarchical Inheritance
+**A)** A `Person` is a `Teacher`  
+**B)** A `Teacher` has a `Person`  
+**C)** A `Teacher` is a `Person`  
+**D)** A `Teacher` uses a `Person`  
 
 <details>
-<summary>Show Answer</summary>
-✔️ **c) Multiple Inheritance** 
+<summary><strong>Check Answer</strong></summary>
+
+**Correct Answer: C**
+
+The text explicitly states that inheritance represents an "is-a relationship" and gives the example: "A **Teacher** is a **Person**."
 </details>
 
 ---
 
-### **3.** In C++, by default the inherited members of the base class are ______ in the derived class (when no access specifier is used).
+### Question 3
+In the UML diagram provided for the Person hierarchy, what does the arrow (pointing from `Teacher` to `Person`) signify?
 
-a) private  
-b) public  
-c) protected  
-d) None of the above
+**A)** That `Teacher` contains a `Person` object  
+**B)** That `Teacher` inherits from `Person`  
+**C)** That `Person` inherits from `Teacher`  
+**D)** That the two classes are unrelated  
 
 <details>
-<summary>Show Answer</summary>
-✔️ **a) private** 
+<summary><strong>Check Answer</strong></summary>
+
+**Correct Answer: B**
+
+The text explains: "The arrow (^) from derived classes points to the base class." This indicates that the derived class (`Teacher`) inherits from the base class (`Person`).
 </details>
 
 ---
 
-### **4.** Which members of the base class are inherited by the derived class in C++?
+### Question 4
+Which of the following is NOT listed as an advantage of inheritance in the text?
 
-a) Public members only  
-b) Private members only  
-c) Both public and protected members  
-d) All members including private
+**A)** Reuse  
+**B)** Less redundancy  
+**C)** Increased maintainability  
+**D)** Faster runtime execution  
 
 <details>
-<summary>Show Answer</summary>
-✔️ **c) Both public and protected members** 
+<summary><strong>Check Answer</strong></summary>
+
+**Correct Answer: D**
+
+The text lists "Reuse," "Less redundancy," and "Increased maintainability" as advantages. It does not mention faster runtime execution as an inherent advantage of inheritance.
 </details>
 
 ---
 
-### **5.** What is the type of inheritance where one class inherits from more than one base class?
+### Question 5
+In the provided class hierarchy (`Person`, `Teacher`, `Doctor`, `Student`), which member function is most likely inherited from the base class?
 
-a) Single Inheritance  
-b) Multilevel Inheritance  
-c) Multiple Inheritance  
-d) Hierarchical Inheritance
+**A)** `showT()`  
+**B)** `showD()`  
+**C)** `display()`  
+**D)** `showS()`  
 
 <details>
-<summary>Show Answer</summary>
-✔️ **c) Multiple Inheritance** 
+<summary><strong>Check Answer</strong></summary>
+
+**Correct Answer: C**
+
+In the UML diagram, the `display()` function is listed in the `Person` class, while `showT()`, `showD()`, and `showS()` are listed only in their respective derived classes. Therefore, `display()` is the function inherited by `Teacher`, `Doctor`, and `Student`.
 </details>
 
 ---
 
-### **6.** Which of the following are *not inherited* in C++?
+### Question 6
+What is a key step in adding a new class using inheritance according to the "Reuse with Inheritance" section?
 
-a) Constructor  
-b) Destructor  
-c) Friend function  
-d) All of the above
-
-<details>
-<summary>Show Answer</summary>
-✔️ **d) All of the above** 
-</details>
-
----
-
-### **7.** In hierarchical inheritance, how many base classes are shared by the derived classes?
-
-a) One  
-b) Two  
-c) None  
-d) Many unrelated
+**A)** Delete all existing classes before adding a new one  
+**B)** Select an existing class close to the desired functionality and inherit from it  
+**C)** Write the new class from scratch without referencing existing code  
+**D)** Copy the code from an existing class and rename it  
 
 <details>
-<summary>Show Answer</summary>
-✔️ **a) One** 
-</details>
+<summary><strong>Check Answer</strong></summary>
 
----
+**Correct Answer: B**
 
-### **8.** If the base class destructor is *not virtual*, what may happen when deleting a derived object via a base pointer?
-
-a) Compilation error  
-b) Runtime error  
-c) Object slicing  
-d) Incorrect destructor call for derived class
-
-<details>
-<summary>Show Answer</summary>
-✔️ **d) Incorrect destructor call for derived class** 
-</details>
-
----
-
-### **9.** In C++ inheritance, when a derived class object is destroyed, which destructor is called first?
-
-a) Base class destructor  
-b) Derived class destructor  
-c) Both at the same time  
-d) Random order
-
-<details>
-<summary>Show Answer</summary>
-✔️ **b) Derived class destructor** 
-</details>
-
----
-
-### **10.** Which inheritance type has a single base and a single derived class?
-
-a) Multiple Inheritance  
-b) Multilevel Inheritance  
-c) Single Inheritance  
-d) Hierarchical Inheritance
-
-<details>
-<summary>Show Answer</summary>
-✔️ **c) Single Inheritance** 
+The text outlines the process: "Select an existing class closer to the desired functionality... Create a new class and inherit it from the selected class."
 </details>
