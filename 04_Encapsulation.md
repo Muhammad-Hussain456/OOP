@@ -367,7 +367,7 @@ Marks < 50   → Grade: F
 ### Algorithm for Student Class Implementation
 
 ```
-1. Define class Student with private data members:
+1. Define class Student with private data members/properties/variables:
    - name (string)
    - rollNo (int)
    - marks (float)
