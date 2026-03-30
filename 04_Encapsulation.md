@@ -292,33 +292,6 @@ Improves data safety and encapsulation
 
 ---
 
-# 🔹 Standard Format for True Encapsulation
-
-```cpp
-class ClassName {
-private:
-    // Hidden data members
-    dataType variable1;
-    dataType variable2;
-    
-    
-    // Setter (Mutator) with validation
-    void setVariable1(dataType value) {
-        if (condition) {
-            variable1 = value;
-        }
-    }
-    
-    // Getter (Accessor)
-    dataType getVariable1() {
-        return variable1;
-    }
-    
-};
-```
-
----
-
 # 🔹 Real-World Analogy
 
 | Real-World | Basic Encapsulation | True Encapsulation |
