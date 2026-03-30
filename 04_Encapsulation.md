@@ -62,7 +62,7 @@ int main() {
 }
 ```
 
-👉 The object `s1` is a single unit containing both data (`name`) and behavior (`study()`).
+👉 The object `s1` is a single unit containing both data/properties (`name`) and behavior (`study()`).
 
 ---
 
