@@ -7,27 +7,26 @@ a) public b) private c) protected d) All of the above
 
 2. What type of inheritance leads to the *diamond problem*?  
 a) Single b) Multilevel c) Multiple d) Hierarchical  
-<details><summary>✔ Answer</summary>c) Multiple</details> :contentReference[oaicite:1]{index=1}
+<details><summary>✔ Answer</summary>c) Multiple</details> 
 
 3. If no access specifier is given, inherited members are by default:  
 a) public b) private c) protected d) None  
-<details><summary>✔ Answer</summary>b) private</details> :contentReference[oaicite:2]{index=2}
+<details><summary>✔ Answer</summary>b) private</details> 
 
 4. In C++, which members of the base class are inherited?  
 a) All b) Private only c) Public and protected d) None  
-<details><summary>✔ Answer</summary>c) Public and protected</details> :contentReference[oaicite:3]{index=3}
+<details><summary>✔ Answer</summary>c) Public and protected</details> 
 
 5. Which of the following cannot be inherited?  
 a) Constructor b) Destructor c) Friend functions d) All  
-<details><summary>✔ Answer</summary>d) All</details> :contentReference[oaicite:4]{index=4}
-
+<details><summary>✔ Answer</summary>d) All</details> 
 6. A class derived from more than one base class uses:  
 a) Single Inheritance b) Multiple c) Hierarchical d) Multilevel  
-<details><summary>✔ Answer</summary>b) Multiple</details> :contentReference[oaicite:5]{index=5}
+<details><summary>✔ Answer</summary>b) Multiple</details> 
 
 7. Multiple derived classes from one base illustrate:  
 a) Single b) Hierarchical c) Multilevel d) Hybrid  
-<details><summary>✔ Answer</summary>b) Hierarchical</details> :contentReference[oaicite:6]{index=6}
+<details><summary>✔ Answer</summary>b) Hierarchical</details> 
 
 8. What relationship does inheritance represent?  
 a) has‑a b) uses‑a c) is‑a d) part‑of  
@@ -35,7 +34,7 @@ a) has‑a b) uses‑a c) is‑a d) part‑of
 
 9. Private inheritance means base class members become:  
 a) public b) protected c) private d) inaccessible  
-<details><summary>✔ Answer</summary>c) private</details> :contentReference[oaicite:7]{index=7}
+<details><summary>✔ Answer</summary>c) private</details> 
 
 10. Which type of inheritance involves a chain of levels?  
 a) Multiple b) Multilevel c) Hierarchical d) Hybrid  
@@ -43,15 +42,15 @@ a) Multiple b) Multilevel c) Hierarchical d) Hybrid
 
 11. How many types of inheritance are typically described in C++?  
 a) 2 b) 3 c) 4 d) 5  
-<details><summary>✔ Answer</summary>d) 5</details> :contentReference[oaicite:8]{index=8}
+<details><summary>✔ Answer</summary>d) 5</details> 
 
 12. Can constructors of the base class be inherited?  
 a) Yes b) No c) Only constructors d) Depends on compiler  
-<details><summary>✔ Answer</summary>b) No</details> :contentReference[oaicite:9]{index=9}
+<details><summary>✔ Answer</summary>b) No</details> 
 
 13. When a derived object is destroyed, which destructor runs first?  
 a) Base b) Derived c) Both simultaneously d) Random  
-<details><summary>✔ Answer</summary>b) Derived</details> :contentReference[oaicite:10]{index=10}
+<details><summary>✔ Answer</summary>b) Derived</details> 
 
 14. In public inheritance, base class public members become:  
 a) public b) private c) protected d) inaccessible  
@@ -67,11 +66,11 @@ a) Yes b) No c) Only in public inheritance d) Only in multiple inheritance
 
 17. What is function overriding?  
 a) Changing operator behavior b) Redefining base class function in derived class c) Having multiple functions with same name in base d) None  
-<details><summary>✔ Answer</summary>b) Redefining base class function in derived class</details> :contentReference[oaicite:11]{index=11}
+<details><summary>✔ Answer</summary>b) Redefining base class function in derived class</details> 
 
 18. Making a base class function `virtual` enables:  
 a) Early binding b) Dynamic binding c) Bigger objects d) Preventing inheritance  
-<details><summary>✔ Answer</summary>b) Dynamic binding</details> :contentReference[oaicite:12]{index=12}
+<details><summary>✔ Answer</summary>b) Dynamic binding</details> 
 
 19. In hybrid inheritance, the structure involves:  
 a) Single + multiple b) Multiple + multilevel c) Hierarchical + multilevel d) Any combination  
