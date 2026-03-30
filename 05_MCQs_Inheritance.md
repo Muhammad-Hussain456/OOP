@@ -78,6 +78,6 @@ a) Single + multiple b) Multiple + multilevel c) Hierarchical + multilevel�
 
 20. The syntax to declare inheritance is:  
 a) `class D inherits B` b) `class D : access B` c) `class D : access specifier B` d) `class D extends B`  
-<details><summary>✔ Answer</summary>c) `class D : access specifier B`</details> 
+<details><summary>✔ Answer</summary>c) `class D extends B`</details> 
 
 ---
