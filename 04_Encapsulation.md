@@ -53,7 +53,7 @@ An **object** is the physical instance that:
 
 ```cpp
 int main() {
-    Student s1;    
+    Student s1;    // object
     
     s1.name = "Ali";
     s1.study();    // method
