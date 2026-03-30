@@ -355,7 +355,7 @@ Marks < 50   → Grade: F
 ```
 
 ### Encapsulation Requirements
-1. **Data Hiding**: All data members must be private
+1. **Data/Property Hiding**: All data members(properties) must be private
 2. **Controlled Access**: Getters and setters with validation
 3. **Automatic Updates**: Grade updates automatically when marks change
 4. **Data Integrity**: No invalid data can be stored
