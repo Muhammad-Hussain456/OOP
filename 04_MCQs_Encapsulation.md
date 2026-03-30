@@ -429,7 +429,7 @@ D) None of the above
 
 <details><summary>✅ Check Answer</summary>
 A) Data hiding  
-</details> :contentReference[oaicite:1]{index=1}
+</details> 
 
 ---
 
@@ -442,7 +442,7 @@ D) internal
 
 <details><summary>✅ Check Answer</summary>
 A) private  
-</details> :contentReference[oaicite:2]{index=2}
+</details> 
 
 ---
 
@@ -455,7 +455,7 @@ D) Using inheritance
 
 <details><summary>✅ Check Answer</summary>
 A) Using access specifiers  
-</details> :contentReference[oaicite:3]{index=3}
+</details> 
 
 ---
 
@@ -468,7 +468,7 @@ D) Looping errors
 
 <details><summary>✅ Check Answer</summary>
 B) Unauthorized data access  
-</details> :contentReference[oaicite:4]{index=4}
+</details> 
 
 ---
 
@@ -481,7 +481,7 @@ D) Creates an object
 
 <details><summary>✅ Check Answer</summary>
 B) Retrieves private data  
-</details> :contentReference[oaicite:5]{index=5}
+</details> 
 
 ---
 
@@ -494,7 +494,7 @@ D) Exposes private methods
 
 <details><summary>✅ Check Answer</summary>
 B) Modifies private members  
-</details> :contentReference[oaicite:6]{index=6}
+</details> 
 
 ---
 
@@ -507,7 +507,7 @@ D) Inheritance
 
 <details><summary>✅ Check Answer</summary>
 B) Direct manipulation of its data  
-</details> :contentReference[oaicite:7]{index=7}
+</details> 
 
 ---
 
@@ -520,7 +520,7 @@ D) Increased redundancy
 
 <details><summary>✅ Check Answer</summary>
 C) Improved control over access and modification  
-</details> :contentReference[oaicite:8]{index=8}
+</details> 
 
 ---
 
@@ -533,7 +533,7 @@ D) Immutable
 
 <details><summary>✅ Check Answer</summary>
 D) Immutable  
-</details> :contentReference[oaicite:9]{index=9}
+</details> 
 
 ---
 
@@ -546,7 +546,7 @@ D) Bundling methods with data
 
 <details><summary>✅ Check Answer</summary>
 C) Data replication  
-</details> :contentReference[oaicite:10]{index=10}
+</details> 
 
 ---
 
@@ -559,7 +559,7 @@ D) Memory management
 
 <details><summary>✅ Check Answer</summary>
 B) Combining data with methods and restricting access  
-</details> :contentReference[oaicite:11]{index=11}
+</details>
 
 ---
 
@@ -572,7 +572,7 @@ D) Directly
 
 <details><summary>✅ Check Answer</summary>
 B) Using public member functions  
-</details> :contentReference[oaicite:12]{index=12}
+</details> 
 
 ---
 
@@ -585,7 +585,7 @@ D) Static members only
 
 <details><summary>✅ Check Answer</summary>
 B) Private data members + public getters/setters  
-</details> :contentReference[oaicite:13]{index=13}
+</details> 
 
 ---
 
@@ -598,7 +598,7 @@ D) No methods
 
 <details><summary>✅ Check Answer</summary>
 B) Access modifiers + getters/setters  
-</details> :contentReference[oaicite:14]{index=14}
+</details> 
 
 ---
 
@@ -611,7 +611,7 @@ D) Ensuring inheritance
 
 <details><summary>✅ Check Answer</summary>
 C) Controlling access to data  
-</details> :contentReference[oaicite:15]{index=15}
+</details> 
 
 ---
 
@@ -624,7 +624,7 @@ D) No benefit
 
 <details><summary>✅ Check Answer</summary>
 A) Less maintenance  
-</details> :contentReference[oaicite:16]{index=16}
+</details> 
 
 ---
 
@@ -637,7 +637,7 @@ D) Manual memory management
 
 <details><summary>✅ Check Answer</summary>
 A) Information hiding  
-</details> :contentReference[oaicite:17]{index=17}
+</details> 
 
 ---
 
@@ -650,7 +650,7 @@ D) protected
 
 <details><summary>✅ Check Answer</summary>
 C) internal  
-</details> :contentReference[oaicite:18]{index=18}
+</details> 
 
 ---
 
@@ -663,7 +663,7 @@ D) Redundant data
 
 <details><summary>✅ Check Answer</summary>
 A) Code security  
-</details> :contentReference[oaicite:19]{index=19}
+</details> 
 
 ---
 
@@ -676,8 +676,7 @@ D) Only inheritance
 
 <details><summary>✅ Check Answer</summary>
 B) Combining data and behavior with controlled access  
-</details> :contentReference[oaicite:20]{index=20}
-
+</details> 
 ---
 
 ### **Q46.** Which feature allows a class to prevent its data from being accessed directly?
@@ -688,7 +687,7 @@ C) Recursion
 D) Polymorphism
 
 <details><summary>✅ Check Answer</summary>
-A) Encapsulation :contentReference[oaicite:1]{index=1}
+A) Encapsulation 
 </details>
 
 ---
@@ -701,7 +700,7 @@ C) switch statements
 D) public classes only
 
 <details><summary>✅ Check Answer</summary>
-B) private access modifier :contentReference[oaicite:2]{index=2}
+B) private access modifier 
 </details>
 
 ---
@@ -714,7 +713,7 @@ C) File names
 D) Comments
 
 <details><summary>✅ Check Answer</summary>
-B) Implementation details :contentReference[oaicite:3]{index=3}
+B) Implementation details 
 </details>
 
 ---
@@ -727,7 +726,7 @@ C) Using public methods
 D) Using global variables
 
 <details><summary>✅ Check Answer</summary>
-C) Using public methods :contentReference[oaicite:4]{index=4}
+C) Using public methods 
 </details>
 
 ---
@@ -740,7 +739,7 @@ C) Increased file size
 D) None
 
 <details><summary>✅ Check Answer</summary>
-B) Improved data security :contentReference[oaicite:5]{index=5}
+B) Improved data security 
 </details>
 
 ---
@@ -753,7 +752,7 @@ C) All public members only
 D) No methods
 
 <details><summary>✅ Check Answer</summary>
-B) Private data members with public access methods :contentReference[oaicite:6]{index=6}
+B) Private data members with public access methods 
 </details>
 
 ---
@@ -766,7 +765,7 @@ C) private
 D) final
 
 <details><summary>✅ Check Answer</summary>
-C) private :contentReference[oaicite:7]{index=7}
+C) private 
 </details>
 
 ---
@@ -779,7 +778,7 @@ C) Buffering
 D) Segmentation
 
 <details><summary>✅ Check Answer</summary>
-B) Encapsulation :contentReference[oaicite:8]{index=8}
+B) Encapsulation 
 </details>
 
 ---
@@ -792,7 +791,7 @@ C) Avoiding classes
 D) Reducing abstraction
 
 <details><summary>✅ Check Answer</summary>
-B) Data security and integrity :contentReference[oaicite:9]{index=9}
+B) Data security and integrity 
 </details>
 
 ---
@@ -805,7 +804,7 @@ C) Faster compilation
 D) Improved maintainability
 
 <details><summary>✅ Check Answer</summary>
-C) Faster compilation :contentReference[oaicite:10]{index=10}
+C) Faster compilation 
 </details>
 
 ---
@@ -818,7 +817,7 @@ C) Loops
 D) Both A & B
 
 <details><summary>✅ Check Answer</summary>
-D) Both A & B :contentReference[oaicite:11]{index=11}
+D) Both A & B 
 </details>
 
 ---
@@ -831,7 +830,7 @@ C) Polymorphism
 D) Abstraction
 
 <details><summary>✅ Check Answer</summary>
-B) Encapsulation :contentReference[oaicite:12]{index=12}
+B) Encapsulation 
 </details>
 
 ---
@@ -844,7 +843,7 @@ C) Overloading
 D) Interrupting
 
 <details><summary>✅ Check Answer</summary>
-B) Encapsulation :contentReference[oaicite:13]{index=13}
+B) Encapsulation 
 </details>
 
 ---
@@ -857,7 +856,7 @@ C) Methods are private only
 D) No control over data
 
 <details><summary>✅ Check Answer</summary>
-B) Data is hidden and accessed via public methods :contentReference[oaicite:14]{index=14}
+B) Data is hidden and accessed via public methods 
 </details>
 
 ---
@@ -870,7 +869,7 @@ C) File handling
 D) Recursion
 
 <details><summary>✅ Check Answer</summary>
-A) Abstraction :contentReference[oaicite:15]{index=15}
+A) Abstraction 
 </details>
 
 ---
@@ -883,7 +882,7 @@ C) Aggregation
 D) Overloading
 
 <details><summary>✅ Check Answer</summary>
-A) Data hiding :contentReference[oaicite:16]{index=16}
+A) Data hiding 
 </details>
 
 ---
@@ -896,7 +895,7 @@ C) Break statements
 D) Conditional statements
 
 <details><summary>✅ Check Answer</summary>
-B) Encapsulation :contentReference[oaicite:17]{index=17}
+B) Encapsulation 
 </details>
 
 ---
@@ -909,7 +908,7 @@ C) Private methods only
 D) Recursion
 
 <details><summary>✅ Check Answer</summary>
-B) Public methods (getters) :contentReference[oaicite:18]{index=18}
+B) Public methods (getters) 
 </details>
 
 ---
@@ -922,7 +921,7 @@ C) Multithreading
 D) Networking
 
 <details><summary>✅ Check Answer</summary>
-B) Encapsulation :contentReference[oaicite:19]{index=19}
+B) Encapsulation 
 </details>
 
 ---
@@ -935,7 +934,7 @@ C) File size
 D) Redundancy
 
 <details><summary>✅ Check Answer</summary>
-B) Security :contentReference[oaicite:20]{index=20}
+B) Security 
 </details>
 
 ---
