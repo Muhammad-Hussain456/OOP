@@ -364,14 +364,7 @@ Marks < 50   → Grade: F
 
 ## 🧮 Algorithm
 
-```
-# 🔹 Simple English Explanation of the Algorithm
-
-Here's the same algorithm explained in **very simple English**:
-
----
-
-## 📋 Step 1: Create the Student Blueprint
+### 📋 Step 1: Create the Student Blueprint
 
 First, we create a **Student blueprint** (called a class) that will store:
 - **Name** - what the student is called
@@ -383,11 +376,11 @@ First, we create a **Student blueprint** (called a class) that will store:
 
 ---
 
-## 📋 Step 2: Create Methods to Set Information (Setters)
+### 📋 Step 2: Create Methods to Set Information (Setters)
 
 We need **special doors** (called setters) to put information into our student:
 
-### Setting the Name:
+#### Setting the Name:
 ```
 When we want to set the name:
     → First check: Is the name empty?
@@ -395,7 +388,7 @@ When we want to set the name:
     → If empty: Show error message "Name cannot be empty"
 ```
 
-### Setting the Roll Number:
+#### Setting the Roll Number:
 ```
 When we want to set the roll number:
     → First check: Is the number greater than 0?
@@ -403,7 +396,7 @@ When we want to set the roll number:
     → If NO: Show error message "Roll number must be positive"
 ```
 
-### Setting the Marks:
+#### Setting the Marks:
 ```
 When we want to set the marks:
     → First check: Are marks between 0 and 100?
@@ -415,7 +408,7 @@ When we want to set the marks:
 
 ---
 
-## 📋 Step 3: Create Methods to Get Information (Getters)
+### 📋 Step 3: Create Methods to Get Information (Getters)
 
 We create **special windows** (called getters) to look at the information:
 
@@ -430,7 +423,7 @@ These are like **read-only** - you can see but cannot change!
 
 ---
 
-## 📋 Step 4: Create Grade Calculation Logic
+### 📋 Step 4: Create Grade Calculation Logic
 
 ```
 This is our rule book for grades:
@@ -447,7 +440,7 @@ If marks are below 50       → Grade is "F"
 
 ---
 
-## 📋 Step 5: Create Display Method
+### 📋 Step 5: Create Display Method
 
 ```
 When we want to see all student information:
@@ -460,18 +453,18 @@ When we want to see all student information:
 
 ---
 
-## 📋 Step 6: Test Everything (Main Program)
+### 📋 Step 6: Test Everything (Main Program)
 
 Now we test our student system:
 
-### Test 1: Create a Student with Good Information
+#### Test 1: Create a Student with Good Information
 ```
 Make a new student called "Ali Raza" with roll number 101 and 85.5 marks
 Show the student's information
 Expected: Everything looks correct with grade "A"
 ```
 
-### Test 2: Try to Put Wrong Information
+#### Test 2: Try to Put Wrong Information
 ```
 Try to give the student 150 marks
     → The system should say "Error: Marks must be between 0 and 100"
@@ -479,7 +472,7 @@ Try to give the student 150 marks
     → Grade should not change
 ```
 
-### Test 3: Put Good Information and Watch Grade Update
+#### Test 3: Put Good Information and Watch Grade Update
 ```
 Give the student 92.5 marks
     → System accepts because it's between 0-100
@@ -487,7 +480,7 @@ Give the student 92.5 marks
     → Show the updated information
 ```
 
-### Test 4: Try to Create Student with Bad Information
+#### Test 4: Try to Create Student with Bad Information
 ```
 Try to make a student with:
     - Empty name
