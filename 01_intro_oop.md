@@ -69,6 +69,111 @@ In it, we:
 
 ---
 
+# 🔹 Class Graphical Representation (Full & Suppressed)
+
+## 📌 Definition
+In UML (Unified Modeling Language), a class is represented using a rectangle.  
+It can be shown in:
+- **Full form (detailed)**
+- **Suppressed form (simplified)**
+
+👉 A class diagram shows structure including attributes and methods :contentReference[oaicite:0]{index=0}  
+👉 These details can be hidden when not needed :contentReference[oaicite:1]{index=1}  
+
+---
+
+# 🎯 1. FULL GRAPHICAL REPRESENTATION (Detailed Class)
+
+👉 Shows:
+- Class name  
+- Attributes (variables)  
+- Methods (functions)  
+
+```
+
+┌──────────────────────────┐
+│        Student           │
+├──────────────────────────┤
+│ - name : string          │
+│ - rollNo : int           │
+├──────────────────────────┤
+│ + study() : void         │
+└──────────────────────────┘
+
+```
+
+---
+
+## 🔹 Explanation
+
+- Top → Class Name  
+- Middle → Attributes  
+- Bottom → Methods  
+
+✔ Used for:
+- Detailed design  
+- Programming understanding  
+- Implementation  
+
+---
+
+# 🎯 2. SUPPRESSED GRAPHICAL REPRESENTATION (Simplified Class)
+
+👉 Shows:
+- Only class name  
+- Hides attributes and methods  
+
+```
+
+┌───────────────┐
+│   Student     │
+└───────────────┘
+
+```
+
+---
+
+## 🔹 Alternative Minimal Form
+
+```
+
+[ Student ]
+
+```
+
+---
+
+## 🔹 Explanation
+
+- Only **name is visible**  
+- Details are **hidden (suppressed)**  
+
+✔ Used for:
+- High-level diagrams  
+- Simple visualization  
+- Showing relationships only  
+
+---
+
+# 📊 FULL vs SUPPRESSED
+
+| Feature        | Full Representation | Suppressed Representation |
+|---------------|--------------------|--------------------------|
+| Class Name    | ✔                  | ✔                        |
+| Attributes    | ✔                  | ❌                        |
+| Methods       | ✔                  | ❌                        |
+| Detail Level  | High               | Low                      |
+
+---
+
+# 🧠 Concept Line
+
+👉 **Full Class = Complete Details**  
+👉 **Suppressed Class = Only Name**
+
+
+---
+
 # 🔹 Analogy (Best way to understand)
 
 Think of a **car factory** 🚗
