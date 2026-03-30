@@ -341,7 +341,7 @@ A school needs a system to manage student grades. The system must ensure that:
 |-----------------|---------|
 | **Data to Store** | Student name, roll number, marks, grade |
 | **Operations** | Create student, update marks, view details |
-| **Constraints** | Name: non-empty, Roll No: positive, Marks: 0-100 |
+| **Constraints/Limits** | Name: non-empty, Roll No: positive, Marks: 0-100 |
 | **Business Logic** | Grade calculation based on marks |
 
 ### Grade Calculation Rule
