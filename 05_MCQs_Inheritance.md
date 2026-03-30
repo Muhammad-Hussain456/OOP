@@ -171,11 +171,4 @@
 > Hybrid is a combination of inheritance types.
 </details>
 
-20. **The syntax to declare inheritance is:**  
-    a) `class D inherits B` b) `class D : access B` c) `class D : access specifier B` d) `class D extends B`  
 
-<details>
-<summary>Check Answer</summary>
- c) `class D : access specifier B`  
-> C++ uses colon + specifier before base name.
-</details>
