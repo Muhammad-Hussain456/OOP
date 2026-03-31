@@ -34,17 +34,8 @@ A **draw()** command:
 
 ---
 
-### Analogy 5: Payment Methods
-A **pay()** function in an e-commerce system:
-- Credit Card → Processes card payment
-- PayPal → Redirects to PayPal login
-- Bank Transfer → Shows bank account details
 
-**Same operation** (pay), **different processes** (based on payment method)
-
----
-
-## 🔹 Examples of Polymorphism (Without Code)
+## 🔹 Examples of Polymorphism 
 
 ### Example 1: Vehicle System
 A transportation system has different vehicles:
