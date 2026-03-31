@@ -57,16 +57,6 @@ The HR system uses the same `calculateBonus()` method for all employees, but eac
 
 ---
 
-### Example 5: Database Operations
-A database system supports different database types:
-- **MySQL** → Execute MySQL-specific query syntax
-- **PostgreSQL** → Execute PostgreSQL-specific query syntax
-- **MongoDB** → Execute NoSQL query syntax
-
-The application uses the same `query(sql)` interface, but each database **processes queries in its own way**.
-
----
-
 ## 🔹 Types of Polymorphism
 
 Polymorphism in OOP is classified into two main types:
