@@ -187,49 +187,7 @@ An **interface** is a contract that defines **what** a class must do, without sp
 | **Purpose** | Define contract/behavior | Define common base with shared code |
 | **Implementation** | "What" to do | "What" and partial "how" |
 
-### Interface in C++ (Pure Abstract Class)
-
-```cpp
-// Interface (Pure Abstract Class)
-class Drawable {
-public:
-    virtual void draw() = 0;
-    virtual void setColor(string color) = 0;
-    virtual ~Drawable() {}  // Virtual destructor
-};
-
-// Another Interface
-class Serializable {
-public:
-    virtual void save() = 0;
-    virtual void load() = 0;
-    virtual ~Serializable() {}
-};
-
-// Class implementing multiple interfaces
-class Circle : public Drawable, public Serializable {
-private:
-    string color;
-    float radius;
-    
-public:
-    void draw() override {
-        cout << "Drawing circle" << endl;
-    }
-    
-    void setColor(string c) override {
-        color = c;
-    }
-    
-    void save() override {
-        cout << "Saving circle" << endl;
-    }
-    
-    void load() override {
-        cout << "Loading circle" << endl;
-    }
-};
-```
+---
 
 ### Benefits of Interfaces
 
