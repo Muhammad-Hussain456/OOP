@@ -421,6 +421,5 @@ Same function name, different behavior/working.
 👉 Example: calculateInterest()
 
 **How to use/implement polymorphism in program**                                                                                          
-using method overloading, method overriding, virtual functions, operator overloading, function overloading, and interfaces
-
+using method overloading, method overriding, virtual functions, and operator overloading.
 ---
