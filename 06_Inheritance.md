@@ -1,23 +1,29 @@
-# 🔹 Inheritance
+# Inheritance
 
 ## What is Inheritance?
 
-**Inheritance** is a mechanism where a derived class (child) inherits properties and behaviors from a base class (parent).                  
- Major benefit of inheritance is reuse                                                                                                  
- 👉 **Inheritance = Code Reusability + Hierarchical Classification + IS-A Relationship**                                  
+**Inheritance** is a mechanism where a derived class (child) inherits properties and behaviors from a base class (parent).  
+Major benefit of inheritance is reuse.
+
+👉 **Inheritance = Code Reusability + Hierarchical Classification + IS-A Relationship**
+
 ---
 
 ## Base Class vs Derived Class
-If a class B inherits from class A then it contains all the characteristics (information structure and behaviour) of class A.              
-The **parent class** is called **base class** and the **child class** is called **derived class**.        
-Derived class inherits all the characteristics of the base class.                                                                          
-Besides inherited characteristics, derived class may have its own unique characteristics.                                                   
+
+If a class B inherits from class A then it contains all the characteristics (information structure and behaviour) of class A.  
+The **parent class** is called **base class** and the **child class** is called **derived class**.  
+Derived class inherits all the characteristics of the base class.  
+Besides inherited characteristics, derived class may have its own unique characteristics.
+
 ---
 
-### Inheritance – “IS A” or“IS A KIND OF” Relationship                                                                                     
- Each derived class is a special kind of its base class
+### Inheritance – “IS A” or “IS A KIND OF” Relationship
+
+Each derived class is a special kind of its base class.
 
 #### Example
+
 ```
         ┌─────────────────┐
         │     Person      │ 
@@ -41,9 +47,10 @@ Besides inherited characteristics, derived class may have its own unique charact
 │+teach()│ │+study() │  │+treat()│
 └─────────┘ └─────────┘  └────────┘
 ```
+
 ---
 
-## 🔹 Key Benefits/Advantages
+## Key Benefits/Advantages
 
 | Benefit | Description |
 |---------|-------------|
@@ -54,14 +61,16 @@ Besides inherited characteristics, derived class may have its own unique charact
 
 ---
 
-### Reuse with Inheritance                                                                                                                 
- Main purpose of inheritance is reuse                                                                                                      
- We can easily add new classes by inheriting from existing classes                                                                        
- Select an existing class closer to the desired functionality                                                                              
- Create a new class and inherit it from the selected class                                                                                 
- Add to and/or modify the inherited functionality     
+### Reuse with Inheritance
+
+Main purpose of inheritance is reuse.  
+We can easily add new classes by inheriting from existing classes.  
+Select an existing class closer to the desired functionality.  
+Create a new class and inherit it from the selected class.  
+Add to and/or modify the inherited functionality.
 
 #### Example
+
 ```
         ┌─────────────────┐
         │     Shape       │  ← Generalized base class
@@ -83,9 +92,10 @@ Besides inherited characteristics, derived class may have its own unique charact
 │+area()│  │+length│    │+area()  │
 └───────┘  └───────┘    └─────────┘
 ```
+
 ---
 
-# 🔹 Concepts Related to Inheritance
+# Concepts Related to Inheritance
 
 The following concepts are closely related to inheritance:
 
@@ -97,17 +107,15 @@ The following concepts are closely related to inheritance:
 
 ---
 
-## 1️⃣ Generalization
+## Generalization
 
 ### Definition
 **Generalization** is the process of extracting common characteristics from multiple classes and creating a new base class.
 
-### Explanation                                                                                                                             
-In OO models, some classes may have common characteristics                                                                                  
-
-We extract these features into a new class and inherit original classes from this new class                                                 
-
-This concept is known as Generalization                                                                                                     
+### Explanation
+In OO models, some classes may have common characteristics.  
+We extract these features into a new class and inherit original classes from this new class.  
+This concept is known as Generalization.
 
 ### Purpose
 - Reduce redundancy
@@ -115,7 +123,7 @@ This concept is known as Generalization
 - Promote reuse
 
 ### Direction
-**Bottom-up** process: From specific classes to general base class
+**Bottom-up** process: From specific classes to general base class.
 
 ### Visual Representation
 
@@ -192,22 +200,18 @@ Teacher, Student, Doctor classes each contain:
 
 ---
 
-## 2️⃣ Sub-typing (Extension)
+## Sub-typing (Extension)
 
 ### Definition
 **Sub-typing** occurs when a derived class **extends** the behavior of a base class without violating base class expectations.
 
-### Explanation                                                                                                                           
-We want to add a new class to an existing model
-
-Find an existing class that already implements some of the desired state and behaviour                                                      
-
-Inherit the new class from this class and add unique behaviour to the new class                                                            
-
+### Explanation
+We want to add a new class to an existing model.  
+Find an existing class that already implements some of the desired state and behaviour.  
+Inherit the new class from this class and add unique behaviour to the new class.
 
 ### Key Concept
-Derived class is **behaviorally compatible** with base class.                                                                               
-
+Derived class is **behaviorally compatible** with base class.
 
 ### Behavioral Compatibility
 Behaviourally compatible means that **base class** can be replaced by the **derived class** (Liskov Substitution Principle).
@@ -219,6 +223,7 @@ Behaviourally compatible means that **base class** can be replaced by the **deri
 - Follows "IS-A" relationship strictly
 
 ### Example: Student extends Person
+
 | Person (Base) | Student (Derived) |
 |---------------|-------------------|
 | name | name (inherited) |
@@ -233,7 +238,7 @@ Behaviourally compatible means that **base class** can be replaced by the **deri
 
 ---
 
-## 3️⃣ Specialization (Restriction)
+## Specialization (Restriction)
 
 ### Definition
 **Specialization** occurs when a derived class **restricts** behavior of base class by adding constraints.
@@ -244,7 +249,6 @@ Derived class may be **behaviorally incompatible** with base class in some aspec
 ### Behavioral Incompatibility
 Base class **cannot always** be replaced by derived class due to restrictions.
 
-
 ### Characteristics
 - Adds validation or constraints
 - May override methods with stricter rules
@@ -252,12 +256,14 @@ Base class **cannot always** be replaced by derived class due to restrictions.
 - Represents a more specific subset
 
 ### Example: Adult restricts Person
+
 | Person (Base) | Adult (Derived) |
 |---------------|-----------------|
 | age: 0-100 | age: 18-100 (restricted) |
 | setAge(15) ✓ allowed | setAge(15) ✗ rejected |
 
 ### Example: NaturalSet restricts IntegerSet
+
 | IntegerSet (Base) | NaturalSet (Derived) |
 |-------------------|---------------------|
 | add(-5) ✓ allowed | add(-5) ✗ rejected |
@@ -266,20 +272,18 @@ Base class **cannot always** be replaced by derived class due to restrictions.
 
 ---
 
-## 4️⃣ Abstract Classes
+## Abstract Classes
 
 ### Definition
 An **abstract class** represents an **abstract concept** that cannot be instantiated directly.
 
 👉 **Abstract Class = Blueprint + Contract + Common Implementation**
 
-
 ### Explanation
-An abstract class implements an abstract concept                                                                                         
-Main purpose is to be inherited by other classes                                                                           
-Can’t be instantiated                                                                                                                      
-Promotes reuse                                                                                                                            
-
+An abstract class implements an abstract concept.  
+Main purpose is to be inherited by other classes.  
+Can’t be instantiated.  
+Promotes reuse.
 
 ### Characteristics
 
@@ -338,7 +342,7 @@ Abstract classes represent **incomplete concepts**:
 
 ---
 
-## 5️⃣ Concrete Classes
+## Concrete Classes
 
 ### Definition
 A **concrete class** represents a **real-world object** that can be instantiated.
@@ -346,11 +350,9 @@ A **concrete class** represents a **real-world object** that can be instantiated
 👉 **Concrete Class = Complete Implementation + Instantiable Objects**
 
 ### Explanation
-A concrete class implements a concrete concept                                                                                            
-
-Main purpose is to be instantiated                                                                                                     
-
-Provides implementation details specific to the domain context                                                                         
+A concrete class implements a concrete concept.  
+Main purpose is to be instantiated.  
+Provides implementation details specific to the domain context.
 
 ### Characteristics
 
@@ -393,7 +395,7 @@ Provides implementation details specific to the domain context
 
 ---
 
-# 🔹 Comparison Table
+# Comparison Table
 
 ## Generalization vs Specialization
 
@@ -427,7 +429,7 @@ Provides implementation details specific to the domain context
 
 ---
 
-# 🔹 Visual Summary
+# Visual Summary
 
 ```
                     INHERITANCE CONCEPTS
@@ -490,60 +492,64 @@ Provides implementation details specific to the domain context
 
 ---
 
-# 🔹 Key Points to Remember
+# Key Points to Remember
 
 ## Inheritance
-✅ **IS-A relationship** between derived and base class  
-✅ Promotes **code reusability**  
-✅ Enables **polymorphism** (covered later)  
+- **IS-A relationship** between derived and base class
+- Promotes **code reusability**
+- Enables **polymorphism** (covered later)
 
 ## Generalization
-✅ **Bottom-up** process  
-✅ Extracts **common features**  
-✅ Creates **base class** from multiple classes  
+- **Bottom-up** process
+- Extracts **common features**
+- Creates **base class** from multiple classes
 
 ## Sub-typing (Extension)
-✅ Derived class **extends** base class behavior  
-✅ **Behaviorally compatible**  
-✅ Follows **Liskov Substitution Principle**  
-✅ Adds new capabilities without breaking existing ones  
+- Derived class **extends** base class behavior
+- **Behaviorally compatible**
+- Follows **Liskov Substitution Principle**
+- Adds new capabilities without breaking existing ones
 
 ## Specialization (Restriction)
-✅ Derived class **restricts** base class behavior  
-✅ May be **behaviorally incompatible**  
-✅ Adds **constraints or validation**  
-✅ Represents a more specific subset  
+- Derived class **restricts** base class behavior
+- May be **behaviorally incompatible**
+- Adds **constraints or validation**
+- Represents a more specific subset
 
 ## Abstract Class
-✅ **Cannot be instantiated**  
-✅ Contains **abstract methods** (without implementation)  
-✅ Defines **contract** for derived classes  
-✅ May contain **concrete methods** for common functionality  
+- **Cannot be instantiated**
+- Contains **abstract methods** (without implementation)
+- Defines **contract** for derived classes
+- May contain **concrete methods** for common functionality
 
 ## Concrete Class
-✅ **Can be instantiated**  
-✅ Implements **all abstract methods**  
-✅ **actual objects** are created using concrete class  
+- **Can be instantiated**
+- Implements **all abstract methods**
+- **Actual objects** are created using concrete class
 
 ---
 
-# 🔹 Common Interview Questions
+# Common Interview Questions
 
 ### Q1: What's the difference between Generalization and Specialization?
+
 **Generalization** extracts common features upward (bottom-up), while **Specialization** adds specific features or constraints downward (top-down).
 
 ### Q2: What is behavioral compatibility in Sub-typing?
+
 Behavioral compatibility means a derived class object can replace a base class object without affecting program correctness (Liskov Substitution Principle).
 
-### Q3: Why can't we instantiate(create object) an abstract class?
+### Q3: Why can't we instantiate (create object) an abstract class?
+
 Abstract classes represent incomplete concepts. They contain abstract methods without implementation, so creating objects would leave functionality undefined.
 
 ### Q4: What's the relationship between Abstract and Concrete classes?
+
 Concrete classes inherit from abstract classes and provide complete implementations of all abstract methods, making them instantiable.
 
 ---
 
-# 🔹 Summary Table
+# Summary Table
 
 | Concept | Purpose | Direction | Key Feature | Example |
 |---------|---------|-----------|-------------|---------|
@@ -552,5 +558,3 @@ Concrete classes inherit from abstract classes and provide complete implementati
 | **Specialization** | Restrict behavior | Top-down | Adds constraints | Adult restricts age |
 | **Abstract Class** | Define contract | N/A | Cannot instantiate | Vehicle class |
 | **Concrete Class** | Create objects | N/A | Full implementation | Car class |
-
----
