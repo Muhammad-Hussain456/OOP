@@ -9,14 +9,12 @@
 ---
 
 ### Base Class vs Derived Class                                                                                                             
-If a class B inherits from class A then it contains all the characteristics (information structure and behaviour) of class A.               
-The **parent class** is called **base class** and the **child class** is called **derived class**.        
-Derived class inherits all the characteristics of the base class.                                                                           
-Besides inherited characteristics, derived class may have its own unique characteristics.                                                   
+ If a class B inherits from class A then it contains all the characteristics (information structure and behaviour) of class A.               The **parent class** is called **base class** and the **child class** is called **derived class**.        
+ Derived class inherits all the characteristics of the base class.                                                                           Besides inherited characteristics, derived class may have its own unique characteristics.                                                   
 ---
 
 ### Inheritance – “IS A” or“IS A KIND OF” Relationship                                                                                     
-Each derived class is a special kind of its base class
+ Each derived class is a special kind of its base class
 
 #### Example
 ```
@@ -56,11 +54,11 @@ Each derived class is a special kind of its base class
 ---
 
 ### Reuse with Inheritance                                                                                                                 
-Main purpose of inheritance is reuse                                                                                                      
-We can easily add new classes by inheriting from existing classes                                                                        
-Select an existing class closer to the desired functionality                                                                              
-Create a new class and inherit it from the selected class                                                                                 
-Add to and/or modify the inherited functionality     
+ Main purpose of inheritance is reuse                                                                                                      
+ We can easily add new classes by inheriting from existing classes                                                                        
+ Select an existing class closer to the desired functionality                                                                              
+ Create a new class and inherit it from the selected class                                                                                 
+ Add to and/or modify the inherited functionality     
 
 #### Example
 ```
