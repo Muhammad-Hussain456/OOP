@@ -5,7 +5,7 @@
 **Inheritance** is a mechanism where a derived class (child) inherits properties and behaviors from a base class (parent).  
 Major benefit of inheritance is reuse.
 
-👉 **Inheritance = Code Reusability + Hierarchical Classification + IS-A Relationship**
+👉 **Inheritance = Code Reusability + Hierarchical Classification**
 
 ---
 
