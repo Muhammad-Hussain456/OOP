@@ -8,9 +8,11 @@
 👉 **Inheritance = Code Reusability + Hierarchical Classification + IS-A Relationship**                                  
 ---
 
-## Base Class vs Derived Class                                                                                                             
- If a class B inherits from class A then it contains all the characteristics (information structure and behaviour) of class A.               The **parent class** is called **base class** and the **child class** is called **derived class**.        
- Derived class inherits all the characteristics of the base class.                                                                           Besides inherited characteristics, derived class may have its own unique characteristics.                                                   
+## Base Class vs Derived Class
+If a class B inherits from class A then it contains all the characteristics (information structure and behaviour) of class A.              
+The **parent class** is called **base class** and the **child class** is called **derived class**.        
+Derived class inherits all the characteristics of the base class.                                                                          
+Besides inherited characteristics, derived class may have its own unique characteristics.                                                   
 ---
 
 ### Inheritance – “IS A” or“IS A KIND OF” Relationship                                                                                     
