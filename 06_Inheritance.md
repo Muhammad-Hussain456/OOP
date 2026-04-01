@@ -2,13 +2,48 @@
 
 ## What is Inheritance?
 
-**Inheritance** is a mechanism where a derived class (child) inherits properties and behaviors from a base class (parent).
+**Inheritance** is a mechanism where a derived class (child) inherits properties and behaviors from a base class (parent).                  
+ Major benefit of inheritance is reuse                                                                                                   
 
-👉 **Inheritance = Code Reusability + Hierarchical Classification + IS-A Relationship**
+👉 **Inheritance = Code Reusability + Hierarchical Classification + IS-A Relationship**                                  
 
+### Base Class vs Derived Class                                                                                                            
+If a class B inherits from class A then it contains all the characteristics (information structure and behaviour) of class A.               
+The **parent class** is called **base class** and the **child class** is called **derived class**.        
+Derived class inherits all the characteristics of the base class.                                                                           
+Besides inherited characteristics, derived class may have its own unique characteristics.                                                   
 ---
 
-## 🔹 Key Benefits
+### Inheritance – “IS A” or“IS A KIND OF” Relationship                                                                                     
+Each derived class is a special kind of its base class
+
+#### Example
+```
+        ┌─────────────────┐
+        │     Person      │ 
+        ├─────────────────┤
+        │ - name          │
+        │ - age           │
+        │ - gender        │
+        ├─────────────────┤
+        │ + eat()         │
+        │ + walk()        │
+        └────────┬────────┘
+                 │
+    ┌────────────┼────────────┐
+    ▼            ▼            ▼
+┌─────────┐ ┌─────────┐  ┌────────┐
+│Teacher  │ │Student  │  │Doctor  │
+├─────────┤ ├─────────┤  ├────────┤
+│-subject│ │-program │  │-special│
+│-salary │ │-year    │  │-license│
+├─────────┤ ├─────────┤  ├────────┤
+│+teach()│ │+study() │  │+treat()│
+└─────────┘ └─────────┘  └────────┘
+```
+---
+
+## 🔹 Key Benefits/Advantages
 
 | Benefit | Description |
 |---------|-------------|
@@ -17,6 +52,37 @@
 | **Extensibility** | Add new features without modifying existing code |
 | **Polymorphism Support** | Enables runtime polymorphism through method overriding (covered later) |
 
+---
+
+### Reuse with Inheritance                                                                                                                 
+Main purpose of inheritance is reuse                                                                                                      
+We can easily add new classes by inheriting from existing classes                                                                        
+Select an existing class closer to the desired functionality                                                                              
+Create a new class and inherit it from the selected class                                                                                 
+Add to and/or modify the inherited functionality     
+
+#### Example
+```
+        ┌─────────────────┐
+        │     Shape       │  ← Generalized base class
+        ├─────────────────┤
+        │ - color         │
+        │ - vertices      │
+        ├─────────────────┤
+        │ + move()        │
+        │ + setColor()    │
+        └────────┬────────┘
+                 │
+    ┌────────────┼────────────┐
+    ▼            ▼            ▼
+┌───────┐  ┌───────┐    ┌─────────┐
+│ Circle│  │ Line  │    │ Triangle│
+├───────┤  ├───────┤    ├─────────┤
+│-radius│  │-length│    │-angle   │
+├───────┤  ├───────┤    ├─────────┤
+│+area()│  │+length│    │+area()  │
+└───────┘  └───────┘    └─────────┘
+```
 ---
 
 # 🔹 Concepts Related to Inheritance
@@ -35,6 +101,13 @@ The following concepts are closely related to inheritance:
 
 ### Definition
 **Generalization** is the process of extracting common characteristics from multiple classes and creating a new base class.
+
+### Explanation                                                                                                                             
+In OO models, some classes may have common characteristics                                                                                  
+
+We extract these features into a new class and inherit original classes from this new class                                                 
+
+This concept is known as Generalization                                                                                                     
 
 ### Purpose
 - Reduce redundancy
@@ -124,11 +197,20 @@ Teacher, Student, Doctor classes each contain:
 ### Definition
 **Sub-typing** occurs when a derived class **extends** the behavior of a base class without violating base class expectations.
 
+### Explanation                                                                                                                           
+We want to add a new class to an existing model
+
+Find an existing class that already implements some of the desired state and behaviour                                                      
+
+Inherit the new class from this class and add unique behaviour to the new class                                                            
+
+
 ### Key Concept
-Derived class is **behaviorally compatible** with base class.
+Derived class is **behaviorally compatible** with base class.                                                                               
+
 
 ### Behavioral Compatibility
-Base class object can be **replaced** by derived class object (Liskov Substitution Principle).
+Behaviourally compatible means that **base class** can be replaced by the **derived class** (Liskov Substitution Principle).
 
 ### Characteristics
 - Adds new methods and properties
@@ -162,6 +244,7 @@ Derived class may be **behaviorally incompatible** with base class in some aspec
 ### Behavioral Incompatibility
 Base class **cannot always** be replaced by derived class due to restrictions.
 
+
 ### Characteristics
 - Adds validation or constraints
 - May override methods with stricter rules
@@ -189,6 +272,14 @@ Base class **cannot always** be replaced by derived class due to restrictions.
 An **abstract class** represents an **abstract concept** that cannot be instantiated directly.
 
 👉 **Abstract Class = Blueprint + Contract + Common Implementation**
+
+
+### Explanation
+An abstract class implements an abstract concept                                                                                         
+Main purpose is to be inherited by other classes                                                                           
+Can’t be instantiated                                                                                                                      
+Promotes reuse                                                                                                                            
+
 
 ### Characteristics
 
@@ -253,6 +344,13 @@ Abstract classes represent **incomplete concepts**:
 A **concrete class** represents a **real-world object** that can be instantiated.
 
 👉 **Concrete Class = Complete Implementation + Instantiable Objects**
+
+### Explanation
+A concrete class implements a concrete concept                                                                                            
+
+Main purpose is to be instantiated                                                                                                     
+
+Provides implementation details specific to the domain context                                                                         
 
 ### Characteristics
 
