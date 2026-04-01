@@ -57,7 +57,6 @@ Each derived class is a special kind of its base class.
 | **Code Reusability** | Child classes automatically get parent's features |
 | **Hierarchical Organization** | Natural classification of related concepts |
 | **Extensibility** | Add new features without modifying existing code |
-| **Polymorphism Support** | Enables runtime polymorphism through method overriding (covered later) |
 
 ---
 
@@ -271,6 +270,53 @@ Base class **cannot always** be replaced by derived class due to restrictions.
 | add(10) ✓ allowed | add(10) ✓ allowed |
 
 ---
+
+## Overriding
+
+### What is Overriding?
+A class may need to override the default behaviour provided by its parent class or parent classes.
+
+---
+
+## Overriding: Single Parent
+
+### Reasons for Overriding
+- Provide behaviour specific to a derived class
+- Extend the default behaviour
+- Restrict the default behaviour
+- Improve performance
+
+> **Note:** This is called **Method Overriding(used to implement polymorphism)** and will be discussed further in the **Polymorphism** topic.
+
+---
+
+## Overriding: Multiple Parents
+
+### Why Multiple Inheritance?
+We may want to reuse characteristics of more than one parent class.
+
+### Challenges/Problems 
+- Increased complexity
+- Reduced understanding
+- Duplicate features
+
+### Solution
+Override the common feature to resolve ambiguity.
+
+> **Note:** This is also handled through **Method Overriding(used to implement polymorphism)**, which will be discussed further in the **Polymorphism** topic.
+
+---
+
+## Summary
+
+| Scenario | Purpose | Solution |
+|----------|---------|----------|
+| **Single Parent** | Customize, extend, restrict, or improve behavior | Method Overriding |
+| **Multiple Parents** | Resolve conflicts and ambiguity | Method Overriding |
+
+> **Method Overriding** will be covered in detail in the **Polymorphism** topic.
+
+--- 
 
 ## Abstract Classes
 
