@@ -6,6 +6,7 @@
  Major benefit of inheritance is reuse                                                                                                   
 
 👉 **Inheritance = Code Reusability + Hierarchical Classification + IS-A Relationship**                                  
+---
 
 ### Base Class vs Derived Class 
 
