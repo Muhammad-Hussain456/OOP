@@ -1,6 +1,6 @@
 # 🔹 Declaration and Initialization of Object                                                                                                                                                                                                 
 ## 🔹 Declaration of Object
-Creating an object is called declaration.                              
+Creating an object is called declaration of object.                              
 
 When an object is declared, it gets the properties and functions declared in the class.
 ### Syntax:
