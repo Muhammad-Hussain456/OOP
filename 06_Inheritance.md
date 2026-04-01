@@ -289,6 +289,163 @@ A class may need to override the default behaviour/method/function provided by i
 
 > **Note:** This is called **Method Overriding(used to implement polymorphism)** and will be discussed further in the **Polymorphism** topic.
 
+
+## Overriding Examples/Scenarios
+
+### 1. Specific Behaviour
+
+#### Description
+Provide behaviour unique to a derived class. Each child implements the same method differently according to its specific needs.
+
+#### UML Diagram
+
+```
+┌─────────────────────┐
+│       Shape         │
+│     (Parent)        │
+├─────────────────────┤
+│ + draw()            │  ← Default/Abstract
+└──────────┬──────────┘
+           │
+    ┌──────┼──────┬──────────────┐
+    ▼      ▼      ▼              ▼
+┌───────┐ ┌───────┐ ┌─────────┐ ┌─────────┐
+│ Circle│ │ Line  │ │Triangle │ │ Rectangle│
+├───────┤ ├───────┤ ├─────────┤ ├─────────┤
+│ +draw()│ │+draw()│ │ +draw() │ │ +draw() │
+└───────┘ └───────┘ └─────────┘ └─────────┘
+    │         │         │           │
+    ▼         ▼         ▼           ▼
+┌───────┐ ┌───────┐ ┌─────────┐ ┌─────────┐
+│Draw   │ │Draw   │ │Draw     │ │Draw     │
+│Circle │ │Line   │ │Triangle │ │Rectangle│
+└───────┘ └───────┘ └─────────┘ └─────────┘
+```
+
+**Explanation:** Each shape overrides `draw()` to provide its own specific drawing behavior.
+
+---
+
+### 2. Extension
+
+#### Description
+Extend the default behaviour by adding extra functionality to the parent method while preserving the original.
+
+#### UML Diagram
+
+```
+┌─────────────────────┐
+│      Window         │
+│     (Parent)        │
+├─────────────────────┤
+│ + open()            │  ← Default behaviour
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│    DialogBox        │
+│    (Child)          │
+├─────────────────────┤
+│ + open()            │  ← Extended behaviour
+└─────────────────────┘
+           │
+           ▼
+┌─────────────────────┐
+│  DialogBox.open()   │
+├─────────────────────┤
+│ 1. super.open()     │  ← Calls parent first
+│ 2. Load content     │  ← Adds extra
+│ 3. Show buttons     │  ← Adds extra
+└─────────────────────┘
+```
+
+**Explanation:** `DialogBox` extends `Window.open()` by adding extra steps while still using the parent's functionality.
+
+---
+
+### 3. Restriction
+
+#### Description
+Restrict the default behaviour by adding constraints or validation that limit what the method can do.
+
+#### UML Diagram
+
+```
+┌─────────────────────┐
+│    IntegerSet       │
+│     (Parent)        │
+├─────────────────────┤
+│ + add(Integer n)    │  ← Accepts any integer
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│    NaturalSet       │
+│     (Child)         │
+├─────────────────────┤
+│ + add(Integer n)    │  ← Restricted behaviour
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────────────────┐
+│      NaturalSet.add()           │
+├─────────────────────────────────┤
+│ if (n <= 0) {                   │
+│     throw Exception             │  ← Restriction!
+│ }                               │
+│ super.add(n);                   │
+└─────────────────────────────────┘
+```
+
+| Operation | IntegerSet | NaturalSet |
+|-----------|------------|------------|
+| add(-5)   | ✓ Allowed  | ✗ Rejected |
+| add(0)    | ✓ Allowed  | ✗ Rejected |
+| add(10)   | ✓ Allowed  | ✓ Allowed |
+
+**Explanation:** `NaturalSet` restricts `add()` to only accept natural numbers (positive integers).
+
+---
+
+### 4. Improve Performance
+
+### Description
+Provide a more efficient implementation of a method without changing its behaviour.
+
+### UML Diagram
+
+```
+┌─────────────────────┐
+│       Shape         │
+│     (Parent)        │
+├─────────────────────┤
+│ + rotate()          │  ← Expensive operation
+└──────────┬──────────┘
+           │
+    ┌──────┴──────┐
+    ▼             ▼
+┌───────┐    ┌─────────┐
+│ Circle│    │ Polygon │
+├───────┤    ├─────────┤
+│+rotate│    │+rotate()│
+└───┬───┘    └────┬────┘
+    │             │
+    ▼             ▼
+┌───────────────────────┐  ┌───────────────────────┐
+│   Circle.rotate()     │  │  Polygon.rotate()     │
+├───────────────────────┤  ├───────────────────────┤
+│ // Null operation     │  │ // Complex calculation│
+│ // No change needed   │  │ // Recompute vertices │
+│ // O(1) performance   │  │ // O(n) performance   │
+└───────────────────────┘  └───────────────────────┘
+```
+
+**Explanation:** 
+- A circle looks the same when rotated (symmetric)
+- `Circle` overrides `rotate()` with a **null operation** (does nothing)
+- Polygon requires complex calculations for rotation
+- Performance improved from O(n) to O(1)
+
 ---
 
 ## Overriding: Multiple Parents
