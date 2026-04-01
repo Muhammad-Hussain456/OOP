@@ -274,7 +274,8 @@ Base class **cannot always** be replaced by derived class due to restrictions.
 ## Overriding
 
 ### What is Overriding?
-A class may need to override the default behaviour provided by its parent class or parent classes.
+The act or process by which something is overridden(modified).                                                                             
+A class may need to override the default behaviour/method/function provided by its parent class or parent classes.
 
 ---
 
@@ -304,17 +305,6 @@ We may want to reuse characteristics of more than one parent class.
 Override the common feature to resolve ambiguity.
 
 > **Note:** This is also handled through **Method Overriding(used to implement polymorphism)**, which will be discussed further in the **Polymorphism** topic.
-
----
-
-## Summary
-
-| Scenario | Purpose | Solution |
-|----------|---------|----------|
-| **Single Parent** | Customize, extend, restrict, or improve behavior | Method Overriding |
-| **Multiple Parents** | Resolve conflicts and ambiguity | Method Overriding |
-
-> **Method Overriding** will be covered in detail in the **Polymorphism** topic.
 
 --- 
 
