@@ -202,7 +202,7 @@ Teacher, Student, Doctor classes each contain:
 ## Sub-typing (Extension)
 
 ### Definition
-**Sub-typing** occurs when a derived class **extends** the behavior of a base class without violating base class expectations.
+**Sub-typing** occurs when a derived class **extends** the characteristics of a base class without violating base class expectations.
 
 ### Explanation
 We want to add a new class to an existing model.  
@@ -240,7 +240,7 @@ Behaviourally compatible means that **base class** can be replaced by the **deri
 ## Specialization (Restriction)
 
 ### Definition
-**Specialization** occurs when a derived class **restricts** behavior of base class by adding constraints.
+**Specialization** occurs when a derived class **restricts** characteristics of base class by adding constraints.
 
 ### Key Concept
 Derived class may be **behaviorally incompatible** with base class in some aspects.
