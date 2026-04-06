@@ -6,7 +6,7 @@
 ### What is Association?
 Association is a connection between two separate things. For example, "a doctor treats a patient" – this is an association because it describes a relationship between two different people.
 
-## Association in OOP
+### Association in OOP
 Objects in an object model interact with each other.                                                                                          
 Usually an object provides services to several other objects.                                                                                 
 An object keeps associations with other objects to delegate tasks.                                                                           
@@ -17,7 +17,7 @@ An object keeps associations with other objects to delegate tasks.
 - Neither object owns the other
 
 
-## Kinds of Association
+### Kinds of Association
 There are two main kinds of association:
 
 | Kind | Description |
@@ -32,7 +32,7 @@ Object Association includes:
 
 ---
 
-## Simple Association
+#### Simple Association
 Is the weakest link between objects                                                                                                           
 
 Is a reference by which one object can interact with some other object                                                                        
@@ -43,16 +43,16 @@ Is simply called as “association”
 
 ---
 
-## Kinds of Simple Association
+#### Kinds of Simple Association
 
-### With respect to navigation
+##### With respect to navigation
 
 | Type | Description | UML Symbol |
 | :--- | :--- | :--- |
 | **One-way Association** | Navigation is possible in only one direction | Arrow `-->` |
 | **Two-way Association** | Navigation is possible in both directions | Line `---` |
 
-### With respect to number of objects
+##### With respect to number of objects
 
 | Type | Description |
 | :--- | :--- |
@@ -62,9 +62,9 @@ Is simply called as “association”
 
 ---
 
-## Examples of Simple Association
+#### Examples of Simple Association
 
-### One-way Association
+##### One-way Association
 
 Ali knows about his Car. The Car does not need to know about Ali.
 
@@ -80,7 +80,7 @@ classDiagram
     }
 ```
 
-### One-way Association 
+##### One-way Association 
 
 The Employee knows which Company they work for.
 
@@ -96,7 +96,7 @@ classDiagram
     }
 ```
 
-### Two-way Association 
+##### Two-way Association 
 
 Both objects know each other. Denoted by a line between the associated objects.
 
@@ -112,7 +112,7 @@ classDiagram
     }
 ```
 
-### Binary Association  
+##### Binary Association  
 
 Associates objects of exactly two classes. Denoted by a line or an arrow between the associated objects.
 
@@ -128,7 +128,7 @@ classDiagram
     }
 ```
 
-### Ternary Association 
+##### Ternary Association 
 
 Associates objects of exactly three classes. Denoted by a diamond with lines connected to the associated objects.
 
@@ -154,7 +154,7 @@ classDiagram
     }
 ```
 
-### N-ary Association
+##### N-ary Association
 
 An association between 3 or more classes. Practical examples are very rare.
 
