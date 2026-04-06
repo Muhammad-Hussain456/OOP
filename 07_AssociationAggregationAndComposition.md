@@ -1,4 +1,4 @@
-# Associations Aggregation And Composition
+# Associations, Aggregation And Composition
 
 ---
 ## Association
