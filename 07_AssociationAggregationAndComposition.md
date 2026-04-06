@@ -1,32 +1,72 @@
-# Association, Aggregation and  Composition
+# Associations Aggregation And Composition
 
-## 1. Association
+---
+## Association
 
 ### What is Association?
+Association is a connection between two separate things. For example, "a doctor treats a patient" – this is an association because it describes a relationship between two different people.
 
-In general terms, **Association** is a relationship between two independent entities. It describes how they are connected or how they interact with each other. For example, "a doctor treats a patient" or "a student attends a course" – these are associations because they describe a meaningful connection between separate things.
+## Association in OOP
+Objects in an object model interact with each other.                                                                                          
+Usually an object provides services to several other objects.                                                                                 
+An object keeps associations with other objects to delegate tasks.                                                                           
 
-### Association in Object-Oriented Programming (OOP)
+**Key points:**
+- Objects have independent lifetimes
+- One object keeps a reference to another
+- Neither object owns the other
 
-In OOP, **Association** is a relationship where one object uses or interacts with another object. Both objects exist independently, and neither owns the other. They simply have a reference (pointer or variable) that allows them to communicate.
 
-**Key characteristics in OOP:**
-- Objects have independent lifecycles (creating/deleting one does not affect the other).
-- It represents a "uses-a" or "knows-a" relationship.
-- It is the weakest form of object relationship.
+## Kinds of Association
+There are two main kinds of association:
 
-### Kinds of Simple Association 
+| Kind | Description |
+| :--- | :--- |
+| **Class Association** | Inheritance (is-a relationship) |
+| **Object Association** | Relationship between objects (uses-a, has-a) |
 
-| Type | Description | UML Notation |
+Object Association includes:
+- Simple Association
+- Composition
+- Aggregation
+
+---
+
+## Simple Association
+Is the weakest link between objects                                                                                                           
+
+Is a reference by which one object can interact with some other object                                                                        
+
+Is simply called as “association”                                                                                                          
+
+
+
+---
+
+## Kinds of Simple Association
+
+### With respect to navigation
+
+| Type | Description | UML Symbol |
 | :--- | :--- | :--- |
-| **One-way Association** | Navigation is possible in only one direction. | Arrow `-->` |
-| **Two-way Association** | Navigation is possible in both directions. | Line `---` |
+| **One-way Association** | Navigation is possible in only one direction | Arrow `-->` |
+| **Two-way Association** | Navigation is possible in both directions | Line `---` |
 
-### Examples from your list
+### With respect to number of objects
 
-#### Example 1: One-way Association – "Ali drives his Car"
+| Type | Description |
+| :--- | :--- |
+| **Binary Association** | Associates objects of exactly two classes |
+| **Ternary Association** | Associates objects of exactly three classes |
+| **N-ary Association** | Association between 3 or more classes (very rare) |
 
-Ali knows about his Car, but the Car does not need to know who is driving it.
+---
+
+## Examples of Simple Association
+
+### One-way Association
+
+Ali knows about his Car. The Car does not need to know about Ali.
 
 ```mermaid
 classDiagram
@@ -34,34 +74,31 @@ classDiagram
     
     class Ali {
         +name: "Ali"
-        +drive()
     }
     class Car {
         +model: String
-        +accelerate()
     }
 ```
 
-#### Example 2: One-way Association – "Employee works for Company"
+### One-way Association 
 
-The Employee knows which Company they work for, but the Company may not track individual employees directly.
+The Employee knows which Company they work for.
 
 ```mermaid
 classDiagram
     Employee --> Company : works for
     
     class Employee {
-        +id: int
-        +work()
+        +name: String
     }
     class Company {
         +name: String
     }
 ```
 
-#### Example 3: Two-way Association – "Yasir is a friend of Ali" AND "Ali is a friend of Yasir"
+### Two-way Association 
 
-Both objects must know each other. If Ali knows Yasir, Yasir must also know Ali.
+Both objects know each other. Denoted by a line between the associated objects.
 
 ```mermaid
 classDiagram
@@ -69,17 +106,15 @@ classDiagram
     
     class Ali {
         +name: "Ali"
-        +friends: List
     }
     class Yasir {
         +name: "Yasir"
-        +friends: List
     }
 ```
 
-#### Example 4: Binary Association – "Company employs employees"
+### Binary Association  
 
-This shows a relationship between two classes with multiplicity (one Company can employ many Employees).
+Associates objects of exactly two classes. Denoted by a line or an arrow between the associated objects.
 
 ```mermaid
 classDiagram
@@ -87,93 +122,81 @@ classDiagram
     
     class Company {
         +name: String
-        +hire()
     }
     class Employee {
         +id: int
-        +quit()
     }
 ```
 
----
+### Ternary Association 
 
-## 2. Aggregation
-
-### What is Aggregation?
-
-In general terms, **Aggregation** is a collection or assembly of items. It implies that something is made up of a group of other things, but the individual items can exist on their own. For example, a "bunch of grapes" – the bunch is the aggregate, but each grape can exist independently of the bunch.
-
-### Aggregation in Object-Oriented Programming (OOP)
-
-In OOP, **Aggregation** is a special form of association that represents a "has-a" relationship, but a **weak** one. The container (whole) holds references to the contained objects (parts), but the parts can exist independently even if the container is destroyed.
-
-**Key characteristics in OOP:**
-- Represents a "whole-part" relationship where the part can exist without the whole.
-- The part's lifecycle is **independent** of the whole.
-- If the container is destroyed, the parts continue to exist.
-- UML Notation: Unfilled (hollow) diamond `◇--` on the container side.
-
-### Example from your list – "Ali lives in a House"
-
-A House contains Ali as a resident, but Ali is not an intrinsic part of the House. Ali can move to another house or live elsewhere independently.
+Associates objects of exactly three classes. Denoted by a diamond with lines connected to the associated objects.
 
 ```mermaid
 classDiagram
-    House "1" o-- "0..*" Person : contains
-    
-    class House {
-        +address: String
-        +getResidents()
-    }
-    class Person {
+    class Student {
         +name: String
-        +moveTo()
+    }
+    class Teacher {
+        +name: String
+    }
+    class Course {
+        +title: String
+    }
+    
+    Student --o Ternary
+    Teacher --o Ternary
+    Course --o Ternary
+    
+    class Ternary {
+        <<ternary>>
+        +semester: String
     }
 ```
 
-### Additional Example – "Furniture in a Room"
+### N-ary Association
 
-Furniture is not an intrinsic part of a room. Furniture can be shifted to another room.
+An association between 3 or more classes. Practical examples are very rare.
 
 ```mermaid
 classDiagram
-    Room o-- Furniture : contains
+    class ClassA
+    class ClassB
+    class ClassC
+    class ClassD
     
-    class Room {
-        +number: int
-    }
-    class Furniture {
-        +type: String
-        +moveTo()
+    ClassA --o Nary
+    ClassB --o Nary
+    ClassC --o Nary
+    ClassD --o Nary
+    
+    class Nary {
+        <<N-ary>>
     }
 ```
 
-**Why Aggregation is weaker:**
-- Furniture can exist without a Room (e.g., in a warehouse).
-- Ali can exist without a House (e.g., in an apartment or another city).
-- The aggregate object (Person, Furniture) has its own independent identity and lifecycle.
-
 ---
 
-## 3. Composition
+## Composition
 
 ### What is Composition?
 
-In general terms, **Composition** is the act of putting together parts to form a whole, where the parts have no meaningful existence without the whole. For example, a "human body" composed of "organs" – a heart cannot function or exist meaningfully outside a body.
+Composition is when parts come together to form a whole, but the parts have no meaning without the whole. For example, a "human body" made of "organs" – a heart cannot exist outside a body.
 
-### Composition in Object-Oriented Programming (OOP)
+### Composition in OOP
 
-In OOP, **Composition** is a stronger form of aggregation where the part objects **cannot exist independently** of the whole object. The whole is responsible for creating and destroying its parts.
+In OOP, Composition is a stronger relationship. An object may be composed of other smaller objects. The relationship between the "part" objects and the "whole" object is known as Composition.
 
-**Key characteristics in OOP:**
-- Represents a "part-of" relationship where the part belongs exclusively to the whole.
-- The part's lifecycle is **dependent** on the whole.
-- If the container is destroyed, the parts are destroyed automatically.
-- UML Notation: Filled (solid) diamond `*--` on the container side.
+**Key points:**
+- The part belongs exclusively to the whole
+- Composed object becomes a part of the composer
+- Composed object cannot exist independently
+- If the whole is destroyed, the parts are also destroyed
+- Denoted by a line with a **filled diamond** head towards the composer object
 
-### Example – "Ali is composed of body parts"
+### Example – Composition of Ali
 
-Ali is made up of different body parts like Heart and Lungs. These parts cannot exist independent of Ali.
+Ali is made up of different body parts. They cannot exist independent of Ali.
 
 ```mermaid
 classDiagram
@@ -182,8 +205,6 @@ classDiagram
     
     class Ali {
         +name: "Ali"
-        +walk()
-        +talk()
     }
     class Heart {
         +beat()
@@ -193,19 +214,18 @@ classDiagram
     }
 ```
 
-### Example – "Composition of a Chair"
+### Example – Composition of Chair
 
-A chair is composed of its parts: Seat, Legs, and Backrest. These parts have no meaningful existence without the chair.
+Chair's body is made up of different parts. They cannot exist independently.
 
 ```mermaid
 classDiagram
     Chair *-- Seat : has
-    Chair *-- Leg : has (4)
+    Chair *-- Leg : has
     Chair *-- Backrest : has
     
     class Chair {
         +weight: int
-        +sit()
     }
     class Seat {
         +material: String
@@ -218,23 +238,76 @@ classDiagram
     }
 ```
 
-**Why Composition is stronger:**
-- A Heart cannot exist independently without a body (Ali).
-- Chair Legs cannot exist meaningfully without the Chair.
-- If Ali is destroyed (object removed), the Heart and Lungs cease to exist logically.
-- The parts are created when the whole is created, and destroyed when the whole is destroyed.
+### Why Composition is Stronger
+
+- Composed object becomes a part of the composer
+- Composed object cannot exist independently
 
 ---
 
-## Comparison Table
+## Aggregation
 
-| Feature | Association | Aggregation | Composition |
-| :--- | :--- | :--- | :--- |
-| **Relationship type** | "Uses-a" / "Knows-a" | "Has-a" (weak) | "Part-of" (strong) |
-| **Lifecycle dependency** | None | None (independent) | Complete (dependent) |
-| **Can part exist without whole?** | Yes (completely independent) | Yes | No |
-| **UML Diamond** | No diamond | Unfilled (hollow) diamond | Filled (solid) diamond |
-| **Ownership** | No ownership | Weak ownership | Strong ownership |
-| **Example** | Ali drives Car | Ali lives in House | Ali has a Heart |
+### What is Aggregation?
+
+Aggregation is a collection of items where each item can exist on its own. For example, a "bunch of grapes" – the bunch is the collection, but each grape can exist without the bunch.
+
+### Aggregation in OOP
+
+In OOP, Aggregation is a weaker relationship. An object may contain a collection (aggregate) of other objects. The relationship between the container and the contained object is called Aggregation.
+
+**Key points:**
+- The part can exist without the whole
+- Aggregate object is not an intrinsic part of the container
+- Aggregate object can exist independently
+- If the container is destroyed, the parts continue to exist
+- Denoted by a line with an **unfilled diamond** head towards the container
+
+### Example – Aggregation
+
+Furniture is not an intrinsic part of a room. Furniture can be shifted to another room, and so can exist independent of a particular room.
+
+```mermaid
+classDiagram
+    Room o-- Furniture : contains
+    
+    class Room {
+        +number: int
+    }
+    class Furniture {
+        +type: String
+    }
+```
+
+### Example – Ali lives in a House
+
+Ali is not an intrinsic part of a house. He can move to another house.
+
+```mermaid
+classDiagram
+    House "1" o-- "0..*" Person : contains
+    
+    class House {
+        +address: String
+    }
+    class Person {
+        +name: String
+    }
+```
+
+### Why Aggregation is Weaker
+
+- Aggregate object is not a part of the container
+- Aggregate object can exist independently
 
 ---
+
+## Summary Table
+
+| Kind | What it means | Can parts exist alone? | UML Diamond | Example |
+| :--- | :--- | :--- | :--- | :--- |
+| **Simple Association** | Object uses another object | Yes (fully independent) | No diamond | Ali drives Car |
+| **Aggregation** | Container holds objects | Yes (weak ownership) | Unfilled (hollow) | Ali lives in House |
+| **Composition** | Whole made of parts | No (strong ownership) | Filled (solid) | Ali has a Heart |
+
+---
+
