@@ -15,7 +15,7 @@ In OOP, **Association** is a relationship where one object uses or interacts wit
 - It represents a "uses-a" or "knows-a" relationship.
 - It is the weakest form of object relationship.
 
-### Kinds of Simple Association (by navigation)
+### Kinds of Simple Association 
 
 | Type | Description | UML Notation |
 | :--- | :--- | :--- |
