@@ -470,6 +470,14 @@ Override the common feature to resolve ambiguity.
 ### Definition
 An **abstract class** represents an **abstract concept** that cannot be instantiated directly.
 
+### Why Abstract Classes Cannot Be Instantiated
+
+Abstract classes represent **incomplete concepts**:                                                                                           
+**For example,**                                                                                                                              
+- `Vehicle` is too generic - you can't have just a "vehicle"
+- `Shape` is abstract - you need a specific shape
+- `Person` is abstract - you need a student, teacher, etc.
+
 👉 **Abstract Class = Blueprint + Contract + Common Implementation**
 
 ### Explanation
@@ -478,23 +486,6 @@ Main purpose is to be inherited by other classes.
 Can’t be instantiated.  
 Promotes reuse.
 
-### Characteristics
-
-| Characteristic | Description |
-|----------------|-------------|
-| **Cannot be instantiated** | No objects can be created |
-| **Contains abstract methods** | Methods without implementation |
-| **Used as base class** | Designed for inheritance |
-| **May contain concrete methods** | Common implementation for children |
-| **Defines interface** | Contract for derived classes |
-
-### Role in Inheritance
-Abstract classes serve a crucial role in inheritance hierarchies:
-
-1. **Provide Common Interface**: Define what derived classes must implement
-2. **Share Common Code**: Provide concrete methods that all children can use
-3. **Enable Polymorphism**: Base class pointers can refer to derived objects
-4. **Prevent Instantiation**: Ensures only concrete classes are instantiated
 
 ### Example: Vehicle Hierarchy
 
@@ -526,12 +517,6 @@ Abstract classes serve a crucial role in inheritance hierarchies:
 └──────────────────┘ └───────────────┘ └──────────────┘
 ```
 
-### Why Abstract Classes Cannot Be Instantiated
-
-Abstract classes represent **incomplete concepts**:
-- `Vehicle` is too generic - you can't have just a "vehicle"
-- `Shape` is abstract - you need a specific shape
-- `Person` is abstract - you need a student, teacher, etc.
 
 ---
 
@@ -547,14 +532,6 @@ A concrete class implements a concrete concept.
 Main purpose is to be instantiated.  
 Provides implementation details specific to the domain context.
 
-### Characteristics
-
-| Characteristic | Description |
-|----------------|-------------|
-| **Can be instantiated** | Objects can be created |
-| **Provides full implementation** | All methods have bodies |
-| **Inherits from abstract classes** | Implements all abstract methods |
-| **Domain specific** | Represents actual entities |
 
 ### Example: Person Hierarchy
 
