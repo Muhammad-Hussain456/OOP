@@ -306,7 +306,7 @@ This guide helps you **identify Association, Aggregation, and Composition** usin
 
 ---
 
-### 🔑 STEP 1: Ownership / Lifetime
+### 🔑 STEP 1: Ownership 
 
 👉 Ask:
 
