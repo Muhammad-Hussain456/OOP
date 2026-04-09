@@ -323,7 +323,7 @@ This guide helps you **identify Association, Aggregation, and Composition** usin
 - Just interact or use each other  
 - No ownership  
 
-✔️ Simple Association is a weak relationship where objects only “use” each other.
+✔️ Simple Association is a weak relationship where objects only “use/know/work on/for” each other.
 
 ---
 
