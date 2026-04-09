@@ -40,7 +40,7 @@ Is simply called as “association”
 
 
 **Note:**
-"In Simple Association, object know/use/work on/for each other."
+"In Simple Association, object knows/uses/works on/for the other or objects know/use/work on/for each other."
 
 
 ---
@@ -323,7 +323,7 @@ This guide helps you **identify Association, Aggregation, and Composition** usin
 - Just interact or use each other  
 - No ownership  
 
-✔️ Simple Association is a weak relationship where objects only “use/know/work on/for” each other.
+✔️ Simple Association is a weak relationship where object knows/uses/works on/for the other or objects know/use/work on/for each other.
 
 ---
 
