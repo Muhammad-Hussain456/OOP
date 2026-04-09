@@ -619,7 +619,7 @@ A **Teacher supervises a Student**.
 
 **Simple Association (Unidirectional, 1:1)**
 
-* Teacher teaches/works on student
+* Teacher supervises/works on student
 * No ownership 
 
 
@@ -665,7 +665,7 @@ A **Doctor prescribes Medicine**, but medicine exists independently.
 
 **Simple Association (Unidirectional, 1:N)**
 
-* Doctor uses medicine  
+* Doctor prescribes/works on medicine  
 * No ownership
 
 </details>
