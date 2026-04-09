@@ -673,7 +673,7 @@ A **Doctor prescribes Medicine**, but medicine exists independently.
 ---
 
 ### 🧩 Question 19
-A **Room contains Furniture**, but furniture can be moved to other rooms.
+A **Room contains Furniture**..
 
 <details>
 <summary>Show Answer</summary>
