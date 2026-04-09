@@ -481,7 +481,7 @@ A **Human has a Heart**, and heart cannot exist independently.
 **Composition**
 
 * Strong dependency  
-* heart life does not exists without a body
+* Heart's life does not exists without a body
 
 </details>
 
