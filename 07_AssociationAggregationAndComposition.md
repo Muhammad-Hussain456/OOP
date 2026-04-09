@@ -400,7 +400,6 @@ If it is **Simple Association**, classify further:
 ---
 
 ### 🧩 Question 1
-
 A **Teacher teaches Students**. Both exist independently.
 
 <details>
@@ -408,7 +407,7 @@ A **Teacher teaches Students**. Both exist independently.
 
 **Simple Association (Bidirectional, 1:N)**
 
-* No ownership
+* No ownership  
 * Both know each other
 
 </details>
@@ -416,7 +415,6 @@ A **Teacher teaches Students**. Both exist independently.
 ---
 
 ### 🧩 Question 2
-
 A **Car has an Engine**, and engine cannot exist without the car.
 
 <details>
@@ -424,7 +422,7 @@ A **Car has an Engine**, and engine cannot exist without the car.
 
 **Composition**
 
-* Strong ownership
+* Strong ownership  
 * Engine depends on car
 
 </details>
@@ -432,7 +430,6 @@ A **Car has an Engine**, and engine cannot exist without the car.
 ---
 
 ### 🧩 Question 3
-
 A **Library contains Books**, but books can exist outside the library.
 
 <details>
@@ -440,7 +437,7 @@ A **Library contains Books**, but books can exist outside the library.
 
 **Aggregation**
 
-* Weak ownership
+* Weak ownership  
 * Books are independent
 
 </details>
@@ -448,7 +445,6 @@ A **Library contains Books**, but books can exist outside the library.
 ---
 
 ### 🧩 Question 4
-
 A **Customer places Orders**, but orders don't need to know the customer.
 
 <details>
@@ -463,7 +459,6 @@ A **Customer places Orders**, but orders don't need to know the customer.
 ---
 
 ### 🧩 Question 5
-
 A **University has Departments**, and departments can exist even if university closes.
 
 <details>
@@ -478,7 +473,6 @@ A **University has Departments**, and departments can exist even if university c
 ---
 
 ### 🧩 Question 6
-
 A **Human has a Heart**, and heart cannot exist independently.
 
 <details>
@@ -486,15 +480,14 @@ A **Human has a Heart**, and heart cannot exist independently.
 
 **Composition**
 
-* Strong dependency
-* Lifetime tied
+* Strong dependency  
+* heart life does not exists without a body
 
 </details>
 
 ---
 
-### 🧩 Question 7 
-
+### 🧩 Question 7
 A **Driver uses a Car**, but neither owns the other.
 
 <details>
@@ -502,15 +495,14 @@ A **Driver uses a Car**, but neither owns the other.
 
 **Simple Association (Unidirectional or Bidirectional)**
 
-* Just usage
+* Just usage  
 * No ownership
 
 </details>
 
 ---
 
-### 🧩 Question 8 
-
+### 🧩 Question 8
 A **Team has Players**, and players can move between teams.
 
 <details>
@@ -518,7 +510,7 @@ A **Team has Players**, and players can move between teams.
 
 **Aggregation (1:N)**
 
-* Players are independent
+* Players are independent  
 * Can exist without a team
 
 </details>
@@ -526,7 +518,6 @@ A **Team has Players**, and players can move between teams.
 ---
 
 ### 🧩 Question 9
-
 A **Bank has Accounts**, but accounts can exist even if the bank closes.
 
 <details>
@@ -534,7 +525,7 @@ A **Bank has Accounts**, but accounts can exist even if the bank closes.
 
 **Aggregation (1:N)**
 
-* Accounts are independent
+* Accounts are independent  
 * Weak ownership
 
 </details>
@@ -542,7 +533,6 @@ A **Bank has Accounts**, but accounts can exist even if the bank closes.
 ---
 
 ### 🧩 Question 10
-
 A **Car has Tires**, and tires cannot exist independently.
 
 <details>
@@ -550,7 +540,7 @@ A **Car has Tires**, and tires cannot exist independently.
 
 **Composition**
 
-* Strong ownership
+* Strong ownership  
 * Tires depend on the car
 
 </details>
@@ -558,7 +548,6 @@ A **Car has Tires**, and tires cannot exist independently.
 ---
 
 ### 🧩 Question 11
-
 A **Student enrolls in Courses**, but courses exist independently.
 
 <details>
@@ -566,7 +555,7 @@ A **Student enrolls in Courses**, but courses exist independently.
 
 **Aggregation (1:N)**
 
-* Courses are independent
+* Courses are independent  
 * Student “has” courses but does not own them
 
 </details>
@@ -574,7 +563,6 @@ A **Student enrolls in Courses**, but courses exist independently.
 ---
 
 ### 🧩 Question 12
-
 A **Chef uses a Knife**, but knife exists independently.
 
 <details>
@@ -582,7 +570,7 @@ A **Chef uses a Knife**, but knife exists independently.
 
 **Simple Association (Unidirectional, 1:1)**
 
-* Just usage
+* Just usage  
 * No ownership
 
 </details>
@@ -590,7 +578,6 @@ A **Chef uses a Knife**, but knife exists independently.
 ---
 
 ### 🧩 Question 13
-
 A **Company employs Employees**, and employees can exist independently.
 
 <details>
@@ -598,7 +585,7 @@ A **Company employs Employees**, and employees can exist independently.
 
 **Aggregation (1:N)**
 
-* Employees are independent
+* Employees are independent  
 * Company aggregates employees
 
 </details>
@@ -606,7 +593,6 @@ A **Company employs Employees**, and employees can exist independently.
 ---
 
 ### 🧩 Question 14
-
 A **Book has Pages**, and pages cannot exist independently.
 
 <details>
@@ -614,7 +600,7 @@ A **Book has Pages**, and pages cannot exist independently.
 
 **Composition**
 
-* Strong ownership
+* Strong ownership  
 * Pages depend on the book
 
 </details>
@@ -622,7 +608,6 @@ A **Book has Pages**, and pages cannot exist independently.
 ---
 
 ### 🧩 Question 15
-
 A **Teacher supervises a Student**, and student exists independently.
 
 <details>
@@ -630,7 +615,7 @@ A **Teacher supervises a Student**, and student exists independently.
 
 **Simple Association (Unidirectional, 1:1)**
 
-* Teacher knows student
+* Teacher knows student  
 * No ownership
 
 </details>
@@ -638,7 +623,6 @@ A **Teacher supervises a Student**, and student exists independently.
 ---
 
 ### 🧩 Question 16
-
 A **Playlist contains Songs**, but songs can exist outside the playlist.
 
 <details>
@@ -646,7 +630,7 @@ A **Playlist contains Songs**, but songs can exist outside the playlist.
 
 **Aggregation (1:N)**
 
-* Weak ownership
+* Weak ownership  
 * Songs are independent
 
 </details>
@@ -654,7 +638,6 @@ A **Playlist contains Songs**, but songs can exist outside the playlist.
 ---
 
 ### 🧩 Question 17
-
 A **Library has Sections**, and sections cannot exist without the library.
 
 <details>
@@ -662,7 +645,7 @@ A **Library has Sections**, and sections cannot exist without the library.
 
 **Composition**
 
-* Strong ownership
+* Strong ownership  
 * Destroy library → sections destroyed
 
 </details>
@@ -670,7 +653,6 @@ A **Library has Sections**, and sections cannot exist without the library.
 ---
 
 ### 🧩 Question 18
-
 A **Doctor prescribes Medicine**, but medicine exists independently.
 
 <details>
@@ -678,7 +660,7 @@ A **Doctor prescribes Medicine**, but medicine exists independently.
 
 **Simple Association (Unidirectional, 1:N)**
 
-* Doctor uses medicine
+* Doctor uses medicine  
 * No ownership
 
 </details>
@@ -686,7 +668,6 @@ A **Doctor prescribes Medicine**, but medicine exists independently.
 ---
 
 ### 🧩 Question 19
-
 A **Room contains Furniture**, but furniture can be moved to other rooms.
 
 <details>
@@ -694,7 +675,7 @@ A **Room contains Furniture**, but furniture can be moved to other rooms.
 
 **Aggregation**
 
-* Weak ownership
+* Weak ownership  
 * Furniture independent of room
 
 </details>
@@ -702,7 +683,6 @@ A **Room contains Furniture**, but furniture can be moved to other rooms.
 ---
 
 ### 🧩 Question 20
-
 A **Computer has CPU and RAM**, which cannot exist independently of that computer.
 
 <details>
@@ -710,7 +690,7 @@ A **Computer has CPU and RAM**, which cannot exist independently of that compute
 
 **Composition**
 
-* Strong ownership
+* Strong ownership  
 * CPU and RAM depend on computer
 
 </details>
