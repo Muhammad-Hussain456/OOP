@@ -436,7 +436,7 @@ A **Car has an Engine**, and engine cannot exist without the car.
 A **Library contains Books**, but books can exist outside the library.
 
 <details>
-<summary>Show Answer</summary>////
+<summary>Show Answer</summary>
 
 **Aggregation**
 
