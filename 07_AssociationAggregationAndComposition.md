@@ -39,6 +39,9 @@ Is a reference by which one object can interact with some other object
 Is simply called as “association”                                                                                                          
 
 
+**Note:**
+"In Simple Association one object knows/uses/works on/for the other object."
+
 
 ---
 
@@ -65,7 +68,7 @@ Is simply called as “association”
 
 ##### One-way Association
 
-Ali knows about his Car. The Car does not need to know about Ali.
+Ali uses his Car. The Car does not use Ali.
 
 ```mermaid
 classDiagram
@@ -81,7 +84,7 @@ classDiagram
 
 ##### One-way Association 
 
-The Employee knows which Company they work for.
+The Employee works for Company but Company does not work for Employee.
 
 ```mermaid
 classDiagram
@@ -97,7 +100,7 @@ classDiagram
 
 ##### Two-way Association 
 
-Both objects know each other. Denoted by a line between the associated objects.
+Both Ali and Yasir (objects) know each other. Denoted by a line between the associated objects.
 
 ```mermaid
 classDiagram
@@ -320,7 +323,7 @@ This guide helps you **identify Association, Aggregation, and Composition** usin
 - Just interact or use each other  
 - No ownership  
 
-✔️ Association is a weak relationship where objects only “use” each other :contentReference[oaicite:0]{index=0}  
+✔️ Simple Association is a weak relationship where objects only “use” each other.
 
 ---
 
@@ -359,12 +362,12 @@ If it is **Simple Association**, classify further:
 
 👉 Ask:
 
-**Who knows whom?**
+**Who knows whom?/ Who works on/for whom? Who uses whom?**
 
 | Type | Meaning |
 |------|--------|
-| **Unidirectional** | One object knows the other |
-| **Bidirectional** | Both objects know each other |
+| **Unidirectional** | One object knows/uses/works on/for the other |
+| **Bidirectional** | Both objects know/use/work on/for each other |
 
 ---
 
@@ -394,123 +397,326 @@ If it is **Simple Association**, classify further:
 
 # 🧪 PRACTICE EXERCISES 
 
-## 🧩 Question 1
+---
+
+### 🧩 Question 1
 
 A **Teacher teaches Students**. Both exist independently.
 
 <details>
 <summary>Show Answer</summary>
 
-**Simple Association (Bidirectional, 1:N)**  
-- No ownership  
-- Both know each other  
+**Simple Association (Bidirectional, 1:N)**
+
+* No ownership
+* Both know each other
 
 </details>
 
 ---
 
-## 🧩 Question 2
+### 🧩 Question 2
 
 A **Car has an Engine**, and engine cannot exist without the car.
 
 <details>
 <summary>Show Answer</summary>
 
-**Composition**  
-- Strong ownership  
-- Engine depends on car  
+**Composition**
+
+* Strong ownership
+* Engine depends on car
 
 </details>
 
 ---
 
-## 🧩 Question 3
+### 🧩 Question 3
 
 A **Library contains Books**, but books can exist outside the library.
 
 <details>
 <summary>Show Answer</summary>
 
-**Aggregation**  
-- Weak ownership  
-- Books are independent  
+**Aggregation**
+
+* Weak ownership
+* Books are independent
 
 </details>
 
 ---
 
-## 🧩 Question 4
+### 🧩 Question 4
 
 A **Customer places Orders**, but orders don't need to know the customer.
 
 <details>
 <summary>Show Answer</summary>
 
-**Unidirectional Association (1:N)**  
-- Only customer knows orders  
+**Unidirectional Association (1:N)**
+
+* Only customer knows orders
 
 </details>
 
 ---
 
-## 🧩 Question 5
+### 🧩 Question 5
 
 A **University has Departments**, and departments can exist even if university closes.
 
 <details>
 <summary>Show Answer</summary>
 
-**Aggregation**  
-- Departments are independent  
+**Aggregation**
+
+* Departments are independent
 
 </details>
 
 ---
 
-## 🧩 Question 6
+### 🧩 Question 6
 
 A **Human has a Heart**, and heart cannot exist independently.
 
 <details>
 <summary>Show Answer</summary>
 
-**Composition**  
-- Strong dependency  
-- Lifetime tied  
+**Composition**
+
+* Strong dependency
+* Lifetime tied
 
 </details>
 
 ---
 
-## 🧩 Question 7 (Tricky)
+### 🧩 Question 7 
 
 A **Driver uses a Car**, but neither owns the other.
 
 <details>
 <summary>Show Answer</summary>
 
-**Simple Association (Unidirectional or Bidirectional)**  
-- Just usage  
-- No ownership  
+**Simple Association (Unidirectional or Bidirectional)**
+
+* Just usage
+* No ownership
 
 </details>
 
 ---
 
-## 🧩 Question 8 (Exam-Level)
+### 🧩 Question 8 
 
 A **Team has Players**, and players can move between teams.
 
 <details>
 <summary>Show Answer</summary>
 
-**Aggregation (1:N)**  
-- Players are independent  
-- Can exist without a team  
+**Aggregation (1:N)**
+
+* Players are independent
+* Can exist without a team
 
 </details>
 
 ---
+
+### 🧩 Question 9
+
+A **Bank has Accounts**, but accounts can exist even if the bank closes.
+
+<details>
+<summary>Show Answer</summary>
+
+**Aggregation (1:N)**
+
+* Accounts are independent
+* Weak ownership
+
+</details>
+
+---
+
+### 🧩 Question 10
+
+A **Car has Tires**, and tires cannot exist independently.
+
+<details>
+<summary>Show Answer</summary>
+
+**Composition**
+
+* Strong ownership
+* Tires depend on the car
+
+</details>
+
+---
+
+### 🧩 Question 11
+
+A **Student enrolls in Courses**, but courses exist independently.
+
+<details>
+<summary>Show Answer</summary>
+
+**Aggregation (1:N)**
+
+* Courses are independent
+* Student “has” courses but does not own them
+
+</details>
+
+---
+
+### 🧩 Question 12
+
+A **Chef uses a Knife**, but knife exists independently.
+
+<details>
+<summary>Show Answer</summary>
+
+**Simple Association (Unidirectional, 1:1)**
+
+* Just usage
+* No ownership
+
+</details>
+
+---
+
+### 🧩 Question 13
+
+A **Company employs Employees**, and employees can exist independently.
+
+<details>
+<summary>Show Answer</summary>
+
+**Aggregation (1:N)**
+
+* Employees are independent
+* Company aggregates employees
+
+</details>
+
+---
+
+### 🧩 Question 14
+
+A **Book has Pages**, and pages cannot exist independently.
+
+<details>
+<summary>Show Answer</summary>
+
+**Composition**
+
+* Strong ownership
+* Pages depend on the book
+
+</details>
+
+---
+
+### 🧩 Question 15
+
+A **Teacher supervises a Student**, and student exists independently.
+
+<details>
+<summary>Show Answer</summary>
+
+**Simple Association (Unidirectional, 1:1)**
+
+* Teacher knows student
+* No ownership
+
+</details>
+
+---
+
+### 🧩 Question 16
+
+A **Playlist contains Songs**, but songs can exist outside the playlist.
+
+<details>
+<summary>Show Answer</summary>
+
+**Aggregation (1:N)**
+
+* Weak ownership
+* Songs are independent
+
+</details>
+
+---
+
+### 🧩 Question 17
+
+A **Library has Sections**, and sections cannot exist without the library.
+
+<details>
+<summary>Show Answer</summary>
+
+**Composition**
+
+* Strong ownership
+* Destroy library → sections destroyed
+
+</details>
+
+---
+
+### 🧩 Question 18
+
+A **Doctor prescribes Medicine**, but medicine exists independently.
+
+<details>
+<summary>Show Answer</summary>
+
+**Simple Association (Unidirectional, 1:N)**
+
+* Doctor uses medicine
+* No ownership
+
+</details>
+
+---
+
+### 🧩 Question 19
+
+A **Room contains Furniture**, but furniture can be moved to other rooms.
+
+<details>
+<summary>Show Answer</summary>
+
+**Aggregation**
+
+* Weak ownership
+* Furniture independent of room
+
+</details>
+
+---
+
+### 🧩 Question 20
+
+A **Computer has CPU and RAM**, which cannot exist independently of that computer.
+
+<details>
+<summary>Show Answer</summary>
+
+**Composition**
+
+* Strong ownership
+* CPU and RAM depend on computer
+
+</details>
+
+---
+
 
 ## MASTER RULE
 
