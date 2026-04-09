@@ -405,10 +405,13 @@ A **Teacher teaches Students**. Both exist independently.
 <details>
 <summary>Show Answer</summary>
 
-**Simple Association (Bidirectional, 1:N)**
+**Simple Association (Unidirectional, 1:N)**  
 
-* No ownership  
-* Both know each other
+* Teacher teaches/works on students  
+* Students does not teach/work on teacher  
+
+
+</details>
 
 </details>
 
@@ -445,14 +448,14 @@ A **Library contains Books**, but books can exist outside the library.
 ---
 
 ### 🧩 Question 4
-A **Customer places Orders**, but orders don't need to know the customer.
+A **Customer places Orders**.
 
 <details>
 <summary>Show Answer</summary>
 
 **Unidirectional Association (1:N)**
 
-* Only customer knows orders
+* customer places/works on orders.
 
 </details>
 
@@ -465,7 +468,7 @@ A **University has Departments**, and departments can exist even if university c
 <summary>Show Answer</summary>
 
 **Aggregation**
-
+* University has departments
 * Departments are independent
 
 </details>
@@ -548,15 +551,14 @@ A **Car has Tires**, and tires cannot exist independently.
 ---
 
 ### 🧩 Question 11
-A **Student enrolls in Courses**, but courses exist independently.
+A **Student enrolls in Courses**.
 
 <details>
 <summary>Show Answer</summary>
 
-**Aggregation (1:N)**
+**Association (1:N)**
 
-* Courses are independent  
-* Student “has” courses but does not own them
+* Student enrolls/works on courses
 
 </details>
 
@@ -583,10 +585,9 @@ A **Company employs Employees**, and employees can exist independently.
 <details>
 <summary>Show Answer</summary>
 
-**Aggregation (1:N)**
+**Association (1:N)**
 
-* Employees are independent  
-* Company aggregates employees
+* Company hires/works on employees
 
 </details>
 
@@ -608,22 +609,22 @@ A **Book has Pages**, and pages cannot exist independently.
 ---
 
 ### 🧩 Question 15
-A **Teacher supervises a Student**, and student exists independently.
+A **Teacher supervises a Student**.
 
 <details>
 <summary>Show Answer</summary>
 
 **Simple Association (Unidirectional, 1:1)**
 
-* Teacher knows student  
-* No ownership
+* Teacher teaches/works on student  
+
 
 </details>
 
 ---
 
 ### 🧩 Question 16
-A **Playlist contains Songs**, but songs can exist outside the playlist.
+A **Playlist contains Naats**, but Naats can exist outside the playlist.
 
 <details>
 <summary>Show Answer</summary>
@@ -631,7 +632,7 @@ A **Playlist contains Songs**, but songs can exist outside the playlist.
 **Aggregation (1:N)**
 
 * Weak ownership  
-* Songs are independent
+* Naats are independent
 
 </details>
 
