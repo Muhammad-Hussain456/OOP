@@ -408,7 +408,7 @@ A **Teacher teaches Students**. Both exist independently.
 **Simple Association (Unidirectional, 1:N)**  
 
 * Teacher teaches/works on students  
-* Students does not teach/work on teacher  
+* No ownership 
 
 
 </details>
@@ -424,7 +424,7 @@ A **Car has an Engine**, and engine cannot exist without the car.
 <summary>Show Answer</summary>
 
 **Composition**
-
+* Car has/owns/is made up of an Engine
 * Strong ownership  
 * Engine depends on car
 
@@ -436,7 +436,7 @@ A **Car has an Engine**, and engine cannot exist without the car.
 A **Library contains Books**, but books can exist outside the library.
 
 <details>
-<summary>Show Answer</summary>
+<summary>Show Answer</summary>////
 
 **Aggregation**
 
@@ -456,7 +456,7 @@ A **Customer places Orders**.
 **Unidirectional Association (1:N)**
 
 * customer places/works on orders.
-
+* No ownership 
 </details>
 
 ---
@@ -468,7 +468,7 @@ A **University has Departments**, and departments can exist even if university c
 <summary>Show Answer</summary>
 
 **Aggregation**
-* University has departments
+* University has/owns departments
 * Departments are independent
 
 </details>
@@ -482,7 +482,7 @@ A **Human has a Heart**, and heart cannot exist independently.
 <summary>Show Answer</summary>
 
 **Composition**
-
+* Human body has/is made up of/owns a Heart
 * Strong dependency  
 * Heart's life does not exists without a body
 
@@ -512,7 +512,7 @@ A **Team has Players**, and players can move between teams.
 <summary>Show Answer</summary>
 
 **Aggregation (1:N)**
-
+*Team has/owns Players
 * Players are independent  
 * Can exist without a team
 
@@ -528,23 +528,25 @@ A **Bank has Accounts**, but accounts can exist even if the bank closes.
 
 **Aggregation (1:N)**
 
-* Accounts are independent  
-* Weak ownership
+* Bank has/owns accounts (weak ownership)  
+* Accounts can exist independently of a specific bank  
+* Destroying the bank does not destroy the accounts  
 
 </details>
 
 ---
 
 ### 🧩 Question 10
-A **Car has Tires**, and tires cannot exist independently.
+A **Car has Tires**, and tires can exist independently.
 
 <details>
 <summary>Show Answer</summary>
 
-**Composition**
+**Aggregation (1:N)**
 
-* Strong ownership  
-* Tires depend on the car
+* Car has/owns tires (weak ownership)  
+* Tires can exist independently (can be removed/reused)  
+* Destroying the car does not destroy the tires  
 
 </details>
 
@@ -559,7 +561,7 @@ A **Student enrolls in Courses**.
 **Association (1:N)**
 
 * Student enrolls/works on courses
-
+* No ownership
 </details>
 
 ---
@@ -588,21 +590,22 @@ A **Company employs Employees**, and employees can exist independently.
 **Association (1:N)**
 
 * Company hires/works on employees
-
+* No ownership 
 </details>
 
 ---
 
 ### 🧩 Question 14
-A **Book has Pages**, and pages cannot exist independently.
+A **Book has Pages**, and pages can exist independently.
 
 <details>
 <summary>Show Answer</summary>
 
-**Composition**
+**Aggregation (1:N)**
 
-* Strong ownership  
-* Pages depend on the book
+* Book has pages (weak ownership)  
+* Pages can exist independently (can be removed/reused)  
+* Destroying the book does not destroy the pages  
 
 </details>
 
@@ -616,7 +619,8 @@ A **Teacher supervises a Student**.
 
 **Simple Association (Unidirectional, 1:1)**
 
-* Teacher teaches/works on student  
+* Teacher teaches/works on student
+* No ownership 
 
 
 </details>
@@ -630,9 +634,9 @@ A **Playlist contains Naats**, but Naats can exist outside the playlist.
 <summary>Show Answer</summary>
 
 **Aggregation (1:N)**
-
+* Playlist has/owns Naats
 * Weak ownership  
-* Naats are independent
+* Naats are independent/Naats can exists without playlist 
 
 </details>
 
@@ -645,7 +649,7 @@ A **Library has Sections**, and sections cannot exist without the library.
 <summary>Show Answer</summary>
 
 **Composition**
-
+* Library has/owns/is made up of Sections
 * Strong ownership  
 * Destroy library → sections destroyed
 
@@ -675,9 +679,9 @@ A **Room contains Furniture**, but furniture can be moved to other rooms.
 <summary>Show Answer</summary>
 
 **Aggregation**
-
+* Room has/owns furniture
 * Weak ownership  
-* Furniture independent of room
+* Furniture independent of room/furniture life exists without room.
 
 </details>
 
@@ -691,8 +695,9 @@ A **Computer has CPU and RAM**, which cannot exist independently of that compute
 
 **Composition**
 
+* Computer has/is made up of/owns CPU and RAM
 * Strong ownership  
-* CPU and RAM depend on computer
+* CPU and RAM depend on computer means if there is no computer CPU and RAM lifetime or working will be end/they wouldn't do their work.
 
 </details>
 
