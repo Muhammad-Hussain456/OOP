@@ -40,7 +40,7 @@ Is simply called as “association”
 
 
 **Note:**
-"In Simple Association, one object knows/uses/works on/for the other object."
+"In Simple Association, object know/use/work on/for each other."
 
 
 ---
