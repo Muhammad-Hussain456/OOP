@@ -68,7 +68,7 @@ Is simply called as “association”
 
 ##### One-way Association
 
-Ali uses his Car. The Car does not use Ali.
+Ali uses his car. The car does not use Ali.
 
 ```mermaid
 classDiagram
@@ -84,7 +84,7 @@ classDiagram
 
 ##### One-way Association 
 
-The Employee works for Company but Company does not work for Employee.
+The employee works for company but company does not work for employee.
 
 ```mermaid
 classDiagram
