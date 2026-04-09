@@ -19,7 +19,10 @@ There are two main kinds of association:
 | Kind | Description |
 | :--- | :--- |
 | **Class Association** | Inheritance (is-a relationship) |
-| **Object Association** | Relationship between objects (uses-a, has-a) |
+| **Object Association** | Relationship between objects (uses-a, has-a) |                                                                     
+
+⚠️ Note:                                                                                                                                    
+“Class Association” in this context refers to inheritance (is-a), but in strict UML, inheritance is not a type of association. In UML, inheritance (called generalization) is a separate type of relationship."                                                                   
 
 Object Association includes:
 - Simple Association
