@@ -51,7 +51,7 @@ Is simply called as “association”
 | **One-way Association** | Navigation is possible in only one direction | Arrow `-->` |
 | **Two-way Association** | Navigation is possible in both directions | Line `---` |
 
-##### With respect to number of objects
+##### With respect to number of classes
 
 | Type | Description |
 | :--- | :--- |
