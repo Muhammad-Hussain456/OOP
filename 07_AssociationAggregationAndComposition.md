@@ -11,10 +11,6 @@ Objects in an object model interact with each other.
 Usually an object provides services to several other objects.                                                                                 
 An object keeps associations with other objects to delegate tasks.                                                                           
 
-**Key points:**
-- Objects have independent lifetimes
-- One object keeps a reference to another
-- Neither object owns the other
 
 
 ### Kinds of Association
