@@ -41,16 +41,6 @@ int main() {
 
 ---
 
-**🔹 Quick Summary**
-
- Constructor Method
-When called? Automatically Manually
-How many times? Once Many times
-Name? Same as class Any name
-Return type? No Yes
-
----
-
 ## Member Functions
 
 · Member functions are methods/functions that operate on data encapsulated in a class.
