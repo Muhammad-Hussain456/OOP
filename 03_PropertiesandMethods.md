@@ -150,7 +150,7 @@ inline void Student::setRollNo(int aRollNo) {
 
 - `inline` is a **request**, not a command  
 - The compiler may **ignore it**
-```
+  
 
 
 ---
