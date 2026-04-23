@@ -28,7 +28,7 @@ class Student {
 
 ## Member Functions (Methods)
 
-Member functions are functions defined inside a class that operate on its data members.
+Member functions are functions declared or defined inside a class that operate on its data members.
 
 ### Key Points
 
