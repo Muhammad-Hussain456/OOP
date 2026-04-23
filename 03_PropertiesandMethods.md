@@ -268,9 +268,9 @@ Student::Student(const Student &obj) {
 
 ---
 
-## Constructor vs Methods (Important Difference)
+## Constructor vs other Methods (Important Difference)
 
-| Feature             | Constructor                      | Method (Member Function)        |
+| Feature             | Constructor                      | Method         |
 |--------------------|----------------------------------|---------------------------------|
 | Purpose            | Initialize object                | Perform operations              |
 | Name               | Same as class                    | Any valid name                  |
