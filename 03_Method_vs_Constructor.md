@@ -310,10 +310,10 @@ Student::Student(const Student &obj) {
 
 ## Summary
 
-· Member functions define behavior of class.
-· Constructors initialize objects automatically.
-· Overloading provides flexibility.
-· Copy constructor handles object copying.
+· Member functions define behavior of class.                                                                             
+· Constructors initialize objects automatically.                                                                         
+· Overloading provides flexibility.                                                                                      
+· Copy constructor handles object copying.                                                                               
 · Deep copy prevents shared memory issues.
 
 ```
