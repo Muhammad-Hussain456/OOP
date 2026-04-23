@@ -106,6 +106,10 @@ void Student::setRollNo(int aRollNo) {
 
 ## Inline Functions
 
+If we define the function inside the class body then the function is by default an inline function.                     
+
+If function is defined outside the class body then we must use the keyword ‘inline’ to make a function inline.      
+
 ### Key Points
 
 - Compiler replaces function call with actual code  
