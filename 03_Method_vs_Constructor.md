@@ -12,7 +12,7 @@
 
 ---
 
-## 🔹 Example
+**🔹 Example**
 
 ```cpp
 class Student {
@@ -41,7 +41,7 @@ int main() {
 
 ---
 
-🔹 Quick Summary
+**🔹 Quick Summary**
 
  Constructor Method
 When called? Automatically Manually
@@ -51,18 +51,20 @@ Return type? No Yes
 
 ---
 
-Member Functions
+## Member Functions
 
 · Member functions are methods/functions that operate on data encapsulated in a class.
 · Public member functions act as the interface of the class.
 
 ---
 
-Defining Member Functions
+### Defining Member Functions
 
 Member functions can be defined in two ways:
 
-1. Inside Class Definition
+**1. Inside Class Definition**
+
+**Syntax:**
 
 ```cpp
 class ClassName {
@@ -73,7 +75,7 @@ public:
 };
 ```
 
-Example:
+**Example:**
 
 ```cpp
 class Student {
@@ -88,11 +90,11 @@ public:
 
 ---
 
-2. Outside Class Definition
+**2. Outside Class Definition**
 
 Must be declared inside class first.
 
-Syntax:
+**Syntax:**
 
 ```cpp
 class ClassName {
@@ -105,7 +107,7 @@ ReturnType ClassName::FunctionName() {
 }
 ```
 
-Example:
+**Example:**
 
 ```cpp
 class Student {
@@ -122,20 +124,19 @@ void Student::setRollNo(int aRollNo) {
 
 ---
 
-Inline Functions
+### Inline Functions
 
 · Compiler replaces function call with function code.
 · inline keyword is used (request, not a command).
 · Functions defined inside class are inline by default.
 
-Example:
+**Example:**
 
 ```cpp
 inline int Area(int len, int hi) {
     return len * hi;
 }
 ```
-
 Inline with Class:
 
 ```cpp
@@ -151,7 +152,7 @@ public:
 
 ---
 
-Constructors
+## Constructors
 
 · Used to initialize objects.
 · Ensures object is in valid state at creation.
@@ -160,7 +161,7 @@ Constructors
 · No return type.
 · Usually public.
 
-Example:
+**Example:**
 
 ```cpp
 class Student {
@@ -171,7 +172,7 @@ public:
 };
 ```
 
-Usage:
+**Usage:**
 
 ```cpp
 int main() {
@@ -181,13 +182,13 @@ int main() {
 
 ---
 
-Default Constructor
+### Default Constructor
 
 · Constructor with no arguments.
 · Compiler generates one if not defined.
 · Initializes members to default values.
 
-Example:
+**Example:**
 
 ```cpp
 class Student {
@@ -196,23 +197,20 @@ class Student {
     float GPA;
 };
 ```
-
 Compiler generated:
-
 ```
 rollNo = 0;
 GPA = 0.0;
 name = NULL;
 ```
-
 ---
 
-Constructor Overloading
+### Constructor Overloading
 
 · Multiple constructors with different parameters.
 · Used for flexible initialization.
 
-Example:
+**Example:**
 
 ```cpp
 class Student {
@@ -224,7 +222,7 @@ public:
 };
 ```
 
-Example with Logic:
+**Example with Logic:**
 
 ```cpp
 Student::Student(int aRollNo, char *aName) {
@@ -237,7 +235,7 @@ Student::Student(int aRollNo, char *aName) {
 
 ---
 
-Usage:
+**Usage:**
 
 ```cpp
 int main() {
@@ -250,7 +248,7 @@ int main() {
 
 ---
 
-Default Parameters in Constructor
+### Default Parameters in Constructor
 
 ```cpp
 Student::Student(char *aName = NULL,
@@ -263,14 +261,14 @@ Equivalent to multiple constructors.
 
 ---
 
-Copy Constructor
+### Copy Constructor
 
 Used when:
 
 · Object is initialized at creation
 · Object is passed by value
 
-Example:
+**Example:**
 
 ```cpp
 void func1(Student student) {
@@ -285,7 +283,7 @@ int main() {
 
 ---
 
-Syntax:
+**Syntax:**
 
 ```cpp
 Student::Student(const Student &obj) {
@@ -297,7 +295,7 @@ Student::Student(const Student &obj) {
 
 ---
 
-Shallow Copy
+### Shallow Copy
 
 · Default copying mechanism.
 · Copies values directly.
@@ -305,7 +303,7 @@ Shallow Copy
 
 ---
 
-Deep Copy (Custom Copy Constructor)
+### Deep Copy (Custom Copy Constructor)
 
 ```cpp
 Student::Student(const Student &obj) {
@@ -320,7 +318,7 @@ Student::Student(const Student &obj) {
 
 ---
 
-Summary
+## Summary
 
 · Member functions define behavior of class.
 · Constructors initialize objects automatically.
