@@ -104,37 +104,54 @@ void Student::setRollNo(int aRollNo) {
 
 ---
 
-## Inline Functions
+## 🔹 Inline Functions 
 
-If we define the function inside the class body then the function is by default an inline function.                     
+An inline function is a function whose code is inserted at the point of call instead of a normal function to reduce function call overhead.                                                                                                  
+overhead = extra work/time.                                                                                              
+If we define the function inside the class body then the function is by default an inline function.                      
+If function is defined outside the class body then we must use the keyword ‘inline’ to make a function inline.
 
-If function is defined outside the class body then we must use the keyword ‘inline’ to make a function inline.      
 
-### Key Points
+---
 
-- Compiler replaces function call with actual code  
-- `inline` is a request, not a command  
-- Functions defined inside class are automatically inline  
-
-### Example
-
-```cpp
-inline int Area(int len, int hi) {
-    return len * hi;
-}
-```
-
-Inside class:
+### 🔹 Example 1: Function Defined Inside Class (Default Inline)
 
 ```cpp
 class Student {
     int rollNo;
+
 public:
-    void setRollNo(int aRollNo) {  // implicitly inline
+    void setRollNo(int aRollNo) {   // implicitly inline
         rollNo = aRollNo;
     }
 };
 ```
+
+---
+
+### 🔹 Example 2: Function Defined Outside Class (Explicit Inline)
+
+```cpp
+class Student {
+    int rollNo;
+
+public:
+    void setRollNo(int aRollNo);
+};
+
+inline void Student::setRollNo(int aRollNo) {
+    rollNo = aRollNo;
+}
+```
+
+---
+
+### ⚠️ Important Note
+
+- `inline` is a **request**, not a command  
+- The compiler may **ignore it**
+```
+
 
 ---
 
@@ -145,7 +162,7 @@ Constructors are special member functions used to initialize objects automatical
 ### Characteristics
 
 | Feature      | Description                  |
-|--------------|------------------------------|
+|--------------|---------------------------|
 | Name         | Same as class name           |
 | Return Type  | None (not even void)         |
 | Calling      | Automatic                    |
