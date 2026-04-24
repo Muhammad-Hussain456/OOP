@@ -309,7 +309,7 @@ Answer: C) Constructor overloading
 
 ---
 
-Q18. Which feature allows using default values in constructor parameters to reduce the number of constructors?
+Q18. Which feature allows using default values in constructor parameters to reduce the number of constructors / to avoid  use of multiple constructors?
 
 A) Copy constructor
 B) Inline functions
