@@ -501,7 +501,7 @@ D) virtual
 
 Answer: C) inline
 
-💡 Outside definition needs explicit inline keyword.
+💡 To make a function defined outside the class as an inline function, we need explicit `inline` keyword.
 
 </details>
 
@@ -519,7 +519,7 @@ D) Private member
 
 Answer: B) Interface
 
-💡 Public methods provide the interface for interacting with objects.
+💡 Public methods provide the interface for interacting with properties / other methods / objects.
 
 </details>
 
