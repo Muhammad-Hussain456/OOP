@@ -201,6 +201,8 @@ public:
 
 Multiple constructors with different parameter lists.
 
+### Example
+
 ```cpp
 class Student {
 public:
@@ -211,23 +213,14 @@ public:
 };
 ```
 
-### Example Implementation
-
-```cpp
-Student::Student(char *aName, int aRollNo) {
-    name = aName;
-    if (aRollNo < 0)
-        rollNo = 0;
-    else
-        rollNo = aRollNo;
-}
-```
 
 ---
 
 ## Default Parameters in Constructor
 
 Instead of multiple constructors:
+
+### Example
 
 ```cpp
 class Student {
