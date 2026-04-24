@@ -188,13 +188,6 @@ public:
 
 - Takes no parameters  
 - Compiler generates it if none is defined  
-- Initializes members with default values  
-
-| Data Type   | Default Value   |
-|-------------|-----------------|
-| int, float  | 0 / 0.0         |
-| pointer     | nullptr / NULL  |
-
 ---
 
 ## Constructor Overloading
