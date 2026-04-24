@@ -8,8 +8,8 @@ A class in Object-Oriented Programming (OOP) is composed of two main components:
 
 | Component  | Also Known As                    | Purpose                           |
 |------------|----------------------------------|-----------------------------------|
-| Properties | Attributes, Data Members, Fields | Store the state/data of an object |
-| Methods    | Member Functions, Behaviors      | Define actions an object can perform |
+| Properties | Attributes, Data Members, Fields | Store the state/data  |
+| Methods    | Member Functions, Behaviors      | Define actions  |
 
 ### Example
 
