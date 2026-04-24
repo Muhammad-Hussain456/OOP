@@ -1,943 +1,633 @@
-## Abstraction, Classes, Graphical Representation, Inheritance
-
-**Instructions**
-- Choose the correct answer
-- Click **Check Answer** to reveal
+## Practice MCQs: Abstraction
 
 ---
 
-# Abstraction
+Q1. Abstraction in OOP focuses on:
 
-## 1. Abstraction is used to:
-
-A) Increase complexity  
-B) Reduce complexity  
-C) Remove objects  
-D) Increase redundancy  
+A) Showing all implementation details
+B) Showing only essential features and hiding implementation details
+C) Making all data public
+D) Creating multiple objects
 
 <details>
-<summary>Check Answer</summary>
+<summary>✅ Check Answer</summary>
 
-**Answer: B) Reduce complexity**
+Answer: B) Showing only essential features and hiding implementation details
+
+💡 Abstraction = Show Essential Features + Hide Implementation Details
 
 </details>
 
 ---
 
-## 2. Abstraction captures:
+Q2. When you drive a car, which of the following represents abstraction?
 
-A) All details  
-B) Only irrelevant details  
-C) Only relevant details  
-D) No details  
+A) Understanding the engine mechanism
+B) Knowing the fuel injection system
+C) Using the steering wheel and pedals
+D) Studying internal wiring
 
 <details>
-<summary>Check Answer</summary>
+<summary>✅ Check Answer</summary>
 
-**Answer: C) Only relevant details**
+Answer: C) Using the steering wheel and pedals
+
+💡 You use essential features (steering, pedals); complex internals are hidden.
 
 </details>
 
 ---
 
-## 3. Different perspectives of the same object represent:
+Q3. The principle of abstraction can be summarized as:
 
-A) Inheritance  
-B) Encapsulation  
-C) Abstraction  
-D) Polymorphism  
+A) Show everything about an object
+B) Capture only details relevant to the current perspective
+C) Hide all details including essential ones
+D) Make all implementation visible
 
 <details>
-<summary>Check Answer</summary>
+<summary>✅ Check Answer</summary>
 
-**Answer: C) Abstraction**
+Answer: B) Capture only details relevant to the current perspective
 
-</details>
-
----
-
-# Classes
-
-## 4. Objects with identical characteristics belong to:
-
-A) Function  
-B) Class  
-C) Method  
-D) Structure  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: B) Class**
+💡 Different perspectives require different abstractions.
 
 </details>
 
 ---
 
-## 5. Ali, Anam, Sohail are examples of:
-
-A) Classes  
-B) Instances  
-C) Methods  
-D) Attributes  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: B) Instances**
-
-</details>
-
----
-
-## 6. A class is:
-
-A) Object  
-B) Blueprint for objects  
-C) Function  
-D) Variable  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: B) Blueprint for objects**
-
-</details>
-
----
-
-# Graphical Representation of Classes
-
-## 7. A class diagram consists of:
-
-A) One section  
-B) Two sections  
-C) Three sections  
-D) Four sections  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: C) Three sections**
-
-</details>
-
----
-
-## 8. The three sections of class diagram are:
-
-A) Name, Attributes, Operations  
-B) Name, Methods, Variables  
-C) Class, Object, Method  
-D) Object, Attributes, Function  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: A) Name, Attributes, Operations**
-
-</details>
-
----
-
-## 9. Which is example of attribute in Circle class?
-
-A) draw  
-B) computeArea  
-C) radius  
-D) rotate  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: C) radius**
-
-</details>
-
----
-
-## 10. Which is example of operation?
-
-A) radius  
-B) center  
-C) draw  
-D) color  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: C) draw**
-
-</details>
-
----
-
-## 11. Suppressed form of class shows:
-
-A) Class name only  
-B) Attributes only  
-C) Operations only  
-D) All details  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: A) Class name only**
-
-</details>
-
----
-
-## 12. Normal form of class shows:
-
-A) Class name only  
-B) Class name + attributes + operations  
-C) Attributes only  
-D) Operations only  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: B) Class name + attributes + operations**
-
-</details>
-
----
-
-# Inheritance
-
-## 13. Inheritance means:
-
-A) Objects inherit features  
-B) Child inherits parent characteristics  
-C) Parent inherits child features  
-D) Classes are deleted  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: B) Child inherits parent characteristics**
-
-</details>
-
----
-
-## 14. Parent class is called:
-
-A) Derived class  
-B) Base class  
-C) Child class  
-D) Object  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: B) Base class**
-
-</details>
-
----
-
-## 15. Child class is called:
-
-A) Base class  
-B) Parent class  
-C) Derived class  
-D) Object  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: C) Derived class**
-
-</details>
-
----
-
-## 16. Teacher, Student, Doctor inherit from:
-
-A) Employee  
-B) Person  
-C) Human  
-D) Object  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: B) Person**
-
-</details>
-
----
-
-## 17. Circle, Triangle, Line inherit from:
-
-A) Object  
-B) Shape  
-C) Geometry  
-D) Figure  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: B) Shape**
-
-</details>
-
----
-
-# IS-A Relationship
-
-## 18. "Teacher is a Person" represents:
-
-A) HAS-A  
-B) IS-A  
-C) USE-A  
-D) PART-A  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: B) IS-A**
-
-</details>
-
----
-
-## 19. Derived class is:
-
-A) Special kind of base class  
-B) Same as base class  
-C) Parent class  
-D) Object  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: A) Special kind of base class**
-
-</details>
-
----
-
-# Advantages of Inheritance
-
-## 20. Inheritance promotes:
-
-A) Redundancy  
-B) Reuse  
-C) Complexity  
-D) Duplication  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: B) Reuse**
-
-</details>
-
----
-
-## 21. Inheritance reduces:
-
-A) Memory  
-B) Redundancy  
-C) Objects  
-D) Classes  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: B) Redundancy**
-
-</details>
-
----
-
-## 22. Inheritance improves:
-
-A) Maintainability  
-B) Complexity  
-C) Redundancy  
-D) Errors  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: A) Maintainability**
-
-</details>
-
----
-
-# Reuse with Inheritance
-
-## 23. Main purpose of inheritance is:
-
-A) Abstraction  
-B) Reuse  
-C) Encapsulation  
-D) Polymorphism  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: B) Reuse**
-
-</details>
-
----
-
-## 24. Derived class may:
-
-A) Add new features  
-B) Modify inherited features  
-C) Use inherited features  
-D) All of the above  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: D) All of the above**
-
-</details>
-
----
-
-## 25. To create new class using inheritance:
-
-A) Delete base class  
-B) Modify base class  
-C) Inherit from existing class  
-D) Remove attributes  
-
-<details>
-<summary>Check Answer</summary>
-
-**Answer: C) Inherit from existing class**
-
-</details>
-
----
-
-### **Q26.** Which of the following is a main purpose of encapsulation in C++?
-
-A) Data hiding
-B) Memory allocation
-C) Inheritance
-D) None of the above
-
-<details><summary>✅ Check Answer</summary>
-A) Data hiding  
-</details> 
-
----
-
-### **Q27.** Which access specifier provides the highest level of protection in encapsulation?
-
-A) private
-B) protected
-C) public
-D) internal
-
-<details><summary>✅ Check Answer</summary>
-A) private  
-</details> 
-
----
-
-### **Q28.** How is encapsulation implemented in C++?
-
-A) Using access specifiers
-B) Using templates
-C) Using loops
-D) Using inheritance
-
-<details><summary>✅ Check Answer</summary>
-A) Using access specifiers  
-</details> 
-
----
-
-### **Q29.** Encapsulation primarily prevents:
-
-A) Code duplication
-B) Unauthorized data access
-C) Memory leaks
-D) Looping errors
-
-<details><summary>✅ Check Answer</summary>
-B) Unauthorized data access  
-</details> 
-
----
-
-### **Q30.** What does a “getter” function do in encapsulation?
-
-A) Deletes private data
-B) Retrieves private data
-C) Hides the class
-D) Creates an object
-
-<details><summary>✅ Check Answer</summary>
-B) Retrieves private data  
-</details> 
-
----
-
-### **Q31.** What does a “setter” function do?
-
-A) Retrieves values
-B) Modifies private members
-C) Returns default values
-D) Exposes private methods
-
-<details><summary>✅ Check Answer</summary>
-B) Modifies private members  
-</details> 
-
----
-
-### **Q32.** If a class encapsulates data and methods, it is preventing:
-
-A) Unexpected object creation
-B) Direct manipulation of its data
-C) Conditional statements
-D) Inheritance
-
-<details><summary>✅ Check Answer</summary>
-B) Direct manipulation of its data  
-</details> 
-
----
-
-### **Q33.** What key benefit does encapsulation provide?
-
-A) Data exposure
-B) Direct access
-C) Improved control over access and modification
-D) Increased redundancy
-
-<details><summary>✅ Check Answer</summary>
-C) Improved control over access and modification  
-</details> 
-
----
-
-### **Q34.** Encapsulation helps in writing ________ classes in Java.
-
-A) Mutable
-B) Abstract
-C) Wrapper
-D) Immutable
-
-<details><summary>✅ Check Answer</summary>
-D) Immutable  
-</details> 
-
----
-
-### **Q35.** Which of these is NOT a part of encapsulation?
-
-A) Data hiding
-B) Controlled access
-C) Data replication
-D) Bundling methods with data
-
-<details><summary>✅ Check Answer</summary>
-C) Data replication  
-</details> 
-
----
-
-### **Q36.** What is the most suitable definition of encapsulation?
-
-A) Combining methods only
-B) Combining data with methods and restricting access
-C) Code optimization
-D) Memory management
-
-<details><summary>✅ Check Answer</summary>
-B) Combining data with methods and restricting access  
-</details>
-
----
-
-### **Q37.** If private data members are inaccessible outside the class, how do we access them?
-
-A) Using friend functions only
-B) Using public member functions
-C) Using global variables
-D) Directly
-
-<details><summary>✅ Check Answer</summary>
-B) Using public member functions  
-</details> 
-
----
-
-### **Q38.** Which of these encapsulation practices improves modular programming?
-
-A) Public data members
-B) Private data members + public getters/setters
-C) Global variables
-D) Static members only
-
-<details><summary>✅ Check Answer</summary>
-B) Private data members + public getters/setters  
-</details> 
-
----
-
-### **Q39.** True encapsulation requires:
-
-A) Access modifiers only
-B) Access modifiers + getters/setters
-C) Direct access
-D) No methods
-
-<details><summary>✅ Check Answer</summary>
-B) Access modifiers + getters/setters  
-</details> 
-
----
-
-### **Q40.** Which of the following is the MAIN principle behind encapsulation?
-
-A) Reducing code length
-B) Separating compilation units
-C) Controlling access to data
-D) Ensuring inheritance
-
-<details><summary>✅ Check Answer</summary>
-C) Controlling access to data  
-</details> 
-
----
-
-### **Q41.** Encapsulation leads to:
-
-A) Less maintenance
-B) More bugs
-C) Harder code
-D) No benefit
-
-<details><summary>✅ Check Answer</summary>
-A) Less maintenance  
-</details> 
-
----
-
-### **Q42.** Encapsulation is also known as:
-
-A) Information hiding
-B) Direct memory access
-C) Pointer arithmetic
-D) Manual memory management
-
-<details><summary>✅ Check Answer</summary>
-A) Information hiding  
-</details> 
-
----
-
-### **Q43.** Which is NOT an access specifier in C++?
-
-A) public
-B) private
-C) internal
-D) protected
-
-<details><summary>✅ Check Answer</summary>
-C) internal  
-</details> 
-
----
-
-### **Q44.** Encapsulation helps increase:
-
-A) Code security
-B) Compile time
-C) Unnecessary dependencies
-D) Redundant data
-
-<details><summary>✅ Check Answer</summary>
-A) Code security  
-</details> 
-
----
-
-### **Q45.** Which of the following best describes encapsulation?
-
-A) Only data hiding
-B) Combining data and behavior with controlled access
-C) Only bundling methods
-D) Only inheritance
-
-<details><summary>✅ Check Answer</summary>
-B) Combining data and behavior with controlled access  
-</details> 
----
-
-### **Q46.** Which feature allows a class to prevent its data from being accessed directly?
+Q4. A Person viewed as a Student shows roll number and grades. This is an example of:
 
 A) Encapsulation
-B) Looping
-C) Recursion
-D) Polymorphism
+B) Polymorphism
+C) Abstraction
+D) Inheritance
 
-<details><summary>✅ Check Answer</summary>
-A) Encapsulation 
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: C) Abstraction
+
+💡 Only student-relevant attributes shown; salary, department are hidden.
+
 </details>
 
 ---
 
-### **Q47.** Encapsulation in Java is primarily achieved by using:
+Q5. Which of the following is NOT a way to achieve abstraction in C++?
 
-A) static keyword
-B) private access modifier
-C) switch statements
-D) public classes only
+A) Abstract classes
+B) Interfaces (pure abstract classes)
+C) Global variables
+D) Pure virtual functions
 
-<details><summary>✅ Check Answer</summary>
-B) private access modifier 
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: C) Global variables
+
+💡 Abstraction is achieved via abstract classes and interfaces.
+
 </details>
 
 ---
 
-### **Q48.** What does encapsulation help hide?
+Q6. An abstract class is a class that:
 
-A) Loop counters
-B) Implementation details
-C) File names
-D) Comments
+A) Can be instantiated directly
+B) Cannot be instantiated
+C) Contains only data members
+D) Has no derived classes
 
-<details><summary>✅ Check Answer</summary>
-B) Implementation details 
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) Cannot be instantiated
+
+💡 Abstract class = cannot create objects directly; must be inherited.
+
 </details>
 
 ---
 
-### **Q49.** Which of the following is the correct way to access private data from outside the class?
+Q7. Which of the following is true about an abstract class?
 
-A) Direct access
-B) Using pointers
-C) Using public methods
-D) Using global variables
+A) It can only contain abstract methods
+B) It can contain both abstract and concrete methods
+C) It cannot have data members
+D) It cannot be inherited
 
-<details><summary>✅ Check Answer</summary>
-C) Using public methods 
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) It can contain both abstract and concrete methods
+
+💡 Abstract class = abstract methods + concrete methods + data members.
+
 </details>
 
 ---
 
-### **Q50.** What is the main advantage of using a setter method?
+Q8. In C++, a pure virtual function is declared using:
 
-A) Faster execution
-B) Improved data security
-C) Increased file size
-D) None
+A) virtual void func();
+B) void func() = 0;
+C) virtual void func() = 0;
+D) pure void func();
 
-<details><summary>✅ Check Answer</summary>
-B) Improved data security 
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: C) virtual void func() = 0;
+
+💡 Syntax: virtual ReturnType functionName() = 0;
+
 </details>
 
 ---
 
-### **Q51.** A class that uses encapsulation typically has:
+Q9. An interface in C++ is implemented using:
 
-A) Only private methods
-B) Private data members with public access methods
-C) All public members only
-D) No methods
+A) A class with all concrete methods
+B) A class with all pure virtual functions
+C) A struct with public data only
+D) A global function
 
-<details><summary>✅ Check Answer</summary>
-B) Private data members with public access methods 
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) A class with all pure virtual functions
+
+💡 Interface = pure abstract class (all methods are pure virtual).
+
 </details>
 
 ---
 
-### **Q52.** What keyword in Java restricts direct access to class variables?
+Q10. Which of the following is NOT a characteristic of an interface?
 
-A) protected
-B) static
-C) private
-D) final
+A) Cannot be instantiated
+B) Contains only abstract methods
+C) Can have data members
+D) All methods are public
 
-<details><summary>✅ Check Answer</summary>
-C) private 
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: C) Can have data members
+
+💡 Interfaces typically have no data members (no state).
+
 </details>
 
 ---
 
-### **Q53.** The principle behind preventing direct access to internal representation is known as:
+Q11. What is the main difference between an abstract class and an interface?
 
-A) Clustering
-B) Encapsulation
-C) Buffering
-D) Segmentation
+A) No difference — they are the same
+B) Abstract class can have concrete methods; interface has only abstract methods
+C) Interface can have data members; abstract class cannot
+D) Abstract class cannot be inherited
 
-<details><summary>✅ Check Answer</summary>
-B) Encapsulation 
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) Abstract class can have concrete methods; interface has only abstract methods
+
+💡 Abstract class = partial implementation. Interface = pure contract.
+
 </details>
 
 ---
 
-### **Q54.** Encapsulation helps in:
+Q12. A class that implements an interface must:
 
-A) Making code longer
-B) Data security and integrity
-C) Avoiding classes
-D) Reducing abstraction
+A) Only inherit it
+B) Provide implementation for all pure virtual functions
+C) Ignore the abstract methods
+D) Create objects of the interface
 
-<details><summary>✅ Check Answer</summary>
-B) Data security and integrity 
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) Provide implementation for all pure virtual functions
+
+💡 Derived class must override all pure virtual functions.
+
 </details>
 
 ---
 
-### **Q55.** What is NOT a direct benefit of encapsulation?
+Q13. Which of the following best describes a pure virtual function?
 
-A) Data hiding
-B) Controlled access
-C) Faster compilation
-D) Improved maintainability
+A) A function with no name
+B) A function with no return type
+C) A function declared with = 0 and no implementation in base class
+D) A function that returns void
 
-<details><summary>✅ Check Answer</summary>
-C) Faster compilation 
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: C) A function declared with = 0 and no implementation in base class
+
+💡 Pure virtual = abstract method; must be overridden in derived class.
+
 </details>
 
 ---
 
-### **Q56.** Which of these is part of true encapsulation?
+Q14. Abstraction helps in reducing:
 
-A) Data hiding only
-B) Setters and getters
-C) Loops
-D) Both A & B
+A) Code execution speed
+B) Complexity for the user
+C) Number of classes
+D) Memory usage only
 
-<details><summary>✅ Check Answer</summary>
-D) Both A & B 
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) Complexity for the user
+
+💡 Users focus on essential features; internal complexity is hidden.
+
 </details>
 
 ---
 
-### **Q57.** If a class exposes all its data publicly, this violates:
+Q15. Which of the following is a real-world example of abstraction?
 
-A) Inheritance
-B) Encapsulation
+A) Reading a book's content
+B) Using an ATM machine (withdraw, deposit) without knowing internal banking
+C) Writing code in a text editor
+D) Saving a file with its full path
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) Using an ATM machine (withdraw, deposit) without knowing internal banking
+
+💡 ATM = simple interface; complex banking system is hidden.
+
+</details>
+
+---
+
+Q16. Abstraction exists at which two levels?
+
+A) Public and private
+B) Design level and implementation level
+C) Static and dynamic
+D) Shallow and deep
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) Design level and implementation level
+
+💡 Design = architecture/UML. Implementation = abstract classes/interfaces.
+
+</details>
+
+---
+
+Q17. Which level of abstraction focuses on essential features and relationships in design?
+
+A) Implementation level
+B) Code level
+C) Design level
+D) Execution level
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: C) Design level
+
+💡 Design level = UML diagrams, architecture design.
+
+</details>
+
+---
+
+Q18. If a derived class does NOT override all pure virtual functions of the base class, then:
+
+A) The program runs normally
+B) The derived class also becomes abstract
+C) A compile-time error occurs
+D) The base class becomes concrete
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) The derived class also becomes abstract
+
+💡 Unimplemented pure virtual functions make the derived class abstract too.
+
+</details>
+
+---
+
+Q19. Which of the following is an advantage of abstraction?
+
+A) Exposes all implementation details
+B) Makes code more complex
+C) Improves code reusability
+D) Removes the need for classes
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: C) Improves code reusability
+
+💡 Abstract classes/interfaces can be reused across the application.
+
+</details>
+
+---
+
+Q20. The main difference between encapsulation and abstraction is:
+
+A) There is no difference
+B) Encapsulation hides data; abstraction hides complexity
+C) Abstraction hides data; encapsulation hides complexity
+D) Both hide the same things
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) Encapsulation hides data; abstraction hides complexity
+
+💡 Encapsulation = data security. Abstraction = showing essentials, hiding details.
+
+</details>
+
+---
+
+Q21. Which of the following is true about abstraction?
+
+A) It shows all details of implementation
+B) It allows direct access to private data
+C) It hides implementation details and shows only essential features
+D) It makes all methods private
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: C) It hides implementation details and shows only essential features
+
+💡 Core definition of abstraction.
+
+</details>
+
+---
+
+Q22. A class with at least one pure virtual function is called:
+
+A) Concrete class
+B) Abstract class
+C) Interface
+D) Final class
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) Abstract class
+
+💡 At least one = 0 function → abstract class.
+
+</details>
+
+---
+
+Q23. Multiple inheritance using interfaces is:
+
+A) Not allowed in C++
+B) Allowed — a class can implement multiple interfaces
+C) Causes automatic error
+D) Only allowed for abstract classes
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) Allowed — a class can implement multiple interfaces
+
+💡 Interface (pure abstract class) supports multiple inheritance in C++.
+
+</details>
+
+---
+
+Q24. Which benefit of abstraction allows implementation to change without affecting users?
+
+A) Simplifies model
+B) Reduces complexity
+C) Provides flexibility
+D) Enhances security
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: C) Provides flexibility
+
+💡 As long as interface remains same, internal changes don't affect users.
+
+</details>
+
+---
+
+Q25. In the car example, which of the following is a hidden implementation detail?
+
+A) Steering wheel
+B) Brake pedal
+C) Engine working mechanism
+D) Accelerator pedal
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: C) Engine working mechanism
+
+💡 Steering wheel, pedals = essential features (shown). Engine = hidden.
+
+</details>
+
+---
+
+Q26. What makes a class an abstract class in C++?
+
+A) Having a virtual destructor
+B) Having at least one pure virtual function
+C) Having all private members
+D) Using the abstract keyword
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) Having at least one pure virtual function
+
+💡 C++ has no abstract keyword. Pure virtual function makes class abstract.
+
+</details>
+
+---
+
+Q27. The keyword override in C++ is used to:
+
+A) Create a new function
+B) Explicitly indicate that a function overrides a base class virtual function
+C) Make a function pure virtual
+D) Delete a function
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) Explicitly indicate that a function overrides a base class virtual function
+
+💡 override ensures the function is correctly overriding a virtual function.
+
+</details>
+
+---
+
+Q28. Which scenario is most suitable for using an interface over an abstract class?
+
+A) When you need shared code among related classes
+B) When you need to store state (data members)
+C) When unrelated classes need to share a common behavior
+D) When you need a base class with partial implementation
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: C) When unrelated classes need to share a common behavior
+
+💡 Interface = defines contract for any class, related or unrelated.
+
+</details>
+
+---
+
+Q29. Abstraction enhances security by:
+
+A) Making all data public
+B) Hiding implementation details from users
+C) Allowing direct memory access
+D) Removing all methods
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) Hiding implementation details from users
+
+💡 Hidden details prevent misuse or accidental modification.
+
+</details>
+
+---
+
+Q30. In the Person example (Student, Teacher, Employee), each view shows:
+
+A) All attributes of Person
+B) Only attributes relevant to that perspective
+C) No attributes at all
+D) Random attributes
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) Only attributes relevant to that perspective
+
+💡 Student shows rollNo, grades. Teacher shows subjects, salary. Different abstractions.
+
+</details>
+
+---
+
+Q31. Which of the following is NOT an advantage of abstraction?
+
+A) Simplifies model
+B) Reduces complexity
+C) Exposes all internal details
+D) Improves maintainability
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: C) Exposes all internal details
+
+💡 Abstraction hides details; it does not expose them.
+
+</details>
+
+---
+
+Q32. In C++, a virtual destructor in an abstract base class is important because:
+
+A) It makes the class abstract
+B) It ensures proper cleanup of derived class objects through base class pointer
+C) It has no use
+D) It prevents inheritance
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) It ensures proper cleanup of derived class objects through base class pointer
+
+💡 Virtual destructor = proper polymorphic deletion.
+
+</details>
+
+---
+
+Q33. Which of the following best describes loose coupling?
+
+A) Classes are heavily dependent on each other
+B) Classes depend on interfaces, not concrete implementations
+C) All code is in one class
+D) No methods are used
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: B) Classes depend on interfaces, not concrete implementations
+
+💡 Interfaces promote loose coupling—implementation can be swapped easily.
+
+</details>
+
+---
+
+Q34. A coffee machine's button (press → get coffee) is a good example of:
+
+A) Encapsulation
+B) Polymorphism
+C) Abstraction
+D) Inheritance
+
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: C) Abstraction
+
+💡 Simple interface (button); complex internals (heating, grinding) are hidden.
+
+</details>
+
+---
+
+Q35. When a same object is viewed differently from different perspectives, this demonstrates:
+
+A) Encapsulation
+B) Inheritance
 C) Polymorphism
 D) Abstraction
 
-<details><summary>✅ Check Answer</summary>
-B) Encapsulation 
+<details>
+<summary>✅ Check Answer</summary>
+
+Answer: D) Abstraction
+
+💡 Different perspectives = different abstractions of the same entity.
+
 </details>
 
 ---
-
-### **Q58.** When we combine data and related functions into a single unit, it is called:
-
-A) Recursion
-B) Encapsulation
-C) Overloading
-D) Interrupting
-
-<details><summary>✅ Check Answer</summary>
-B) Encapsulation 
-</details>
-
----
-
-### **Q59.** Which is true about encapsulation?
-
-A) Data is exposed to all
-B) Data is hidden and accessed via public methods
-C) Methods are private only
-D) No control over data
-
-<details><summary>✅ Check Answer</summary>
-B) Data is hidden and accessed via public methods 
-</details>
-
----
-
-### **Q60.** Data encapsulation is a means to implement:
-
-A) Abstraction
-B) Inheritance
-C) File handling
-D) Recursion
-
-<details><summary>✅ Check Answer</summary>
-A) Abstraction 
-</details>
-
----
-
-### **Q61.** Encapsulation is also called:
-
-A) Data hiding
-B) Recursion
-C) Aggregation
-D) Overloading
-
-<details><summary>✅ Check Answer</summary>
-A) Data hiding 
-</details>
-
----
-
-### **Q62.** Which feature stops accidental modification of data?
-
-A) Pointers
-B) Encapsulation
-C) Break statements
-D) Conditional statements
-
-<details><summary>✅ Check Answer</summary>
-B) Encapsulation 
-</details>
-
----
-
-### **Q63.** What can be used to access hidden data?
-
-A) Global variables
-B) Public methods (getters)
-C) Private methods only
-D) Recursion
-
-<details><summary>✅ Check Answer</summary>
-B) Public methods (getters) 
-</details>
-
----
-
-### **Q64.** Which is a core OOP concept that encapsulates both data and methods?
-
-A) File I/O
-B) Encapsulation
-C) Multithreading
-D) Networking
-
-<details><summary>✅ Check Answer</summary>
-B) Encapsulation 
-</details>
-
----
-
-### **Q65.** Encapsulation increases:
-
-A) Errors
-B) Security
-C) File size
-D) Redundancy
-
-<details><summary>✅ Check Answer</summary>
-B) Security 
-</details>
-
----
-
-
-
