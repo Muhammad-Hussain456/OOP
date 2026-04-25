@@ -69,20 +69,22 @@ This is abstraction in action.
 ```
                     ┌─────────────────┐
                     │     Person      │
-                    │   (Abstract)    │
+                    │   (Abstract class)    │
                     └────────┬────────┘
                              │
          ┌───────────────────┼───────────────────┐
          ▼                   ▼                   ▼
 ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
-│    Student      │ │    Teacher      │ │    Employee     │
+│   Student   │ │    Teacher      │ │    Employee     │
 ├─────────────────┤ ├─────────────────┤ ├─────────────────┤
 │ - rollNo        │ │ - subjects      │ │ - employeeID    │
 │ - grades        │ │ - department    │ │ - department    │
 │ - courses       │ │ - salary        │ │ - salary        │
 └─────────────────┘ └─────────────────┘ └─────────────────┘
 
-Each subclass shows only relevant attributes
+Each subclass shows only relevant attributes.                                                                            
+
+**Note**:- Here, child classes like Student, Teacher, and Employee are known as **Concrete classes** from which objects are directly created. We will learn more about **Concrete class** later in the topic "Inheritance".
 ```
 
 ---
@@ -130,17 +132,17 @@ It cannot be instantiated and is used to define abstraction. It serves as a blue
 ```
 ┌─────────────────────────────────────┐
 │           Vehicle                   │
-│           <<abstract>>              │
+│           <<abstract class>>              │
 ├─────────────────────────────────────┤
-│ + start() : void (abstract)         │
-│ + stop() : void (abstract)          │
+│ + start() : void (abstract method)         │
+│ + stop() : void (abstract method)          │
 └─────────────────────────────────────┘
               △
               │ (Inheritance)
     ┌─────────┴─────────┐
     ▼                   ▼
 ┌───────────┐     ┌───────────┐
-│   Car     │     │   Bike    │
+│   Car       │     │   Bike      │ 
 ├───────────┤     ├───────────┤
 │ + start() │     │ + start() │
 │ + stop()  │     │ + stop()  │
