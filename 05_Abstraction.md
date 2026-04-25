@@ -171,10 +171,12 @@ This is the most important concept in abstraction.
 
 ---
 
-## 🔸 Abstract Method (Pure Virtual Function)
+## 🔸 Abstract Function/Method (Pure Virtual Function)
 
 ## Definition:
-An abstract method is a method that is declared in a class but has no implementation and must be implemented in derived classes.
+An abstract function/method or a pure virtual function is a function/method that is declared in a class but has no implementation and must be implemented in derived classes.                                                               
+
+In C++, a pure virtual function (=0) is an abstract function that must be overridden in derived classes, and any class containing it becomes an abstract class that cannot be instantiated. All other member functions with implementations are regular (concrete) functions.
 
 ## Characteristics:
 - No function body in base class  
@@ -192,7 +194,7 @@ public:
 
 ---
 
-## 🔸 Concrete Method
+## 🔸 Concrete Function/Method
 
 ## Definition:
 A concrete method is a method that has a complete implementation inside the class.
@@ -207,7 +209,7 @@ A concrete method is a method that has a complete implementation inside the clas
 ```cpp
 class Vehicle {
 public:
-    // Concrete method 
+    // Concrete method/function 
     void stop() {
         cout << "Vehicle stopped" << endl;
     }
