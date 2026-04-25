@@ -238,6 +238,7 @@ public:
     virtual void resize() = 0;
     virtual ~Shape() {}
 };
+```
 
 ### Interface vs Abstract Class
 
