@@ -147,6 +147,21 @@ It cannot be instantiated and is used to define abstraction. It serves as a blue
 └───────────┘     └───────────┘
 ```
 
+
+### Example:
+```cpp 
+class Vehicle {
+public:
+    // Abstract method (pure virtual function)
+    virtual void start() = 0;
+
+    // Concrete method
+    void stop() {
+        cout << "Vehicle stopped" << endl;
+    }
+};
+
+
 # 🔹 Abstract Method vs Concrete Method
 
 This is the most important concept in abstraction.
@@ -168,7 +183,7 @@ An abstract method is a method that is declared in a class but has no implementa
 ```cpp
 class Vehicle {
 public:
-    virtual void start() = 0;  // Abstract method
+    virtual void start() = 0;  // Abstract method (pure virtual function)
 };
 ```
 
@@ -189,6 +204,7 @@ A concrete method is a method that has a complete implementation inside the clas
 ```cpp
 class Vehicle {
 public:
+    // Concrete method 
     void stop() {
         cout << "Vehicle stopped" << endl;
     }
@@ -211,6 +227,16 @@ An **interface** is a contract that defines **what** a class must do, without sp
 | **No data members** | Typically no state/variables |
 | **All methods are public** | Interface defines public contract |
 | **Multiple inheritance allowed** | A class can implement multiple interfaces |
+
+### Example:
+```cpp 
+class Shape {
+public:
+    // Abstract methods (pure virtual functions)
+    virtual void draw() = 0;  
+    virtual void resize() = 0;
+    virtual ~Shape() {}
+};
 
 ### Interface vs Abstract Class
 
