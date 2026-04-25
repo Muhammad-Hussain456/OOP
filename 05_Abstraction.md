@@ -68,23 +68,23 @@ This is abstraction in action.
 
 ```
                     ┌─────────────────┐
-                    │     Person      │
-                    │   (Abstract class)    │
+                    │     Person         │
+                    │   (Abstract class) │
                     └────────┬────────┘
                              │
          ┌───────────────────┼───────────────────┐
          ▼                   ▼                   ▼
 ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
-│   Student   │ │    Teacher      │ │    Employee     │
+│   Student          │ │    Teacher         │ │    Employee        │
 ├─────────────────┤ ├─────────────────┤ ├─────────────────┤
-│ - rollNo        │ │ - subjects      │ │ - employeeID    │
-│ - grades        │ │ - department    │ │ - department    │
-│ - courses       │ │ - salary        │ │ - salary        │
+│ - rollNo           │ │ - subjects         │ │ - employeeID       │
+│ - grades           │ │ - department       │ │ - department       │
+│ - courses          │ │ - salary           │ │ - salary           │
 └─────────────────┘ └─────────────────┘ └─────────────────┘
 
 Each subclass shows only relevant attributes.                                                                            
 
-**Note**:- Here, child classes like Student, Teacher, and Employee are known as **Concrete classes** from which objects are directly created. We will learn more about **Concrete class** later in the topic "Inheritance".
+Note:- Here, child classes like Student, Teacher, and Employee are known as **Concrete classes** from which objects are directly created. We will learn more about **Concrete class** later in the topic "Inheritance".
 ```
 
 ---
@@ -131,8 +131,8 @@ It cannot be instantiated and is used to define abstraction. It serves as a blue
 
 ```
 ┌─────────────────────────────────────┐
-│           Vehicle                   │
-│           <<abstract class>>              │
+│           Vehicle                          │
+│           <<abstract class>>               │
 ├─────────────────────────────────────┤
 │ + start() : void (abstract method)         │
 │ + stop() : void (abstract method)          │
@@ -144,8 +144,8 @@ It cannot be instantiated and is used to define abstraction. It serves as a blue
 ┌───────────┐     ┌───────────┐
 │   Car       │     │   Bike      │ 
 ├───────────┤     ├───────────┤
-│ + start() │     │ + start() │
-│ + stop()  │     │ + stop()  │
+│ + start()   │     │ + start()   │
+│ + stop()    │     │ + stop()    │
 └───────────┘     └───────────┘
 ```
 
