@@ -111,7 +111,8 @@ Abstraction can be achieved using:
 
 ### What is an Abstract Class?
 
-An **abstract class** is a class that cannot be instantiated and is used to define abstraction. It serves as a blueprint for other classes.
+An **abstract class** is a class with at least one pure virtual function.                                                
+It cannot be instantiated and is used to define abstraction. It serves as a blueprint for other classes.
 
 ### Characteristics
 
@@ -133,7 +134,6 @@ An **abstract class** is a class that cannot be instantiated and is used to defi
 ├─────────────────────────────────────┤
 │ + start() : void (abstract)         │
 │ + stop() : void (abstract)          │
-│ + accelerate() : void (concrete)    │
 └─────────────────────────────────────┘
               △
               │ (Inheritance)
@@ -147,16 +147,36 @@ An **abstract class** is a class that cannot be instantiated and is used to defi
 └───────────┘     └───────────┘
 ```
 
-### Abstract Method (Pure Virtual Function)
+# 🔹 Abstract Method vs Concrete Method
 
-An **abstract method** (pure virtual function in C++):
-- Has **no implementation** in the abstract class
-- Must be **implemented** in derived classes
-- Ends with `= 0` in C++
+This is the most important concept in abstraction.
 
-```cpp
-virtual void start() = 0;  // Abstract method
-```
+---
+
+## 🔸 Abstract Method (Pure Virtual Function)
+
+## Definition:
+An abstract method is a method that is declared in a class but has no implementation and must be implemented in derived classes.
+
+## Characteristics:
+- No function body in base class  
+- Only declared, not defined  
+- Must be overridden in derived class  
+- Defines required behavior (WHAT to do)  
+
+---
+
+## 🔸 Concrete Method
+
+## Definition:
+A concrete method is a method that has a complete implementation inside the class.
+
+## Characteristics:
+- Has function body in base class  
+- Fully defined method  
+- Can be used directly without overriding  
+- Defines actual behavior (HOW to do it)  
+
 
 ---
 
@@ -235,37 +255,6 @@ Implementation details are hidden, preventing misuse or accidental modification.
 
 ---
 
-## 🔹 Encapsulation vs Abstraction
-
-| Feature | Encapsulation | Abstraction |
-|---------|---------------|-------------|
-| **Purpose** | Hide data | Hide complexity |
-| **Focus** | Data security and integrity | Essential features |
-| **Implementation** | Access modifiers (private, public) | Abstract classes, interfaces |
-| **What it hides** | Data members (state) | Implementation details |
-| **Example** | Private variables with getters/setters | Abstract class Vehicle with start() method |
-| **Level** | Implementation level | Both design and implementation level |
-
-### Visual Difference
-
-```
-ENCAPSULATION                          ABSTRACTION
-┌─────────────────┐                   ┌─────────────────┐
-│     Class       │                   │   Interface     │
-│  ┌───────────┐  │                   │                 │
-│  │ Private   │  │  ← Data hidden    │   What to do    │
-│  │ Data      │  │                   │   (Contract)    │
-│  └───────────┘  │                   │                 │
-│  ┌───────────┐  │                   │       ▲         │
-│  │ Public    │  │  ← Controlled     │       │         │
-│  │ Methods   │  │    access         │  ┌────┴────┐    │
-│  └───────────┘  │                   │  │ How to  │    │
-└─────────────────┘                   │  │ do it   │    │
-                                      │  └─────────┘    │
-Focus: HOW to hide data               │  Implementation │
-                                      └─────────────────┘
-                                      Focus: WHAT to do
-```
 
 ---
 
