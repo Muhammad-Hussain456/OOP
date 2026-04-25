@@ -162,7 +162,15 @@ An abstract method is a method that is declared in a class but has no implementa
 - No function body in base class  
 - Only declared, not defined  
 - Must be overridden in derived class  
-- Defines required behavior (WHAT to do)  
+- Defines required behavior (WHAT to do)
+
+### Example:
+```cpp
+class Vehicle {
+public:
+    virtual void start() = 0;  // Abstract method
+};
+```
 
 ---
 
@@ -177,7 +185,15 @@ A concrete method is a method that has a complete implementation inside the clas
 - Can be used directly without overriding  
 - Defines actual behavior (HOW to do it)  
 
-
+### Example:
+```cpp
+class Vehicle {
+public:
+    void stop() {
+        cout << "Vehicle stopped" << endl;
+    }
+};
+```
 ---
 
 ## 🔹 Interface
