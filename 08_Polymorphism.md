@@ -2,9 +2,11 @@
 
 ## What is Polymorphism?
 
-**Polymorphism** is a fundamental concept of Object-Oriented Programming (OOP) that allows objects of different classes to be treated as objects of a common base class, with each responding to the same message in its own way.
+**Polymorphism** is a fundamental concept of Object-Oriented Programming (OOP) that allows objects of different classes to be treated as objects of a common base class, with each responding to the same message in its own way.       
 
-👉 **Polymorphism = Many Forms + One Interface + Multiple Implementations**
+Polymorphism allows one function or method to behave differently for different objects.
+
+👉 **Polymorphism = Many Forms + One Interface + Multiple Implementations**.   
 
 The word "polymorphism" comes from Greek:
 - **Poly** = Many
