@@ -22,7 +22,7 @@ A **sound button** in a mobile game:
 - Press the button → Cat meows 🐈
 - Press the button → Cow moos 🐄
 
-**Same interface** (press button), **different behaviors** (different sounds)
+**Same press button**, **different behaviors** (different sounds)
 
 ---
 
